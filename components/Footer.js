@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <div>
       This is footer component
+      <div>copyright isha</div>
     </div>
   )
 }
