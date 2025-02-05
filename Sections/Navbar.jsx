@@ -9,12 +9,7 @@ import Link from 'next/link'
 export const Navbar = () => {
   return (
     <div>
-      <div className='flex bg-gray-400/25 justify-around py-4  items-center'>
-        <div className='uppercase sm:text-xs flex items-center'>
-          <Link href="/About"><Image src={Email} alt='email' width={30} height={30} /></Link>
-          <span className='sm:hidden'>greenheavenacademy2011@gmail.com</span></div>
-        <div>Login</div>
-      </div>
+      
       <nav className="flex bg-[#76B947]  text-white items-center justify-between px-4 h-20 font-serif text-lg ">
         <div className="flex gap-3 items-center">
           <Image src={SchoolLogo} alt="logo of the school" className='sm:w-[85px] sm:h-[85px] w-24 h-24  p-1' />
