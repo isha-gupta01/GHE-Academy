@@ -32,7 +32,7 @@ export const Navbar = () => {
             <li><DropdownMenu menuTitle={"Home"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
             <li><DropdownMenu menuTitle={"Academics"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
             <li><DropdownMenu menuTitle={"Admissions"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
-            <li><DropdownMenu menuTitle={"About"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
+            <Link href="/about"><li><DropdownMenu menuTitle={"About"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li></Link>
             <li><DropdownMenu menuTitle={"Contact"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
           </ul>
         </div>
