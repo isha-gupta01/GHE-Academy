@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Principle from "@/assets/images/principle.png"
 
 
-const PrncipleMessage = () => {
+const PrincipalMessage = () => {
   return (
     <div className='flex-col'>
       <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 ml-8'>Principal's Message</h1></div>
@@ -28,6 +28,6 @@ const PrncipleMessage = () => {
 }
 
 
-export default PrncipleMessage
+export default PrincipalMessage
 
 
