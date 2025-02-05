@@ -11,11 +11,11 @@ export const Navbar = () => {
     <div>
       <div className='flex justify-around py-4  items-center'>
         <div className='uppercase sm:text-xs flex items-center'>
-          <Link href="/"><Image src={Email} alt='email' width={30} height={30} /></Link>
+          <Link href="/About"><Image src={Email} alt='email' width={30} height={30} /></Link>
           <span className='sm:hidden'>greenheavenacademy2011@gmail.com</span></div>
         <div>Login</div>
       </div>
-      <nav className="flex bg-[#76B947]  text-white items-center justify-between px-4 h-24 font-serif text-lg ">
+      <nav className="flex bg-[#76B947]  text-white items-center justify-between px-4 h-20 font-serif text-lg ">
         <div className="flex gap-3 items-center">
           <Image src={SchoolLogo} alt="logo of the school" className='sm:w-[85px] sm:h-[85px] w-24 h-24  p-1' />
           <div className='flex gap-1 flex-col'>
@@ -27,13 +27,13 @@ export const Navbar = () => {
           </div>
         </div>
         <Sidebar className="hidden" />
-        <div className=' nav border border-white/15 rounded-full bg-white/10 backdrop-blur'>
-          <ul className='flex gap-8 sm:hidden md:flex lg:flex'>
-            <li><DropdownMenu menuTitle={"Home"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
-            <li><DropdownMenu menuTitle={"Academics"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
-            <li><DropdownMenu menuTitle={"Admissions"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
-            <Link href="/about"><li><DropdownMenu menuTitle={"About"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li></Link>
-            <li><DropdownMenu menuTitle={"Contact"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
+        <div className='  border border-white/15 rounded-full bg-white/10 backdrop-blur'>
+          <ul className='flex h-16 sm:hidden md:flex lg:flex'>
+            <li className='nav'><Link href="/About"><DropdownMenu menuTitle={"About"} menuItems={["Principal-Message", "Vision", "Mission","Education-Approach"]} /></Link></li>
+            <li className='nav'><Link href=""><DropdownMenu menuTitle={"Home"} menuItems={["Principal-Message", "Our vision", "our mission"]} /></Link></li>
+            <li className='nav'><Link href=""><DropdownMenu menuTitle={"Academics"} menuItems={["Principal Message", "Our vision", "our mission"]} /></Link></li>
+            <li className='nav'><Link href=""><DropdownMenu menuTitle={"Admissions"} menuItems={["Principal Message", "Our vision", "our mission"]} /></Link></li>
+            <li className='nav bg-white  text-gray-900 hover:bg-white/70 hover:text-gray-900'><DropdownMenu menuTitle={"Contact"} menuItems={["Principal Message", "Our vision", "our mission"]} /></li>
           </ul>
         </div>
       </nav>
