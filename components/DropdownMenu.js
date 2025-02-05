@@ -21,9 +21,9 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
     
 
     return (
-        <div className='px-3 py-3 md:px-2  text-center '>
-            <div 
-            className='lg:text-lg md:text-sm relative'>
+        <div className='lg:px-2 py-2 md:px-2  '>
+            <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+            className='lg:text-xl md:text-sm relative'>
             <button  onClick={()=>setIsDropdownOpen(!isDropdownOpen)}>{menuTitle}</button>
             {isDropdownOpen && (
                 <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
