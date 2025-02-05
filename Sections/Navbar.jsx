@@ -12,7 +12,7 @@ export const Navbar = () => {
         <div className='uppercase sm:text-xs'>greenheavenacademy2011@gmail.com</div>
         <div>Login</div>
       </div>
-      <nav className="flex bg-[#2F5233]  text-white items-center justify-between px-4 h-24 font-serif text-lg ">
+      <nav className="flex bg-[#76B947]  text-white items-center justify-between px-4 h-24 font-serif text-lg ">
         <div className="flex gap-3 items-center">
           <Image src={SchoolLogo} alt="logo of the school" className='sm:w-[85px] sm:h-[85px] w-24 h-24  p-1' />
           <div className='flex gap-1 flex-col'>
