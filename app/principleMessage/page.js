@@ -18,7 +18,7 @@ const PrncipleMessage = () => {
             <p>Principle</p>
             <p>Green Heaven English Academy</p>
           </div>
-          
+        
         </div>
         
       </div>
