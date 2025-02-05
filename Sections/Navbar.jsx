@@ -20,7 +20,7 @@ const Navbar = () => {
           </div>
         </div>
         <Sidebar className="hidden" />
-        <div className='  border border-white/15 rounded-full bg-white/10 backdrop-blur'>
+        <div className='z-10  border border-white/15 rounded-full bg-white/10 backdrop-blur'>
           <ul className='ml-1 flex h-16 sm:hidden md:flex lg:flex items-center'>
             <li className='nav'><Link href="/About"><DropdownMenu menuTitle={"About"} menuItems={["Principal-Message","Manager-Message", "Vision-&-Mission","Education-Approach"]} /></Link></li>
             <li className='nav'><Link href=""><DropdownMenu menuTitle={"Home"} menuItems={["Principal-Message", "Our vision", "our mission"]} /></Link></li>
