@@ -2,7 +2,7 @@
 import { useState } from "react";
 // import { Menu, X } from "lucide-react"; // Icons
 
-export default function Navbar() {
+export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

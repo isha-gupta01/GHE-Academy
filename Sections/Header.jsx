@@ -1,4 +1,7 @@
 import React from 'react'
+import Email from "@/assets/icons/email.png"
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Header = () => {
     return (

@@ -1,15 +1,13 @@
 import React from 'react'
 import SchoolLogo from "@/assets/images/logo.png"
-import Email from "@/assets/icons/email.png"
 import Image from 'next/image'
 import DropdownMenu from '@/components/DropdownMenu'
 import Sidebar from '@/components/Sidebar'
 import Link from 'next/link'
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <div>
-      
       <nav className="flex bg-[#76B947]  text-white items-center justify-between px-4 h-20 font-serif text-lg ">
         <div className="flex gap-3 items-center">
           <Image src={SchoolLogo} alt="logo of the school" className='sm:w-[85px] sm:h-[85px] w-24 h-24  p-1' />
@@ -24,7 +22,7 @@ export const Navbar = () => {
         <Sidebar className="hidden" />
         <div className='  border border-white/15 rounded-full bg-white/10 backdrop-blur'>
           <ul className='ml-1 flex h-16 sm:hidden md:flex lg:flex items-center'>
-            <li className='nav'><Link href="/About"><DropdownMenu menuTitle={"About"} menuItems={["Principal-Message","Manager-Message", "Vision", "Mission","Education-Approach"]} /></Link></li>
+            <li className='nav'><Link href="/About"><DropdownMenu menuTitle={"About"} menuItems={["Principal-Message","Manager-Message", "Vision-&-Mission","Education-Approach"]} /></Link></li>
             <li className='nav'><Link href=""><DropdownMenu menuTitle={"Home"} menuItems={["Principal-Message", "Our vision", "our mission"]} /></Link></li>
             <li className='nav'><Link href=""><DropdownMenu menuTitle={"Academics"} menuItems={["Principal Message", "Our vision", "our mission"]} /></Link></li>
             <li className='nav'><Link href=""><DropdownMenu menuTitle={"Admissions"} menuItems={["Principal Message", "Our vision", "our mission"]} /></Link></li>
@@ -36,4 +34,4 @@ export const Navbar = () => {
   )
 }
 
-
+export default Navbar
