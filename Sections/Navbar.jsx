@@ -3,7 +3,7 @@ import SchoolLogo from "@/assets/images/logo.png"
 import Image from 'next/image'
 import DropdownMenu from '@/components/DropdownMenu'
 import Sidebar from '@/components/Sidebar'
-import grainImage from "@/assets/images/grain.jpg"
+// import grainImage from "@/assets/images/grain.jpg"
 
 export const Navbar = () => {
   return (
