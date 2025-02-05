@@ -1,7 +1,7 @@
 import React from 'react'
 // import Link from 'next/link'
 import Image from 'next/image'
-import Principal from "@/assets/images/Principle.png"
+import Principal from "@/assets/images/principle.png"
 
 
 const PrncipleMessage = () => {
