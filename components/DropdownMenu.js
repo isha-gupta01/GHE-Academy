@@ -21,9 +21,9 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
     
 
     return (
-        <div className='border border-black px-5 py-4'>
-            <li 
-            className='text-xl relative'>
+        <div className='lg:px-5 py-4 md:px-2 '>
+            <div 
+            className='lg:text-xl md:text-sm relative'>
             <button  onClick={()=>setIsDropdownOpen(!isDropdownOpen)}>{menuTitle}</button>
             {isDropdownOpen && (
                 <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -36,7 +36,7 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
                     </ul>
                 </div>
             )}
-        </li>
+        </div>
         </div>
     );
 };

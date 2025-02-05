@@ -3,9 +3,3 @@
 @tailwind utilities;
 
 
-@layer components{
-  .nav
-  {
-    @apply flex bg-blue-900 text-white items-center justify-between px-8 h-16 font-serif text-lg;
-  }
-}
