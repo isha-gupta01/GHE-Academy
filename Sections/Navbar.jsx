@@ -1,15 +1,18 @@
 import React from 'react'
 import SchoolLogo from "@/assets/images/logo.png"
+import Email from "@/assets/icons/email.png"
 import Image from 'next/image'
 import DropdownMenu from '@/components/DropdownMenu'
 import Sidebar from '@/components/Sidebar'
-// import grainImage from "@/assets/images/grain.jpg"
+import Link from 'next/link'
 
 export const Navbar = () => {
   return (
     <div>
       <div className='flex justify-around py-4  items-center'>
-        <div className='uppercase sm:text-xs'>greenheavenacademy2011@gmail.com</div>
+        <div className='uppercase sm:text-xs flex items-center'>
+          <Link href="/"><Image src={Email} alt='email' width={30} height={30} /></Link>
+          <span className='sm:hidden'>greenheavenacademy2011@gmail.com</span></div>
         <div>Login</div>
       </div>
       <nav className="flex bg-[#76B947]  text-white items-center justify-between px-4 h-24 font-serif text-lg ">
@@ -24,13 +27,15 @@ export const Navbar = () => {
           </div>
         </div>
         <Sidebar className="hidden" />
-        <ul className='flex gap-8 sm:hidden md:flex lg:flex'>
-          <li><DropdownMenu menuTitle={"Home"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
-          <li><DropdownMenu menuTitle={"Academics"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
-          <li><DropdownMenu menuTitle={"Admissions"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
-          <li><DropdownMenu menuTitle={"About"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
-          <li><DropdownMenu menuTitle={"Contact"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
-        </ul>
+        <div className=' nav border border-white/15 rounded-full bg-white/10 backdrop-blur'>
+          <ul className='flex gap-8 sm:hidden md:flex lg:flex'>
+            <li><DropdownMenu menuTitle={"Home"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
+            <li><DropdownMenu menuTitle={"Academics"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
+            <li><DropdownMenu menuTitle={"Admissions"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
+            <Link href="/about"><li><DropdownMenu menuTitle={"About"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li></Link>
+            <li><DropdownMenu menuTitle={"Contact"} menuItems={["Principle's Message", "Our vision", "our mission"]} /></li>
+          </ul>
+        </div>
       </nav>
     </div>
   )
