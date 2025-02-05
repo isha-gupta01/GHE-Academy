@@ -27,7 +27,7 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
             <button  onClick={()=>setIsDropdownOpen(!isDropdownOpen)}>{menuTitle}</button>
             {isDropdownOpen && (
                 <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    <ul className='absolute top-12 -left-6 w-28 bg-white text-black  shadow-lg rounded-md'>
+                    <ul className='absolute top-12 -left-6 min-w-max bg-white text-black  shadow-lg rounded-md'>
                         {menuItems.map((item, index) => (
                             <li key={index} className='p-2 hover:bg-gray-400'>
                                 <Link href={`/${menuTitle}/${item}`}>{item}</Link>
