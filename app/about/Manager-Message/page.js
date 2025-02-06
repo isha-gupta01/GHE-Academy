@@ -1,12 +1,19 @@
 import React from 'react'
-
+import Header from '@/Sections/Header'
+import Navbar from '@/Sections/Navbar'
+import Hero from '@/Sections/Hero'
 // import Link from 'next/link'
 import Image from 'next/image'
 import Manager from "@/assets/images/manager.png"
+import SchoolImage from "@/assets/images/ghe1.png"
 
 
 const ManagerMessage = () => {
   return (
+    <>
+    <Header/>
+    <Navbar/>
+    <Hero image={SchoolImage} title="Manager's Message" subBody="Excellence in every Student" height={50}/>
     <div className='flex-col'>
       <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 ml-8'>Manager's Message</h1></div>
       <div className='flex' >
@@ -24,6 +31,8 @@ const ManagerMessage = () => {
         
       </div>
     </div>
+
+    </>
   )
 }
 
