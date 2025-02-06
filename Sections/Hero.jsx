@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = ({ image, title, subBody, height }) => {
     return (
-        <div className="relative w-full" style={{ height: `${height}vh` }}>
+        <div className="relative w-full z-0" style={{ height: `${height}vh` }}>
             {/* Background Image */}
             <div className="absolute inset-0 "><Image src={image} alt="School Image" fill className=" object-cover top-16" /></div>
 

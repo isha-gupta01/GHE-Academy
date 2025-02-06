@@ -11,8 +11,8 @@ import SchoolImage from "@/assets/images/ghe1.png"
 const PrincipalMessage = () => {
   return (
     <>
-    {/* <Header/> */}
-    {/* <Navbar/> */}
+    <Header/>
+    <Navbar/>
     <Hero image={SchoolImage} title="Principal's Message" subBody="Excellence in every Student" height={50}/>
       <div className='flex-col h-[80vh]'>
       <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 ml-8'>Principal's Message</h1></div>

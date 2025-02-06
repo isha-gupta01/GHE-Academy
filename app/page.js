@@ -13,7 +13,7 @@ export default function Home() {
         <Navbar />
       </div>
       <Hero image={SchoolImage} title="Welcome to" subBody="Green Heaven English school" height={90}/>
-      <PrincipalMessage/>
+      {/* <PrincipalMessage/> */}
     </>
   )
 }
