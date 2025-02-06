@@ -9,7 +9,7 @@ const VisionMission = () => {
     <>
     <Header/>
     <Navbar/>
-    <Hero image={SchoolImage} title="Vision & Mission" subBody="Excellence in every Student" height={50}/>
+    <Hero image={SchoolImage} title="Vision & Mission" subBody="Excellence in every Student" height={70}/>
     <div className='w-[80%] mr-auto ml-auto'>
     <h1 className='text-center mt-10 font-extralight text-[3rem] text-[#76B947]'>Vision and Mission</h1>
     <p className='text-lg'>Green Heaven English Academy provides a balanced mix of academic excellence and personal development, creating opportunities for students to thrive in a nurturing environment and reach their full potential.</p>
