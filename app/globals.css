@@ -5,7 +5,7 @@
 
 @layer base{
     .nav{
-        @apply  px-0.5 hover:bg-white/10 hover:text-white transition duration-300 py-1.5 rounded-full text-white/70 text-lg 
+        @apply  px-0.5 hover:bg-white/10 hover:text-white transition duration-300  rounded-full text-white/70 text-sm 
     }
 }
 
