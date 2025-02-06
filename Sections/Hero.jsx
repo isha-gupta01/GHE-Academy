@@ -1,19 +1,24 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 
-const Hero = ({image,title,subBody}) => {
+const Hero = ({ image, title, subBody, height }) => {
     return (
-        <div>
-            <div className={`relative w-full h-[73vh]`}>
-                <Image src={image} alt='School Image' fill className='object-cover' />
-            </div>
-            <div className="absolute inset-0 bottom-[2.9rem] top-[8.87rem] flex flex-col items-center justify-center text-white bg-black/50">
-                <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">{title}</h1>
-                <p className="text-base md:text-lg lg:text-xl mt-2">{subBody}</p>
-            </div>
+        <div className="relative w-full" style={{ height: `${height}vh` }}>
+            {/* Background Image */}
+            <div className="absolute inset-0 -top-5"><Image src={image} alt="School Image" fill className=" object-cover top-16" /></div>
 
+            {/* Overlay (Gray Opaque Background) */}
+            <div className="absolute inset-0 -top-5  bg-gray-900/50"></div>
+
+            {/* Text Content - Inside Overlay */}
+            {/* <div className="flex flex-col items-center "> */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center   text-white px-4 ">
+                    <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">{title}</h1>
+                    <p className="text-base md:text-lg lg:text-xl mt-2">{subBody}</p>
+                </div>
+            {/* </div> */}
         </div>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;

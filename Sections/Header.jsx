@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Header = () => {
     return (
         <div>
-            <div className='flex bg-gray-400/25 justify-around py-4  items-center'>
+            <div className='relative flex z-0 bg-white justify-around py-4  items-center'>
                 <div className='uppercase sm:text-xs flex items-center'>
                     <Link href="/About"><Image src={Email} alt='email' width={30} height={30} /></Link>
                     <span className='sm:hidden'>greenheavenacademy2011@gmail.com</span></div>

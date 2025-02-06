@@ -7,7 +7,7 @@ export default function Sidebar() {
 
   return (
     <>
-      <div className="text-white p-4 flex justify-between items-center md:hidden">
+      <div className="text-white z-10 p-4 flex justify-between items-center md:hidden">
         <button onClick={() => setIsOpen(true)} className="p-2">
           |||
         </button>
@@ -16,7 +16,7 @@ export default function Sidebar() {
       <div
         className={`fixed top-0 left-0 w-64 h-full bg-[#94c973be] text-white transform ${
           isOpen ? "translate-x-0 backdrop-blur" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out z-40 md:hidden`}>
+        } transition-transform duration-300 ease-in-out z-40`}>
         <button
           className="absolute top-4 right-4"
           onClick={() => setIsOpen(false)}>

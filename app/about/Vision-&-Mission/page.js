@@ -1,7 +1,15 @@
 import React from 'react'
+import Navbar from '@/Sections/Navbar'
+import Header from '@/Sections/Header'
+import Hero from '@/Sections/Hero'
+import SchoolImage from "@/assets/images/ghe1.png"
 
-const Vision = () => {
+const VisionMission = () => {
   return (
+    <>
+    <Header/>
+    <Navbar/>
+    <Hero image={SchoolImage} title="Vision & Mission" subBody="Excellence in every Student" height={50}/>
     <div className='w-[80%] mr-auto ml-auto'>
     <h1 className='text-center mt-10 font-extralight text-[3rem] text-[#76B947]'>Vision and Mission</h1>
     <p className='text-lg'>Green Heaven English Academy provides a balanced mix of academic excellence and personal development, creating opportunities for students to thrive in a nurturing environment and reach their full potential.</p>
@@ -14,7 +22,8 @@ const Vision = () => {
             <h2 className='text-2xl text-[#2F5233]'>Our mission is to provide a high-quality, holistic education that empowers students to grow intellectually, socially, and emotionally. We are committed to fostering a culture of respect, discipline, and collaboration, where each child is encouraged to strive for excellence, develop critical thinking, and contribute positively to society. Through innovative teaching methods and a supportive community, we prepare our students for a successful future.</h2>
         </div>
     </div>
+    </>
   )
 }
 
-export default Vision
+export default VisionMission

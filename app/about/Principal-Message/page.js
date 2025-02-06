@@ -1,13 +1,20 @@
 import React from 'react'
 
-// import Link from 'next/link'
+import Header from '@/Sections/Header'
+import Navbar from '@/Sections/Navbar'
+import Hero from '@/Sections/Hero'
 import Image from 'next/image'
 import Principle from "@/assets/images/principle.png"
+import SchoolImage from "@/assets/images/ghe1.png"
 
 
 const PrincipalMessage = () => {
   return (
-    <div className='flex-col'>
+    <>
+    {/* <Header/> */}
+    {/* <Navbar/> */}
+    <Hero image={SchoolImage} title="Principal's Message" subBody="Excellence in every Student" height={50}/>
+      <div className='flex-col h-[80vh]'>
       <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 ml-8'>Principal's Message</h1></div>
       <div className='flex' >
         <Image className=' ml-8 mr-8' src={Principle} alt='Manager' width={1400} height={1200} />
@@ -24,6 +31,7 @@ const PrincipalMessage = () => {
         
       </div>
     </div>
+    </>
   )
 }
 
