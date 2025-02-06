@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10">
+    <footer className="bg-gray-900 mt-[5rem] text-gray-300 py-10">
       <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-4 gap-8 text-center md:text-left">
         {/* Logo & Intro */}
         <div>
@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="">
           <h3 className="text-lg font-semibold text-white">Quick Links</h3>
           <ul className="mt-2 space-y-2">
             <li><a href="/about" className="hover:text-green-400">About Us</a></li>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div>
+        <div className="lg:w-[21rem]">
           <h3 className="text-lg font-semibold text-white">Contact Us</h3>
           <p className="mt-2">Vill./Post Madanpura/Talhapur at Jasmour-Biharigarh Road, UP-247129</p>
           <p>Email: greenheavenacademy2011@gmail.com</p>
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media */}
-        <div>
+        <div className="lg:ml-[4rem]">
           <h3 className="text-lg font-semibold text-white">Follow Us</h3>
           <div className="flex justify-center md:justify-start space-x-4 mt-2">
             <a href="#" className="hover:text-blue-500"><FaFacebook size={24} /></a>
