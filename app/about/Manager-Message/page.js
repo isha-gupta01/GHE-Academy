@@ -6,6 +6,7 @@ import Hero from '@/Sections/Hero'
 import Image from 'next/image'
 import Manager from "@/assets/images/manager.png"
 import SchoolImage from "@/assets/images/ghe1.png"
+import Footer from '@/Sections/Footer'
 
 
 const ManagerMessage = () => {
@@ -13,8 +14,8 @@ const ManagerMessage = () => {
     <>
     <Header/>
     <Navbar/>
-    <Hero image={SchoolImage} title="Manager's Message" subBody="Excellence in every Student" height={50}/>
-    <div className='flex-col flex h-[80vh]'>
+    <Hero image={SchoolImage} title="Manager's Message" subBody="Excellence in every Student" height={70}/>
+    <div className='flex-col flex h-auto]'>
       <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-10 sm:mx-4'>Manager's Message</h1></div>
       <div className='flex sm:flex-col mx-5 lg:flex-row md:flex-row' >
         <Image className='lg:rounded-lg sm:h-auto  sm:w-auto  lg:ml-8 lg:mr-8 lg:h-auto lg:w-[500px] md:h-auto md:w-[400px]' src={Manager} alt='Manager' />
@@ -36,7 +37,7 @@ const ManagerMessage = () => {
         
       </div>
     </div>
-
+    <Footer/>
     </>
   )
 }

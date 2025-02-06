@@ -25,10 +25,11 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="lg:w-[21rem]">
+        <div className="lg:w-[22rem]">
           <h3 className="text-lg font-semibold text-white">Contact Us</h3>
           <p className="mt-2">Vill./Post Madanpura/Talhapur at Jasmour-Biharigarh Road, UP-247129</p>
-          <p>Email: greenheavenacademy2011@gmail.com</p>
+          {/* <p>Email: greenheavenacademy2011@gmail.com</p> */}
+          <a href="mailto:greenheavenacademy2011@gmail.com" className="text-green-400 hover:underline">Email: greenheavenacademy2011@gmail.com</a>
           <p>Phone: +91 97196 71243</p>
           <p>Phone: +91 97198 00456</p>
         </div>
