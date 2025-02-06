@@ -5,10 +5,10 @@ const Hero = ({ image, title, subBody, height }) => {
     return (
         <div className="relative w-full" style={{ height: `${height}vh` }}>
             {/* Background Image */}
-            <div className="absolute inset-0 -top-5"><Image src={image} alt="School Image" fill className=" object-cover top-16" /></div>
+            <div className="absolute inset-0 "><Image src={image} alt="School Image" fill className=" object-cover top-16" /></div>
 
             {/* Overlay (Gray Opaque Background) */}
-            <div className="absolute inset-0 -top-5  bg-gray-900/50"></div>
+            <div className="absolute inset-0   bg-gray-900/50"></div>
 
             {/* Text Content - Inside Overlay */}
             {/* <div className="flex flex-col items-center "> */}
