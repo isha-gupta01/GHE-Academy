@@ -4,10 +4,12 @@ import Header from "@/Sections/Header";
 import Hero from "@/Sections/Hero";
 import SchoolImage from "@/assets/images/ghe1.png"
 import PrincipalMessage from "./About/Principal-Message/page";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+    
       <Header />
       <div className="mt-6"> 
         <Navbar />
