@@ -39,8 +39,8 @@ const Message = () => {
                     <p className="text-center max-w-md mx-auto lg:text-xl text-black mt-4 md:text-lg">GHE Academy has a team of highly dedicated, experienced, and qualified teachers.They are the best teacher with high moral values; a real role model for students.</p>
                     <div className="flex flex-col mt-10 lg:mt-3 md:mt-12 gap-20">
                         {cards.map((project,index) => (
-                            <div key={project.title} style={{top:`calc(112px + ${index * 40}px)`}} className="bg-gray-800 rounded-3xl sticky  overflow-hidden z-0 after:z-10  after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 after:pointer-events-none lg:pt-16 lg:px-20 ">
-                                <div className="absolute inset-0 -z-10 opacity-5" style={{
+                            <div key={project.title} style={{top:`calc(112px + ${index * 40}px)`}} className="bg-gray-800 rounded-3xl sticky  overflow-hidden   after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 after:pointer-events-none lg:pt-16 lg:px-20 ">
+                                <div className="absolute inset-0  opacity-5" style={{
                                     backgroundImage: `url(${grainImage.src})`,
                                 }}></div>
                                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
