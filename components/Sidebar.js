@@ -1,54 +1,104 @@
-"use client"; // Needed for Next.js App Router
+"use client";
+
 import { useState } from "react";
 import Link from "next/link";
-// import { Menu, X } from "lucide-react"; // Icons
 
-export default function Sidebar({menuTitles=[],menuItems=[]}) {
-  const [isOpen, setIsOpen] = useState(false);
+const menuData = [
+  {
+    title: "About",
+    items: [
+      "Principal-Message",
+      "Manager-Message",
+      "Vision-&-Mission",
+      "Progress-Report",
+      "Academic-Year",
+      "AnnualAcademic-Year",
+      "Institutional-Rules",
+    ],
+  },
+  {
+    title: "Admissions",
+    items: ["Application-Process", "Fee-Structure"],
+  },
+  {
+    title: "Gallery",
+    items: [],
+  },
+  {
+    title: "CampusFacility",
+    items: [
+      "Art-Lab",
+      "BoardExam-Applicability",
+      "Computer-Lab",
+      "EnglishLanguage-Lab",
+      "ExtraCurricularActivities",
+      "Facility",
+      "Faculty-and-Staff",
+      "Parent-Teacher-Association",
+      "School-Management-Commitee",
+      "Science-Lab",
+      "Transportation",
+    ],
+  },
+  {
+    title: "Certificates",
+    items: [
+      "Affilation-Certificate",
+      "Building_Safety-Certificate",
+      "Fire-Safety-Certificate",
+      "Land-Certificate",
+      "No_Objection-Certificate",
+      "Recognition-Certificate",
+      "School_Infrastructure-Certificate",
+      "Self-Certification",
+      "Society_Trust-Certificate",
+      "Water_Health_&_Sanitation-Certificate",
+    ],
+  },
+  {
+    title: "Contact",
+    items: [],
+  },
+];
+
+const Sidebar = () => {
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  const toggleMenu = (index) => {
+    setActiveMenu(activeMenu === index ? null : index);
+  };
 
   return (
-    <>
-      <div className="text-black z-10 p-4 flex  items-center lg:hidden md:hidden">
-        <button onClick={() => setIsOpen(true)} className="p-2">
-          |||
-        </button>
-      </div>
-
-      <div
-        className={`fixed top-0 left-0 w-64 h-[100vh] bg-[#94c973be] text-black transform ${
-          isOpen ? "translate-x-0 backdrop-blur" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out z-20`}>
-        <button
-          className="absolute top-4 right-4"
-          onClick={() => setIsOpen(false)}>
-          X
-        </button>
-        <nav className="py-20 px-8 space-y-6">
-          <ul>
-            {menuTitles.map((title, index) => (
-              <li key={index} className="p-2 font-bold text-lg">
-                <span>{title}</span>
-                {/* Map over corresponding submenu items */}
-                {menuItems[index] && menuItems[index].length > 0 && (
-                  <ul className="pl-4">
-                    {menuItems[index].map((item, subIndex) => (
-                      <li key={subIndex} className="p-2 hover:bg-gray-400">
-                        <Link href={`/${title}/${item}`}>{item}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
-      {isOpen && (
-        <div
-          className="absolute inset-0 z-10 bg-black opacity-50 h-[100vh] md:hidden"
-          onClick={() => setIsOpen(false)}
-        />
-      )}
-    </>
+    <aside className="w-64 h-screen bg-gray-900 text-white p-4 md:hidden lg:hidden">
+      <h2 className="text-xl font-bold mb-4">Sidebar Menu</h2>
+      <ul className="space-y-2">
+        {menuData.map((menu, index) => (
+          <li key={index}>
+            <button
+              className="w-full text-left font-semibold p-2 bg-gray-800 rounded-md"
+              onClick={() => toggleMenu(index)}
+            >
+              {menu.title}
+            </button>
+            {activeMenu === index && menu.items.length > 0 && (
+              <ul className="mt-2 pl-4">
+                {menu.items.map((item, idx) => (
+                  <li key={idx} className="py-1">
+                    <Link
+                      href={`/${menu.title}/${item}`}
+                      className="hover:underline"
+                    >
+                      {item.replace(/-/g, " ")}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </aside>
   );
-}
+};
+
+export default Sidebar;

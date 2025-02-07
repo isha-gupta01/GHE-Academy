@@ -45,7 +45,7 @@ const Message = () => {
                                 }}></div>
                                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                                     <div className="lg:pb-16">
-                                        <h3 className="font-serif md:text-4xl md:mt-5  text-2xl mt-2 bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest  text-transparent bg-clip-text ">{project.title}</h3>
+                                        <h3 className="font-serif md:text-4xl md:mt-5  text-2xl mt-2 bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2  uppercase tracking-widest  text-transparent bg-clip-text ">{project.title}</h3>
                                         <hr className="border-t-2 border-white/5 md:mt-5 mt-4" />
                                         <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                                             <p className="text-sm md:text-base text-white/50 mt-4">{project.results}</p>
