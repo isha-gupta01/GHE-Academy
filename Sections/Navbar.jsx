@@ -43,11 +43,11 @@ const Navbar = () => {
         </div>
         <div className='z-10 rounded-full shadow-[0px_0px_15px_6px_rgba(0,_0,_0,_0.1)]  backdrop-blur'>
           <ul className='ml-1 flex h-16 sm:hidden md:flex  lg:flex items-center'>
-            <li className='nav'><Link href="/"><DropdownMenu menuTitle={"About"} menuItems={["Principal-Message", "Manager-Message", "Vision-&-Mission", "Education-Approach"]} /></Link></li>
+            <li className='nav'><Link href=""><DropdownMenu menuTitle={"About"} menuItems={["Principal-Message", "Manager-Message", "Vision-&-Mission", "Education-Approach"]} /></Link></li>
             <li className='nav'><Link href=""><DropdownMenu menuTitle={"Admissions"} menuItems={["Application-Process", "Fee-Structure"]} /></Link></li>
-            <li className='nav'><Link href=""><DropdownMenu menuTitle={"Gallery"} menuItems={[]} /></Link></li>
-            <li className='nav'><Link href=""><DropdownMenu menuTitle={"CampusFacility"} menuItems={["Principal Message", "Our vision", "our mission"]} /></Link></li>
-            <li className='nav'><Link href=""><DropdownMenu menuTitle={"CampusFacility"} menuItems={["Principal Message", "Our vision", "our mission"]} /></Link></li>
+            <li className='nav'><Link href="/Gallery"><DropdownMenu menuTitle={"Gallery"} menuItems={[]} /></Link></li>
+            <li className='nav'><Link href="/CampusFacility"><DropdownMenu menuTitle={"CampusFacility"} menuItems={["Art-Lab", "Our vision", "our mission"]} /></Link></li>
+            {/* <li className='nav'><Link href=""><DropdownMenu menuTitle={"CampusFacility"} menuItems={["Principal Message", "Our vision", "our mission"]} /></Link></li> */}
             <li className='nav md:hidden lg:block'><Link href=""><DropdownMenu menuTitle={"Certificates"} menuItems={["MandatoryDisclosure", "Our vision", "our mission"]} /></Link></li>
             <li className='mr-1 px-1 py-1.5 hover:bg-white/10 hover:text-white transition duration-300 border border-white/5 rounded-full  shadow-[inset_0px_0px_15px_3px_rgba(0,_0,_0,_0.1)] '><Link href="/Contact"><DropdownMenu menuTitle={"Contact"} menuItems={[]} /></Link></li>
           </ul>

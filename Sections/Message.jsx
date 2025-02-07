@@ -1,7 +1,7 @@
 import React from 'react'
 import PrincipleImage from "@/assets/images/principle.png"
 import ManagerImage from "@/assets/images/manager.png"
-import VisionImage from "@/assets/images/library2.jpg"
+import VisionImage from "@/assets/images/sqLIbrary.jpg"
 import grainImage from "@/assets/images/grain.jpg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
 import Image from 'next/image'
@@ -30,13 +30,13 @@ const Message = () => {
     ];
     return (
         <>
-            <section className="pb-16 lg:py-24">
+            <section className="pb-16 pt-24 lg:py-24">
                 <div className="container">
                     <div className="flex justify-center">
                         <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">Message from our Authorities</p>
                     </div>
                     <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Our Intellectual Assets</h2>
-                    <p className="text-center max-w-md mx-auto lg:text-xl text-white/60 mt-4 md:text-lg">GHE Academy has a team of highly dedicated, experienced, and qualified teachers.They are the best teacher with high moral values; a real role model for students.</p>
+                    <p className="text-center max-w-md mx-auto lg:text-xl text-black mt-4 md:text-lg">GHE Academy has a team of highly dedicated, experienced, and qualified teachers.They are the best teacher with high moral values; a real role model for students.</p>
                     <div className="flex flex-col mt-10 lg:mt-3 md:mt-12 gap-20">
                         {cards.map((project,index) => (
                             <div key={project.title} style={{top:`calc(112px + ${index * 40}px)`}} className="bg-gray-800 rounded-3xl sticky  overflow-hidden z-0 after:z-10  after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 after:pointer-events-none lg:pt-16 lg:px-20 ">

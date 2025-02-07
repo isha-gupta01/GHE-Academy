@@ -21,8 +21,8 @@ const Hero = ({ image, title, subBody, height,className,className2 }) => {
             {/* Text Content - Inside Overlay */}
             {/* <div className="flex flex-col items-center "> */}
                 <div className={`absolute inset-0 flex flex-col  justify-center   text-white px-4 ${playfair.className}`}>
-                    <h1 className={`text-3xl md:text-4xl text-white lg:text-5xl ${className}`}>{title}</h1>
-                    <p className={`text-base md:text-lg lg:text-6xl itallic font-bold text-white  mt-2 ${className2}`}>{subBody}</p>
+                    <h1 className={` md:text-4xl text-white sm:text-5xl lg:text-5xl ${className}`}>{title}</h1>
+                    <p className={` md:text-6xl lg:text-6xl itallic font-bold text-white sm:text-[1.7rem]   mt-2 ${className2}`}>{subBody}</p>
                 </div>
             {/* </div> */}
         </div>
