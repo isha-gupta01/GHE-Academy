@@ -6,8 +6,6 @@ import Sidebar from '@/components/Sidebar'
 
 
 const Header = () => {
-    const menuTitles = ["About","Admission","Gallery"]
-    const menuItems = [["Principal-Message","Manager-Message", "Vision-&-Mission","Education-Approach"],["ApplicationProcess","FeeStructure"],[]]
     return (
         <div className='sm:flex sm:justify-between sm:px-7 lg:block md:block'>
             <div className='relative flex bg-white justify-between gap-8 my-5  items-center'>

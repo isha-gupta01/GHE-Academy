@@ -3,7 +3,7 @@ import React from 'react'
 import SchoolLogo from "@/assets/images/logo.png"
 import Image from 'next/image'
 import DropdownMenu from '@/components/DropdownMenu'
-// import Sidebar from '@/components/Sidebar'
+import Sidebar from '@/components/Sidebar'
 import Link from 'next/link'
 import { useEffect, useState } from "react";
 
@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className={`sm:w-full  z-10  transition-transform lg:max-w-screen   ease-in-out duration-300 text-white flex items-center justify-between px-2 h-20 font-serif text-lg ${scrolled ? "fixed top-0 bg-[#5E9538] shadow-lg h-24 transform translate-y-0 " : "absolute top-44 bg-transparent h-20 sm:h-20 transform translate-y-[-100%]"}`}>
-        <div className="flex -px-8 z-10  items-center  ">
+        <div className=" relative flex -px-8 z-10  items-center  ">
           <Link href="/" className='flex items-center justify-center w-24 h-24'><Image src={SchoolLogo} alt="logo of the school" className='sm:w-[85px] sm:h-[85px] w-24 h-24' /></Link>
           <div className='flex gap-1  flex-col'>
 
@@ -40,6 +40,7 @@ const Navbar = () => {
             <span className='text-[0.7rem] leading-snug sm:hidden lg:flex z-10 '>Affiliated To The Council For The<br />
               Central Board of Secondary Education (CBSE)</span>
           </div>
+          {/* <Sidebar className="md:hidden" /> */}
         </div>
         <div className={`z-10 ${scrolled?"bg-[#76B947]":""} rounded-full shadow-[0px_0px_15px_6px_rgba(0,_0,_0,_0.1)]   backdrop-blur`}>
           <ul className='ml-1 flex h-16 sm:hidden md:flex  lg:flex items-center'>

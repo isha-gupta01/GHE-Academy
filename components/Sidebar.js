@@ -84,18 +84,18 @@ const Sidebar = () => {
 
       {/* Sidebar (Appears when isSidebarOpen is true) */}
       <aside
-        className={`fixed z-20 top-0 left-0 w-64 h-full bg-[#76B947] text-white p-4 transform ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed z-50 top-0  right-0 w-64 h-full backdrop-blur-3xl text-white p-4 transform ${
+          isSidebarOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 md:hidden`}
       >
         <button className=" mb-4" onClick={toggleSidebar}>
-          <Image src={Cross} alt="Cross" width={40} height={40}/>
+          <Image src={Cross} alt="Cross" width={50} height={50}/>
           </button>
         <ul className="space-y-2">
           {menuData.map((menu, index) => (
             <li key={index}>
               <button
-                className="w-full text-left font-semibold p-2 bg-[#5E9538] rounded-md"
+                className="w-full text-left font-semibold p-2 bg-gray-900 rounded-md"
                 onClick={() => toggleMenu(index)}
               >
                 {menu.title}
@@ -122,7 +122,7 @@ const Sidebar = () => {
       {/* Overlay (Closes sidebar when clicked outside) */}
       {isSidebarOpen && (
         <div
-          className="fixed inset-0  bg-black opacity-50 z-0 md:hidden"
+          className="fixed inset-0  bg-black opacity-50 z-10 md:hidden"
           onClick={toggleSidebar}
         ></div>
       )}
