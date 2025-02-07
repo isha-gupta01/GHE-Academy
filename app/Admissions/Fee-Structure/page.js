@@ -9,14 +9,14 @@ import Footer from '@/Sections/Footer'
 
 export default function FeeStructure() {
     const data = [
-      { class: "1", regFees: "500", admissionFees: "1000", tuitionFees: "650" },
-      { class: "2", regFees: "500", admissionFees: "1000", tuitionFees: "800" },
-      { class: "3", regFees: "500", admissionFees: "1000", tuitionFees: "1000" },
-      { class: "4", regFees: "500", admissionFees: "1000", tuitionFees: "1200" },
-      { class: "5", regFees: "500", admissionFees: "1000", tuitionFees: "1500" },
-      { class: "6", regFees: "500", admissionFees: "1000", tuitionFees: "1700" },
-      { class: "7", regFees: "500", admissionFees: "1000", tuitionFees: "1900" },
-      { class: "8", regFees: "500", admissionFees: "1000", tuitionFees: "2100" },
+      { class: "1", regFees: "₹500", admissionFees: "₹1,000", tuitionFees: "₹650" },
+      { class: "2", regFees: "₹500", admissionFees: "₹1,000", tuitionFees: "₹800" },
+      { class: "3", regFees: "₹500", admissionFees: "₹1,000", tuitionFees: "₹1,000" },
+      { class: "4", regFees: "₹500", admissionFees: "₹1,000", tuitionFees: "₹1,200" },
+      { class: "5", regFees: "₹500", admissionFees: "₹1,000", tuitionFees: "₹1,500" },
+      { class: "6", regFees: "₹500", admissionFees: "₹1,000", tuitionFees: "₹1,700" },
+      { class: "7", regFees: "₹500", admissionFees: "₹1,000", tuitionFees: "₹1,900" },
+      { class: "8", regFees: "₹500", admissionFees: "₹1,000", tuitionFees: "₹2,100" },
     ];
   
     return (
