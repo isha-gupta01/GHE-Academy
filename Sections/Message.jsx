@@ -1,7 +1,7 @@
 import React from 'react'
 import PrincipleImage from "@/assets/images/principle.png"
 import ManagerImage from "@/assets/images/manager.png"
-// import VisionImage from "@/assets/images/manager.png"
+import VisionImage from "@/assets/images/library2.jpg"
 import grainImage from "@/assets/images/grain.jpg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
 import Image from 'next/image'
@@ -25,7 +25,7 @@ const Message = () => {
             title: "Vision and Mission",
             results: "Our vision is to create a nurturing and inclusive learning environment where every student can unlock their full potential, embrace lifelong learning, and become responsible, compassionate global citizens. We aim to inspire curiosity, foster creativity, and develop the skills needed to excel in a rapidly changing world.",
             link: "/About/Vision-&-Mission",
-            image: PrincipleImage,
+            image: VisionImage,
         },
     ];
     return (
@@ -37,9 +37,9 @@ const Message = () => {
                     </div>
                     <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Our Intellectual Assets</h2>
                     <p className="text-center max-w-md mx-auto lg:text-xl text-white/60 mt-4 md:text-lg">GHE Academy has a team of highly dedicated, experienced, and qualified teachers.They are the best teacher with high moral values; a real role model for students.</p>
-                    <div className="flex flex-col mt-10 md:mt-20 gap-20">
-                        {cards.map((project) => (
-                            <div key={project.title} className="bg-gray-800 rounded-3xl relative overflow-hidden z-0 after:z-10  after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 after:pointer-events-none lg:pt-16 lg:px-20">
+                    <div className="flex flex-col mt-10 lg:mt-3 md:mt-12 gap-20">
+                        {cards.map((project,index) => (
+                            <div key={project.title} style={{top:`calc(112px + ${index * 40}px)`}} className="bg-gray-800 rounded-3xl sticky  overflow-hidden z-0 after:z-10  after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 after:pointer-events-none lg:pt-16 lg:px-20 ">
                                 <div className="absolute inset-0 -z-10 opacity-5" style={{
                                     backgroundImage: `url(${grainImage.src})`,
                                 }}></div>
