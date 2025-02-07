@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '@/Sections/Navbar'
 import Header from '@/Sections/Header'
 import Hero from '@/Sections/Hero'
-import SchoolImage from "@/assets/images/ghe1.png"
+import Pencil2 from "@/assets/images/library2.jpg"
 import Footer from '@/Sections/Footer'
 
 
@@ -12,7 +12,7 @@ const VisionMission = () => {
       <div className=''>
         <Header />
         <Navbar />
-        <Hero image={SchoolImage} title="Vision & Mission" subBody="Excellence in every Student" height={70} />
+        <Hero image={Pencil2} title="Vision & Mission" subBody="Excellence in every Student" height={70} />
         <div className='w-[80%] mr-auto ml-auto'>
           <h1 className='text-center mt-10 font-extralight text-[3rem] text-[#76B947]'>Vision & Mission</h1>
           <p className='text-lg'>Green Heaven English Academy provides a balanced mix of academic excellence and personal development, creating opportunities for students to thrive in a nurturing environment and reach their full potential.</p>
