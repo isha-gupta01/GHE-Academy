@@ -11,7 +11,7 @@ export default function Home() {
     <>
     
       <Header />
-      <div className="mt-6"> 
+      <div className="sm:mt-0 lg:mt-6"> 
         <Navbar />
       </div>
       <Hero image={SchoolImage} title="Welcome to" subBody="Green Heaven English Academy" height={90} className="opacity-0 animate-slideInFromLeft delay-75" className2="opacity-0 animate-slideInFromLeft delay-75"/>
