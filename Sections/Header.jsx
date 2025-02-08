@@ -1,20 +1,23 @@
 import React from 'react'
 import Email from "@/assets/icons/icons8-email-96.png"
+import Whatsapp from "@/assets/icons/icons8-whatsapp-96.png"
 import Link from 'next/link'
 import Image from 'next/image'
 
 
 const Header = () => {
     return (
-        <div className='sm:flex  sm:justify-between sm:px-7 lg:block md:block'>
-            <div className=' flex bg-white justify-between gap-8 my-5  items-center'>
+        <div className='sm:flex py-1  sm:justify-between sm:px-7 lg:block md:block'>
+            <div className=' flex  md:h-[2rem] bg-white justify-between gap-8  items-center'>
                 <div className='uppercase sm:text-xs gap-4 flex items-center'>
-                    <Link href="/About"><Image src={Email} alt='email' width={40} height={40} /></Link>
-                    <span className='sm:hidden lg:block md:block'>greenheavenacademy2011@gmail.com</span>
+                    <Link href="mailto:greenheavenacademy2011@gmail.com"><Image src={Email} alt='email' width={30} height={30} /></Link>
+                    <Link href="https://wa.me/91" target="_blank" rel="noopener noreferrer">
+                        <Image src={Whatsapp} alt='email' width={30} height={30} />
+                    </Link>
                 </div>
-                <div>Login</div>
+                <div className='font-serif font-bold '>Login</div>
             </div>
-        </div> 
+        </div>
     )
 }
 
