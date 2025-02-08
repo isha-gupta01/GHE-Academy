@@ -6,12 +6,12 @@ import DropdownMenu from '@/components/DropdownMenu'
 import Sidebar from '@/components/Sidebar'
 import Link from 'next/link'
 import { useEffect, useState } from "react";
+import Green from "@/assets/images/Wgreen.png"
 
 
 const Navbar = () => {
 
   const [scrolled, setScrolled] = useState(false);
-  // const [isSidebaropen, setIsSidebaropen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,13 +34,14 @@ const Navbar = () => {
       <nav className={`sm:w-full  z-10  transition-transform lg:max-w-screen   ease-in-out duration-300 text-white flex items-center justify-between px-2 h-20 font-serif text-lg ${scrolled ? "fixed top-0 bg-[#5E9538] shadow-lg h-24 transform translate-y-0 " : "absolute top-48 bg-transparent h-20 sm:h-24 transform translate-y-[-100%]"}`}>
         <div className=" relative flex -px-8 z-10 justify-between gap-24  items-center  ">
           <div className='relative flex -px-8 z-10 justify-between  items-center '>
-            <Link href="/" className='flex items-center justify-between w-24 h-24'><Image src={SchoolLogo} alt="logo of the school" className='sm:w-[85px] sm:h-[85px] w-24 h-24' /></Link>
-            <div className='flex gap-1  flex-col'>
-
-              <span className='md:hidden sm:hidden lg:flex lg:text-xl whitespace-nowrap font-bold'>Green Heaven English Academy</span>
-              <span className='lg:hidden text-2xl'>GHE Academy</span>
-              <span className='text-[0.7rem] leading-snug sm:hidden lg:flex z-10 '>Affiliated To The Council For The<br />
-                Central Board of Secondary Education (CBSE)</span>
+            <Link href="/" className='flex items-center justify-between '><Image src={SchoolLogo} alt="logo of the school" className='sm:w-[96px] sm:h-[96px] w-32 h-32' /></Link>
+            <div className='flex   flex-col justify-center items-center'>
+              <span className=' lg:flex lg:text-xl '><Link href="/"><Image src={Green} alt="Green Heaven English Academy" width={200} height={50}/></Link></span>
+              {/* <span className='lg:hidden text-2xl'>GHE Academy</span> */}
+              <span className='text-[0.5rem] leading-tight sm:hidden lg:flex z-10 flex flex-col justify-center items-center '>
+                <p>Affiliated To The Council For The</p>
+                <p>Central Board of Secondary Education (CBSE)</p>
+                </span>
             </div>
           </div>
           <Sidebar className="hidden " />

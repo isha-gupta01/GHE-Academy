@@ -4,6 +4,8 @@ import Header from '@/Sections/Header'
 import Hero from '@/Sections/Hero'
 import Pencil from "@/assets/images/pencils.jpg"
 import Footer from '@/Sections/Footer'
+import Updates from "@/components/Updates";
+
 
 
 
@@ -21,6 +23,7 @@ export default function FeeStructure() {
   
     return (
     <>
+    <Updates/>
     <Header />
     <Navbar />
     <Hero image={Pencil} title="Fee Structure" subBody="Excellence in every Student" height={70} />

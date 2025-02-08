@@ -6,11 +6,14 @@ import Image from 'next/image'
 import Principle from "@/assets/images/principle.png"
 import SchoolImage from "@/assets/images/ghe1.png"
 import Footer from '@/Sections/Footer'
+import Updates from "@/components/Updates";
+
 
 
 const PrincipalMessage = () => {
   return (
     <>
+    <Updates/>
     <Header/>
     <Navbar/>
     <Hero image={SchoolImage} title="Principal's Message" subBody="Excellence in every Student" height={70}/>

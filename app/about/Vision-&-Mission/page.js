@@ -4,12 +4,15 @@ import Header from '@/Sections/Header'
 import Hero from '@/Sections/Hero'
 import Pencil2 from "@/assets/images/library2.jpg"
 import Footer from '@/Sections/Footer'
+import Updates from "@/components/Updates";
+
 
 
 const VisionMission = () => {
   return (
     <>
       <div className=''>
+        <Updates/>
         <Header />
         <Navbar />
         <Hero image={Pencil2} title="Vision & Mission" subBody="Excellence in every Student" height={70} />

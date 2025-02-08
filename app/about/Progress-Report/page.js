@@ -4,12 +4,14 @@ import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/pencils3.jpg"
+import Updates from "@/components/Updates";
 
 
 const ProgressReport = () => {
   return (
     <>
       <div>
+        <Updates/>
       <Header/>
       <Navbar/>
       <Hero image={SchoolImage} title="Progress Report" subBody="Excellence in every Student" height={70}/>

@@ -4,12 +4,15 @@ import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/ghe1.png"
+import Updates from "@/components/Updates";
+
 
 
 const InstitutionalRules = () => {
   return (
     <>
     <div>
+      <Updates/>
       <Header/>
       <Navbar/>
       <Hero image={SchoolImage} title="Institutional Rules" subBody="Excellence in every Student" height={70}/>

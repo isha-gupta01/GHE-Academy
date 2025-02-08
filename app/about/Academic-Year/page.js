@@ -4,6 +4,8 @@ import Header from '@/Sections/Header'
 import Hero from '@/Sections/Hero'
 import Maths from "@/assets/images/maths.jpg"
 import Footer from '@/Sections/Footer'
+import Updates from "@/components/Updates";
+
 
 export default function AcademicCalendar() {
     const data = [
@@ -14,6 +16,7 @@ export default function AcademicCalendar() {
   
     return (
     <>
+    <Updates/>
     <Header />
     <Navbar />
     <Hero image={Maths} title="Academic Year and Vacations" subBody="Excellence in every Student" height={70} />

@@ -6,10 +6,12 @@ import Pencil2 from "@/assets/images/library2.jpg"
 import Footer from '@/Sections/Footer'
 import Image from "next/image";
 import Logo from "@/assets/images/logo.png"
+import Updates from "@/components/Updates";
 
 export default function About() {
   return (
     <>
+    <Updates/>
     <Header />
     <Navbar />
     <Hero image={Pencil2} title="About" subBody="Green Heaven English Adacemy" height={92} />

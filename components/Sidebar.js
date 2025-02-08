@@ -11,6 +11,7 @@ const menuData = [
   {
     title: "About",
     items: [
+      "About-Us",
       "Principal-Message",
       "Manager-Message",
       "Vision-&-Mission",

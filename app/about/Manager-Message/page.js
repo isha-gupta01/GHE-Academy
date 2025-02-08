@@ -7,11 +7,14 @@ import Image from 'next/image'
 import Manager from "@/assets/images/manager.png"
 import SchoolImage from "@/assets/images/ghe1.png"
 import Footer from '@/Sections/Footer'
+import Updates from "@/components/Updates";
+
 
 
 const ManagerMessage = () => {
   return (
     <>
+    <Updates/>
     <Header/>
     <Navbar/>
     <Hero image={SchoolImage} title="Manager's Message" subBody="Excellence in every Student" height={70}/>
