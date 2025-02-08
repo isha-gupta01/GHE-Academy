@@ -13,7 +13,7 @@ const Hero = ({ image, title, subBody, height,className,className2 }) => {
     return (
         <div className={`relative w-full z-0 ${playfair.className}`} style={{ height: `${height}vh` }}>
             {/* Background Image */}
-            <div className="absolute inset-0 "><Image src={image} alt="School Image" fill className=" object-cover top-16" /></div>
+            <div className="absolute inset-0 "><Image src={image} alt="School Image" fill className=" object-cover top-16"  /></div>
 
             {/* Overlay (Gray Opaque Background) */}
             <div className="absolute inset-0   bg-gray-900/50"></div>

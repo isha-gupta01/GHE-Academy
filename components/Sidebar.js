@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Hamburger from "@/assets/icons/icons8-menu.svg"
-import  Cross from "@/assets/icons/icons8-multiply-100.png"
+import Cross from "@/assets/icons/icons8-multiply-100.png"
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const menuData = [
   {
@@ -72,6 +73,18 @@ const Sidebar = () => {
   const toggleMenu = (index) =>
     setActiveMenu(activeMenu === index ? null : index);
 
+  useEffect(() => {
+    if(isSidebarOpen){
+      document.body.style.overflow="hidden";
+    }
+    else{
+      document.body.style.overflow = "auto";
+    }
+  
+
+  }, [isSidebarOpen])
+  
+
   return (
     <>
       {/* Hamburger Menu Button (Visible only on small screens) */}
@@ -79,18 +92,18 @@ const Sidebar = () => {
         className="md:hidden  text-white z-50  "
         onClick={toggleSidebar}
       >
-        <Hamburger/>
+        <Hamburger className="size-12"/>
       </button>
 
       {/* Sidebar (Appears when isSidebarOpen is true) */}
       <aside
-        className={`fixed z-50 top-0  right-0 w-64 h-full backdrop-blur-3xl text-white p-4 transform ${
-          isSidebarOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 md:hidden`}
+        className={`fixed z-50 top-0  right-0 w-72 h-[100vh] backdrop-blur-3xl text-white p-2 transform ${isSidebarOpen ? "translate-x-0 " : "translate-x-full hidden"
+          } transition-transform duration-300 md:hidden`}
       >
-        <button className=" mb-4" onClick={toggleSidebar}>
-          <Image src={Cross} alt="Cross" width={50} height={50}/>
-          </button>
+        <button className="relative top-0 left-52 mb-4" onClick={toggleSidebar}>
+          <Image src={Cross} alt="Cross" width={50} height={50} />
+        </button>
+
         <ul className="space-y-2">
           {menuData.map((menu, index) => (
             <li key={index}>
@@ -100,29 +113,45 @@ const Sidebar = () => {
               >
                 {menu.title}
               </button>
-              {activeMenu === index && menu.items.length > 0 && (
-                <ul className="mt-2 pl-4">
-                  {menu.items.map((item, idx) => (
-                    <li key={idx} className="py-1">
-                      <Link
-                        href={`/${menu.title}/${item}`}
-                        className="hover:underline"
-                      >
-                        {item.replace(/-/g, " ")}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <motion.ul
+                initial="hidden"
+                animate={activeMenu === index ? "visible" : "hidden"}
+                variants={{
+                  hidden: { height: 0, opacity: 0 },
+                  visible: {
+                    height: "auto",
+                    opacity: 1,
+                    transition: { duration: 0.3 },
+                  },
+                }}
+                className="overflow-y-auto  max-h-48 mt-2 pl-4"
+              >
+              
+                {menu.items.length > 0 && (
+                  <ul className="mt-2 pl-4">
+                    {menu.items.map((item, idx) => (
+                      <li key={idx} className="py-1">
+                        <Link
+                          href={`/${menu.title}/${item}`}
+                          className="hover:underline"
+                        >
+                          {item.replace(/-/g, " ")}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                </motion.ul>
             </li>
           ))}
         </ul>
+
       </aside>
 
       {/* Overlay (Closes sidebar when clicked outside) */}
       {isSidebarOpen && (
         <div
-          className="fixed inset-0  bg-black opacity-50 z-10 md:hidden"
+          className="fixed inset-0  h-[90vh] bg-black opacity-50 z-40 md:hidden"
           onClick={toggleSidebar}
         ></div>
       )}

@@ -5,6 +5,7 @@ import VisionImage from "@/assets/images/sqLIbrary.jpg"
 import grainImage from "@/assets/images/grain.jpg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const Message = () => {
@@ -39,7 +40,7 @@ const Message = () => {
                     <p className="text-center max-w-md mx-auto lg:text-xl text-black mt-4 md:text-lg">GHE Academy has a team of highly dedicated, experienced, and qualified teachers.They are the best teacher with high moral values; a real role model for students.</p>
                     <div className="flex flex-col mt-10 lg:mt-3 md:mt-12 gap-20">
                         {cards.map((project,index) => (
-                            <div key={project.title} style={{top:`calc(112px + ${index * 40}px)`}} className="bg-gray-800 rounded-3xl sticky  overflow-hidden   after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 after:pointer-events-none lg:pt-16 lg:px-20 ">
+                            <div key={project.title} style={{top:`calc(112px + ${index * 40}px)`,z:`calc(10 + ${index * 10})`}} className="bg-gray-800 rounded-3xl sticky  overflow-hidden pointer-events-none   after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10  lg:pt-16 lg:px-20 ">
                                 <div className="absolute inset-0  opacity-5" style={{
                                     backgroundImage: `url(${grainImage.src})`,
                                 }}></div>
@@ -50,12 +51,11 @@ const Message = () => {
                                         <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                                             <p className="text-sm md:text-base text-white/50 mt-4">{project.results}</p>
                                         </ul>
-                                        <a href={project.link}>
-                                            <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex gap-2 items-center justify-center mt-8 md:w-auto md:px-6">
-                                                <span>Read More</span>
+                                            <button className="bg-white cursor-pointer relative z-100 pointer-events-auto text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex gap-2 items-center justify-center mt-8 md:w-auto md:px-6">
+                                            <Link href={project.link}><span>Read More</span></Link>
                                                 <ArrowUpRightIcon className="size-4  " />
                                             </button>
-                                        </a>
+                                        
                                     </div>
                                     <div className="relative">
                                         <Image src={project.image} alt={project.title} width={500} height={500} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
