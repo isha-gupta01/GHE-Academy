@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 mt-[5rem] rounded-t-[4rem] text-gray-300 py-10">
+    <footer className="bg-gray-900 mt-[5rem] sm:rounded-t-[2rem] lg:rounded-t-[4rem] text-gray-300 py-10">
       <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-4 gap-8 text-center md:text-left">
         {/* Logo & Intro */}
         <div>
@@ -27,7 +27,7 @@ const Footer = () => {
         {/* Contact Info */}
         <div className="lg:w-[22rem]">
           <h3 className="text-lg font-semibold text-white">Contact Us</h3>
-          <p className="mt-2">Vill./Post Madanpura/Talhapur at Jasmour-Biharigarh Road, UP-247129</p>
+          <p className="mt-2">Vill: Post Madanpura/ Talhapur at Jasmour-Biharigarh Road, UP-247129</p>
           {/* <p>Email: greenheavenacademy2011@gmail.com</p> */}
           <a href="mailto:greenheavenacademy2011@gmail.com" className="text-green-400 hover:underline">Email: greenheavenacademy2011@gmail.com</a>
           <p>Phone: +91 97196 71243</p>
@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="mt-10 text-center border-t border-gray-700 pt-4 text-sm">
+      <div className="mt-10 h-[1rem] text-center border-t border-gray-700 pt-4 sm:text-xs md:text-sm lg:text-sm">
         © {new Date().getFullYear()} Green Heaven English Academy. All rights reserved.
       </div>
     </footer>
