@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className={`sm:w-full  z-10  transition-transform lg:max-w-screen   ease-in-out duration-300 text-white flex items-center justify-between px-2 h-20 font-serif text-lg ${scrolled ? "fixed top-0 bg-[#5E9538] shadow-lg h-24 transform translate-y-0 " : "absolute top-48 bg-transparent h-20 sm:h-24 transform translate-y-[-100%]"}`}>
-        <div className=" relative flex -px-8 z-10 justify-between gap-24  items-center  ">
+        <div className=" relative flex -px-8 z-10 justify-between gap-16  items-center  ">
           <div className='relative flex -px-8 z-10 justify-between  items-center '>
             <Link href="/" className='flex items-center justify-between '><Image src={SchoolLogo} alt="logo of the school" className='sm:w-[96px] sm:h-[96px] w-32 h-32' /></Link>
             <div className='flex   flex-col justify-center items-center'>
