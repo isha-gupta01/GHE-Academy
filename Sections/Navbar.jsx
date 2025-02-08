@@ -45,7 +45,7 @@ const Navbar = () => {
           </div>
           <Sidebar className="hidden " />
         </div>
-        <div className={`z-10 ${scrolled ? "bg-[#76B947]" : ""} rounded-full shadow-[0px_0px_15px_6px_rgba(0,_0,_0,_0.1)]   backdrop-blur`}>
+        <div className={`z-10 ${scrolled ? "bg-[#76B947]" : ""} rounded-full shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)]   backdrop-blur`}>
           <ul className='ml-1 flex h-16 sm:hidden md:flex  lg:flex items-center'>
             <li className='nav'><Link href=""><DropdownMenu menuTitle={"About"} menuItems={["About-Us", "Principal-Message", "Manager-Message", "Vision-&-Mission", "Progress-Report", "Academic-Year", "Institutional-Rules"]} /></Link></li>
             <li className='nav'><Link href=""><DropdownMenu menuTitle={"Admissions"} menuItems={["Application-Process", "Fee-Structure"]} /></Link></li>
