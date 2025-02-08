@@ -15,7 +15,7 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
     const handleMouseLeave = () => {
         timeoutId = setTimeout(() => {
             setIsDropdownOpen(false);
-        }, 150);
+        }, 200);
     };
 
     
@@ -26,10 +26,10 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
             className='lg:text-xl md:text-sm relative'>
             <button  onClick={()=>setIsDropdownOpen(!isDropdownOpen)}>{menuTitle}</button>
             {isDropdownOpen && (
-                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    <ul className='absolute top-12 -left-6 min-w-max bg-white text-black  shadow-lg rounded-md'>
+                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
+                    <ul className='absolute top-12 -left-6 min-w-max bg-gray-800 text-white shadow-lg rounded-md'>
                         {menuItems.map((item, index) => (
-                            <li key={index} className='p-2 hover:bg-gray-400'>
+                            <li key={index} className='p-2 rounded-md  border-b-[1px] border-white/5 '>
                                 <Link href={`/${menuTitle}/${item}`} className=''>{item}</Link>
                             </li>
                         ))}

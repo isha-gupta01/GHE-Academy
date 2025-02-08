@@ -74,16 +74,18 @@ const Sidebar = () => {
     setActiveMenu(activeMenu === index ? null : index);
 
   useEffect(() => {
-    if(isSidebarOpen){
-      document.body.style.overflow="hidden";
+    setActiveMenu(null)
+  }, [])
+
+  useEffect(() => {
+    if (isSidebarOpen) {
+      document.body.style.overflow = "hidden";
     }
-    else{
+    else {
       document.body.style.overflow = "auto";
     }
-  
-
   }, [isSidebarOpen])
-  
+
 
   return (
     <>
@@ -92,7 +94,7 @@ const Sidebar = () => {
         className="md:hidden  text-white z-50  "
         onClick={toggleSidebar}
       >
-        <Hamburger className="size-12"/>
+        <Hamburger className="size-12" />
       </button>
 
       {/* Sidebar (Appears when isSidebarOpen is true) */}
@@ -107,11 +109,21 @@ const Sidebar = () => {
         <ul className="space-y-2">
           {menuData.map((menu, index) => (
             <li key={index}>
+
               <button
                 className="w-full text-left font-semibold p-2 bg-gray-900 rounded-md"
                 onClick={() => toggleMenu(index)}
               >
-                {menu.title}
+                {/* {menu.title} */}
+
+                {(index === 2 || index === 5) ? (
+                  <Link href={`/${menu.title}`}>
+                    {menu.title}
+                  </Link>
+                ) : (
+                  <span>{menu.title}</span>
+                )}
+
               </button>
               <motion.ul
                 initial="hidden"
@@ -126,7 +138,7 @@ const Sidebar = () => {
                 }}
                 className="overflow-y-auto  max-h-48 mt-2 pl-4"
               >
-              
+
                 {menu.items.length > 0 && (
                   <ul className="mt-2 pl-4">
                     {menu.items.map((item, idx) => (
@@ -141,7 +153,7 @@ const Sidebar = () => {
                     ))}
                   </ul>
                 )}
-                </motion.ul>
+              </motion.ul>
             </li>
           ))}
         </ul>

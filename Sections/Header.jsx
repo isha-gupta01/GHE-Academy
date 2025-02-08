@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Header = () => {
     return (
-        <div className='sm:flex sm:justify-between sm:px-7 lg:block md:block'>
+        <div className='sm:flex  sm:justify-between sm:px-7 lg:block md:block'>
             <div className=' flex bg-white justify-between gap-8 my-5  items-center'>
                 <div className='uppercase sm:text-xs gap-4 flex items-center'>
                     <Link href="/About"><Image src={Email} alt='email' width={40} height={40} /></Link>
