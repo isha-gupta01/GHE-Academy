@@ -1,8 +1,10 @@
 import React from 'react'
 import Email from "@/assets/icons/icons8-email-96.png"
-import Whatsapp from "@/assets/icons/icons8-whatsapp-96.png"
+import Login from "@/assets/icons/login.png.png"
 import Link from 'next/link'
 import Image from 'next/image'
+import { FaFacebook, FaWhatsapp } from 'react-icons/fa'
+
 
 
 const Header = () => {
@@ -12,12 +14,19 @@ const Header = () => {
                 <div className='uppercase sm:text-xs gap-4 flex items-center'>
                     <Link href="mailto:greenheavenacademy2011@gmail.com"><Image src={Email} alt='email' width={30} height={30} /></Link>
                     <Link href="https://wa.me/91" target="_blank" rel="noopener noreferrer">
-                        <Image src={Whatsapp} alt='email' width={30} height={30} />
+                        <FaWhatsapp size={30} />
+                    </Link>
+                    <Link href="#" className="hover:text-blue-500"><FaFacebook size={28} /></Link>
+
+                </div>
+                <div className='flex gap-3'>
+
+                    <Link href="/LoginPage" className='border border-black py-1 bg-gray-800 rounded-3xl  '>
+                        <span className='px-4  text-center text-white   '>Login</span>
                     </Link>
                 </div>
-                <div className='border border-black h-[2rem] rounded-full shadow-[0px_0px_14px_2px_rgba(0,_0,_0,_0.1)] flex items-center px-3  gap-4 text-sm '><Link href="/LoginPage">Login</Link></div>
-            </div>                
-            
+            </div>
+
         </div>
     )
 }
