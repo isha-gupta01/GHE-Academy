@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'staff-bg': "url('/assets/images/staff1.jpg')",
+      },
       animation: {
         slideInFromLeft: "slideInFromLeft 1s ease-in-out forwards", // Custom slide-in animation
       },

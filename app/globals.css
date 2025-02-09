@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+
+
+
 @layer base{
     .nav{
         @apply  px-0.5 hover:bg-white/10 hover:border hover:border-white  hover:text-white transition duration-300 py-1.5  rounded-full text-white/70 text-sm 
@@ -10,6 +13,21 @@
 }
 
 /* styles/globals.css */
+
+/* globals.css */
+/* .background-image {
+  background-image: url(
+'https://learnloner.com/wp-content/uploads/2024/01/DSA.png.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: white;
+} */
 
 @layer utilities {
     @keyframes fadeIn {

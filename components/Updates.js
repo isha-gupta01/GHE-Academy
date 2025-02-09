@@ -9,7 +9,7 @@ const Updates = () => {
                 <motion.div
                     initial={{ x: "100%" }}
                     animate={{ x: "-100%" }}
-                    transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
+                    transition={{ repeat: Infinity, duration: 8, ease:"linear" }}
                     className="whitespace-nowrap text-sm   text-white"
                 >
                     Admissions Open 2025-26 - Register Now!!!

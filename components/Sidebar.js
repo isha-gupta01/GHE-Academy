@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Hamburger from "@/assets/icons/icons8-menu.svg"
+import Hamburger from "@/assets/icons/icons8-menu.png"
 import Cross from "@/assets/icons/icons8-multiply-100.png"
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Search from "./Search";
+// import Search from "./Search";
 
 const menuData = [
   {
@@ -89,23 +89,25 @@ const Sidebar = () => {
   }, [isSidebarOpen])
 
 
+
   return (
     <>
       {/* Hamburger Menu Button (Visible only on small screens) */}
       <button
-        className="md:hidden  text-white z-50  "
+        className="md:hidden  text-white z-50 pr-3 "
         onClick={toggleSidebar}
       >
-        <Hamburger className="size-12" />
+        <Image src={Hamburger} alt="menu" width={40} height={40} className="invert "/>
       </button>
+      {/* <a href="https://www.freepik.com/search">Icon by pocike</a> */}
 
       {/* Sidebar (Appears when isSidebarOpen is true) */}
       <aside
         className={`fixed z-50 top-0  right-0 w-72 h-[100vh] backdrop-blur-3xl text-white p-2 transform ${isSidebarOpen ? "translate-x-0 " : "translate-x-full hidden"
           } transition-transform duration-300 md:hidden`}
       >
-        <button className="relative top-0 left-52 mb-4" onClick={toggleSidebar}>
-          <Image src={Cross} alt="Cross" width={50} height={50} />
+        <button className="relative top-0 pt-7 left-56 mb-4" onClick={toggleSidebar}>
+          <Image src={Cross} alt="Cross" width={40} height={40} />
         </button>
         
 
@@ -167,7 +169,7 @@ const Sidebar = () => {
       {/* Overlay (Closes sidebar when clicked outside) */}
       {isSidebarOpen && (
         <div
-          className="fixed inset-0  h-[90vh] bg-black opacity-50 z-40 md:hidden"
+          className="fixed inset-0  h-[100vh] bg-black opacity-50 z-40 md:hidden"
           onClick={toggleSidebar}
         ></div>
       )}
