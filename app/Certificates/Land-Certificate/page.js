@@ -4,7 +4,7 @@ import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
-import SchoolImage from "@/assets/images/pencils3.jpg"
+import SchoolImage from "@/assets/images/certification1.png"
 
 const ImageGallery = () => {
   const images = [
