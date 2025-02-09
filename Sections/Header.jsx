@@ -19,9 +19,9 @@ const Header = () => {
                     <Link href="#" className="hover:text-blue-500"><FaFacebook size={28} /></Link>
 
                 </div>
-                <div className='flex gap-3'>
+                <div className='flex gap-3 mb-[2px]'>
 
-                    <Link href="/LoginPage" className='border border-black py-1 bg-gray-800 rounded-3xl  '>
+                    <Link href="/LoginPage" className='border hover:bg-[#5E9538]  py-1 bg-gray-800 rounded-3xl  '>
                         <span className='px-4  text-center text-white   '>Login</span>
                     </Link>
                 </div>
