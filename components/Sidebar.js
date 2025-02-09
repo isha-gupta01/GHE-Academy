@@ -6,6 +6,7 @@ import Hamburger from "@/assets/icons/icons8-menu.svg"
 import Cross from "@/assets/icons/icons8-multiply-100.png"
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Search from "./Search";
 
 const menuData = [
   {
@@ -106,6 +107,7 @@ const Sidebar = () => {
         <button className="relative top-0 left-52 mb-4" onClick={toggleSidebar}>
           <Image src={Cross} alt="Cross" width={50} height={50} />
         </button>
+        
 
         <ul className="space-y-2">
           {menuData.map((menu, index) => (
@@ -118,6 +120,7 @@ const Sidebar = () => {
                 {/* {menu.title} */}
 
                 {(index === 2 || index === 5) ? (
+                  
                   <Link href={`/${menu.title}`}>
                     {menu.title}
                   </Link>
