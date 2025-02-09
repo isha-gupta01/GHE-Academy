@@ -6,7 +6,6 @@ import Hamburger from "@/assets/icons/icons8-menu.png"
 import Cross from "@/assets/icons/icons8-multiply-100.png"
 import Image from "next/image";
 import { motion } from "framer-motion";
-// import Search from "./Search";
 
 const menuData = [
   {
@@ -18,7 +17,6 @@ const menuData = [
       "Vision-&-Mission",
       "Progress-Report",
       "Academic-Year",
-      "AnnualAcademic-Year",
       "Institutional-Rules",
     ],
   },
@@ -31,13 +29,13 @@ const menuData = [
     items: [],
   },
   {
-    title: "CampusFacility",
+    title: "Campus-Facility",
     items: [
       "Art-Lab",
-      "BoardExam-Applicability",
+      "Board-Exam-Applicability",
       "Computer-Lab",
-      "EnglishLanguage-Lab",
-      "ExtraCurricularActivities",
+      "English-Language-Lab",
+      "Extra-Curricular-Activities",
       "Facility",
       "Faculty-and-Staff",
       "Parent-Teacher-Association",
@@ -50,15 +48,15 @@ const menuData = [
     title: "Certificates",
     items: [
       "Affilation-Certificate",
-      "Building_Safety-Certificate",
+      "Building-Safety-Certificate",
       "Fire-Safety-Certificate",
       "Land-Certificate",
-      "No_Objection-Certificate",
+      "No-Objection-Certificate",
       "Recognition-Certificate",
-      "School_Infrastructure-Certificate",
+      "School-Infrastructure-Certificate",
       "Self-Certification",
-      "Society_Trust-Certificate",
-      "Water_Health_&_Sanitation-Certificate",
+      "Society-Trust-Certificate",
+      "Water-Health-&-Sanitation-Certificate",
     ],
   },
   {
@@ -124,10 +122,10 @@ const Sidebar = () => {
                 {(index === 2 || index === 5) ? (
                   
                   <Link href={`/${menu.title}`}>
-                    {menu.title}
+                    {menu.title.replace(/-/g," ")}
                   </Link>
                 ) : (
-                  <span>{menu.title}</span>
+                  <span>{menu.title.replace(/-/g," ")}</span>
                 )}
 
               </button>

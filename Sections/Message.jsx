@@ -3,7 +3,7 @@ import PrincipleImage from "@/assets/images/principle.png"
 import ManagerImage from "@/assets/images/manager.png"
 import VisionImage from "@/assets/images/sqLIbrary.jpg"
 import grainImage from "@/assets/images/grain.jpg"
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
+import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.png"
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -53,7 +53,7 @@ const Message = () => {
                                         </ul>
                                             <button className="bg-white cursor-pointer relative z-100 pointer-events-auto text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex gap-2 items-center justify-center mt-8 md:w-auto md:px-6">
                                             <Link href={project.link}><span>Read More</span></Link>
-                                                <ArrowUpRightIcon className="size-4  " />
+                                                <Image src={ArrowUpRightIcon} alt='arrow' width={24} height={24}/>
                                             </button>
                                         
                                     </div>

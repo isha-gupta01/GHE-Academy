@@ -48,10 +48,9 @@ const FacilitiesSection = () => {
         <Image
           src={Staff}
           alt="Background"
-          layout="fill"
-          objectFit="cover"
+          fill
           quality={100}
-          className="z-0"
+          className="z-0 object-cover"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50 z-10"></div>
@@ -81,7 +80,7 @@ const FacilitiesSection = () => {
                 key={index}
                 className="bg-white text-gray-800 shadow-lg rounded-2xl overflow-hidden w-full sm:w-[300px]"
               >
-                <Image src={slide.image} alt={slide.title} className="w-full h-40 object-cover" />
+                <Image src={slide.image} alt={slide.title} width={200} height={200} className="w-full h-40 object-cover" />
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">{slide.title}</h2>
                   <p className="text-sm">{slide.description}</p>
@@ -99,6 +98,7 @@ const FacilitiesSection = () => {
                   src={slides[currentIndex].image}
                   alt={slides[currentIndex].title}
                   className="w-full h-40 object-cover"
+                  width={200} height={200}
                 />
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">{slides[currentIndex].title}</h2>
@@ -124,7 +124,7 @@ const FacilitiesSection = () => {
 
           {/* View All Facilities Button */}
           <div className="mt-8">
-            <Link href="/CampusFacility/Facility">
+            <Link href="/Campus-Facility/Facility">
               <button className="bg-[#678f1f] hover:bg-[#8bb837] text-white font-bold py-2 px-6 rounded-full shadow-md">
                 View All Facilities
               </button>
