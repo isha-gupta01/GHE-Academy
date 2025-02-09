@@ -14,11 +14,11 @@ const FacultyStaff = () => {
         <Header />
         <Navbar />
         <Hero image={SchoolImage} title="Faculty and Staff" subBody="" height={70} />
-        <div className='flex-col flex md:h-[80vh] sm:h-[100vh]'>
-          <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-14 sm:mx-4'>Faculty and Staff</h1></div>
-          <div className='sm:flex-col mx-5 lg:flex-row md:flex-row flex' >
-            <Image className='lg:rounded-lg sm:h-auto  sm:w-auto  lg:ml-8 lg:mr-8 lg:h-auto lg:w-[600px] md:h-auto md:w-[400px]' src={Staff} alt='Staff' />
-            <div className='mx-1 md:ml-[2rem] text-justify sm:mt-8 '>
+        <div className='min-h-screen flex flex-col items-center p-4'>
+          <div><h1 className='text-3xl mt-8 font-bold text-green-700'>Faculty and Staff</h1></div>
+          <div className='w-full mt-12 shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)] p-3 pb-8 rounded-lg max-w-3xl flex flex-col items-center gap-4"' >
+            <Image className='w-full rounded-lg shadow-md]' src={Staff} alt='Staff' />
+            <div className='mx-1 text-justify sm:mt-8'>
               <p className='sm:text-[1rem] lg:text-xl'>A team of highly dedicated, motivated, and well-qualified faculty members plays a pivotal role in bringing the school's vision to life. With a commitment to academic excellence and holistic development, they create an engaging and nurturing learning environment that fosters intellectual curiosity, creativity, and critical thinking. </p>
               <p className='mt-4 sm:text-[1rem] lg:text-xl'> Through innovative teaching methodologies and personalized guidance, the faculty ensures that each student receives the knowledge, skills, and values needed to excel both academically and personally.</p>
             </div>
