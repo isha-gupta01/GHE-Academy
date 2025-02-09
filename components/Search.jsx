@@ -13,7 +13,7 @@ const menuData = [
   { menuTitle: "Contact", items: [] },
 ];
 
-const Search = () => {
+const Search = ({show}) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [showSearch, setShowSearch] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -80,7 +80,7 @@ const Search = () => {
     <nav className="p-4 flex justify-between items-center text-white relative">
       {/* Search Icon */}
       <button onClick={toggleSearch} className="relative ">
-        <FaSearch className="text-xl cursor-pointer sm:size-8 md:size-5 " />
+        <FaSearch className={`text-xl  cursor-pointer sm:size-8 md:size-5 ${show}`} />
       </button>
 
       {/* Search Box */}

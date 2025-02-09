@@ -21,8 +21,8 @@ const Navbar = () => {
       } else {
         setScrolled(false);
       }
-    };
-
+    }; 
+ 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -45,14 +45,14 @@ const Navbar = () => {
             </div>
           </div>
           <div className='flex gap-2 items'>
-            {/* <Search className="lg:hidden" /> */}
+            <Search show="hidden" />
             <Sidebar className="hidden " />
           </div>
         </div>
 
         <div className={`z-10 ${scrolled ? "bg-[#76B947]" : ""} rounded-full shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)]   backdrop-blur`}>
           <ul className='ml-1 flex h-16 sm:hidden md:flex  lg:flex items-center'>
-            <Search className=" "/>
+            <Search show="flex" className="hidden "/>
             <li className='nav'><Link href=""><DropdownMenu menuTitle={"About"} menuItems={["About-Us", "Principal-Message", "Manager-Message", "Vision-&-Mission", "Progress-Report", "Academic-Year", "Institutional-Rules"]} /></Link></li>
             <li className='nav'><Link href=""><DropdownMenu menuTitle={"Admissions"} menuItems={["Application-Process", "Fee-Structure"]} /></Link></li>
             <li className='nav md:hidden lg:block'><Link href=""><DropdownMenu menuTitle={"Certificates"} menuItems={["Affilation-Certificate", "Building-Safety-Certificate", "Fire-Safety-Certificate", "Land-Certificate", "No-Objection-Certificate", "Recognition-Certificate", "School-Infrastructure-Certificate", "Self-Certification", "Society-Trust-Certificate", "Water-Health-&-Sanitation-Certificate"]} /></Link></li>

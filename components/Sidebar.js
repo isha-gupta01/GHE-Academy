@@ -23,7 +23,7 @@ const menuData = [
     ],
   },
   {
-    title: "Admissions",
+    title: "Admissions", 
     items: ["Application-Process", "Fee-Structure"],
   },
   {
@@ -106,8 +106,8 @@ const Sidebar = () => {
         className={`fixed z-50 top-0  right-0 w-72 h-[100vh] backdrop-blur-3xl text-white p-2 transform ${isSidebarOpen ? "translate-x-0 " : "translate-x-full hidden"
           } transition-transform duration-300 md:hidden`}
       >
-        <button className="relative top-0 pt-7 left-56 mb-4" onClick={toggleSidebar}>
-          <Image src={Cross} alt="Cross" width={40} height={40} />
+        <button className="relative top-0 pt-7 left-56 mb-4 invert" onClick={toggleSidebar}>
+          <Image src={Cross} alt="Cross" width={30} height={30} />
         </button>
         
 
