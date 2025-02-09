@@ -31,35 +31,16 @@ const PopUp = () => {
             exit={{ scale: 0.8, opacity: 0 }}
             className="fixed inset-0 flex justify-center items-center z-50"
           >
-            <div className="flex flex-col items-center py-4 px-6 border-2 border-black backdrop-blur-lg bg-[#2F5233] text-[#89d552] w-[22rem] h-[20rem] rounded-[3rem] shadow-xl">
-              
-              {/* Logo */}
-              <Image src={SchoolLogo} alt="School Logo" width={90} height={90} />
-
-              {/* Header Section */}
-              <div className="flex justify-between items-center w-full">
-                <h2 className="text-4xl font-serif font-bold text-[#B1D8B7] underline">
-                  Updates
-                </h2>
-                <button onClick={closePopup}>
-                  <Image
-                    src={Cross}
-                    alt="Close"
-                    width={30}
-                    height={30}
-                    className="bg-white rounded-full"
-                  />
-                </button>
+              <div className="bg-white pt-4 h-[30rem] w-[25rem] rounded-2xl flex justify-center flex-col gap-20 items-center">
+            <div className="flex flex-col justify-center">
+                <Image src={SchoolLogo} alt="icon" width={200} height={200}/>
+                </div>
+              <div className="text-white w-full bg-yellow-500 h-[13rem] rounded-b-2xl flex flex-col items-center justify-center">
+                <span>Updates</span>
+                <span>Admissions Open 2025-26</span>
+                <button>Register Now!</button>
               </div>
-
-              {/* Notification Text */}
-              <p className="py-2 text-2xl font-serif">Admission Open 2025-26</p>
-              <p className="py-1 text-3xl font-serif font-bold text-[#76B947]">
-                Register Now!
-              </p>
-              <p className="px-2 text-lg font-serif text-[#B1D8B7]">
-                Admissions close on 25th Feb 2025.
-              </p>
+              
             </div>
           </motion.div>
         </>
