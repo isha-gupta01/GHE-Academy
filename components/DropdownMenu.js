@@ -24,7 +24,7 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
         <div className='lg:px-2 py-2 md:px-2  '>
             <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
             className='lg:text-xl md:text-sm relative'>
-            <button  onClick={()=>setIsDropdownOpen(!isDropdownOpen)}>{menuTitle}</button>
+            <button  onClick={()=>setIsDropdownOpen(!isDropdownOpen)}>{menuTitle.replace(/-/g," ")}</button>
             {isDropdownOpen && (
                 <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
                     <ul className='absolute top-12 -left-6 min-w-max bg-gray-800 text-white shadow-lg rounded-md'>
