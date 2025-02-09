@@ -51,7 +51,7 @@ const ContactPage = () => {
   return (
     <>
     <Header/>
-    <Navbar className=""/>
+    <Navbar />
     {/* <Hero image={SchoolImage} title="" subBody="" height={70}/> */}
     <div className="min-h-screen  flex justify-center items-center bg-[#5E9538] p-4">
       <div className="w-full sm:mt-[10rem] lg:mt-[8rem] max-w-4xl bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg shadow-xl p-6 md:p-10 flex flex-col md:flex-row">
@@ -152,7 +152,7 @@ const ContactPage = () => {
           <div className="flex gap-4 mt-2">
             <a href="#" className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-white hover:from-[#1877f2] hover:to-[#3b5998]">Facebook</a>
             <a href="#" className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 hover:from-[#f46f30] hover:to-[#c32aa3]">Instagram</a>
-            <a href="https://wa.me/91" className="text-transparent bg-clip-text bg-gradient-to-r from-white to-teal-500 hover:from-[#2aff98] hover:to-[#25d366]">Whatsapp</a>
+            <a href="https://wa.me/91" className="text-[#25d366]">Whatsapp</a>
           </div>
         </div>
       </div>
