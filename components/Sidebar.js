@@ -101,7 +101,7 @@ const Sidebar = () => {
 
       {/* Sidebar (Appears when isSidebarOpen is true) */}
       <aside
-        className={`fixed z-50 top-[7px]  right-0 w-72 h-[100vh] backdrop-blur-3xl text-white p-2 transform ${isSidebarOpen ? "translate-x-0 " : "translate-x-full hidden"
+        className={`fixed z-50 top-[16px]  right-0 w-72 h-[100vh] backdrop-blur-3xl text-white p-2 transform ${isSidebarOpen ? "translate-x-0 " : "translate-x-full hidden"
           } transition-transform duration-300 md:hidden`}
       >
         <button className="relative top-0 pt-7 left-56 mb-4 invert" onClick={toggleSidebar}>
@@ -167,7 +167,7 @@ const Sidebar = () => {
       {/* Overlay (Closes sidebar when clicked outside) */}
       {isSidebarOpen && (
         <div
-          className="fixed inset-0 top-[7px] h-[100vh] bg-black opacity-50 z-40 md:hidden"
+          className="fixed inset-0 top-[16px] h-[100vh] bg-black opacity-50 z-40 md:hidden"
           onClick={toggleSidebar}
         ></div>
       )}
