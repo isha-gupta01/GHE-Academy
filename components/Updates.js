@@ -33,7 +33,7 @@ const Updates = () => {
                     </motion.div>
                 </div>
 
-                <div className='self-center w-[10vw] lg:text-[16px] flex justify-between  mr-5'>
+                <div className='self-center md:w-[10vw] sm:gap-2 lg:text-[16px] flex justify-between sm:mr-3  mr-5'>
 
                     <Link href="/" className='border hover:bg-[#5E9538]  py-1 bg-gray-800 rounded-3xl  '>
                         <span className='px-4 sm:px-2 text-center text-white   '>Home</span>
