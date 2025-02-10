@@ -8,7 +8,6 @@ import Footer from '@/Sections/Footer'
 import Updates from "@/components/Updates";
 
 
-
 const PrincipalMessage = () => {
   return (
     <>
