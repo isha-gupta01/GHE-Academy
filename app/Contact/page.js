@@ -1,11 +1,15 @@
 "use client";
-import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Updates from '@/components/Updates';
 // import Hero from '@/Sections/Hero'
 // import SchoolImage from "@/assets/images/contact.jpg"
 import { useState } from "react";
+import Email from "@/assets/icons/white_mail.png"
+import Whatsapp from "@/assets/icons/white_WA.png"
+import Facebook from "@/assets/icons/image.png"
+import Link from 'next/link'
+import Image from 'next/image'
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -74,10 +78,9 @@ const ContactPage = () => {
   return (
     <>
     <Updates/>
-    <Header/>
     <Navbar />
     {/* <Hero image={SchoolImage} title="" subBody="" height={70}/> */}
-    <div className="min-h-screen  flex justify-center items-center bg-slate-600 p-4">
+    <div className="min-h-screen  flex justify-center items-center bg-gradient-to-b from-slate-500 to-stone-500   p-4">
       <div className="w-full sm:mt-[10rem] lg:mt-[8rem] max-w-4xl bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg shadow-xl p-6 md:p-10 flex flex-col md:flex-row">
         {/* Left Section - Form */}
         <div className="w-full md:w-2/3">
@@ -175,9 +178,14 @@ const ContactPage = () => {
 
           <h2 className="text-lg font-bold text-[#5E9538] mt-6">Follow Us</h2>
           <div className="flex gap-4 mt-2">
-            <a href="#" className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-white hover:from-[#1877f2] hover:to-[#3b5998]">Facebook</a>
-            <a href="#" className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 hover:from-[#f46f30] hover:to-[#c32aa3]">Instagram</a>
-            <a href="https://wa.me/91" className="text-[#25d366]">Whatsapp</a>
+                <div className='uppercase sm:text-xs gap-4 flex'>
+                        <Link href="mailto:greenheavenacademy2011@gmail.com"><Image src={Email} alt='email'  width={30} height={30} /></Link>
+                        <Link href="https://wa.me/91" target="_blank" rel="noopener noreferrer">
+                        <Image src={Whatsapp} alt='email'  width={30} height={30} />
+                        </Link>
+                        <Link href="https://www.facebook.com/Education.temple.G.H.E.Academy/" target='_blank' className="hover:text-blue-500"><Image src={Facebook} alt='email'  width={30} height={30} /></Link>
+
+                </div>
           </div>
         </div>
       </div>
