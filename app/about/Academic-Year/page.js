@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '@/Sections/Navbar'
-import Header from '@/Sections/Header'
 import Hero from '@/Sections/Hero'
 import Maths from "@/assets/images/maths.jpg"
 import Footer from '@/Sections/Footer'
@@ -17,7 +16,6 @@ export default function AcademicCalendar() {
     return (
     <>
     <Updates/>
-    <Header />
     <Navbar />
     <Hero image={Maths} title="Academic Year and Vacations" subBody="Excellence in every Student" height={70} />
     

@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Hero from '@/Sections/Hero'
 // import Link from 'next/link'
@@ -15,7 +14,6 @@ const ManagerMessage = () => {
   return (
     <>
     <Updates/>
-    <Header/>
     <Navbar/>
     <Hero image={SchoolImage} title="Manager's Message" subBody="Excellence in every Student" height={70}/>
     <div className='flex-col flex h-auto]'>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
@@ -13,7 +12,6 @@ const InstitutionalRules = () => {
     <>
     <div>
       <Updates/>
-      <Header/>
       <Navbar/>
       <Hero image={SchoolImage} title="Institutional Rules" subBody="Excellence in every Student" height={70}/>
       <div className="min-h-[70vh]  flex flex-col items-center justify-center p-6">

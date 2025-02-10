@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className={`sm:w-full  z-10  transition-transform lg:max-w-screen   ease-in-out duration-300 text-white flex items-center justify-between px-2 h-20 font-serif text-sm ${scrolled ? "fixed top-0 z-50 bg-[#5E9538] shadow-lg h-24 transform translate-y-0 " : "absolute top-[12.3rem] bg-transparent h-20 sm:h-[7.5rem] transform translate-y-[-100%]"}`}>
+      <nav className={`sm:w-full  z-10  transition-transform lg:max-w-screen   ease-in-out duration-300 text-white flex items-center justify-between px-2 h-20 font-serif text-sm ${scrolled ? "fixed top-0 z-50 bg-[#5E9538] shadow-lg h-24 transform translate-y-0 " : "absolute md:top-[10rem] sm:top-[9rem] bg-transparent h-20 sm:h-[7.5rem] transform translate-y-[-100%]"}`}>
         <div className=" relative flex -px-8 z-10 justify-between gap-12  items-center  ">
           <div className='relative flex -px-8 z-10 justify-between md:gap-5 sm:gap-4  items-center '>
             <Link href="/" className='flex items-center justify-between '><Image src={SchoolLogo} alt="logo of the school" className='sm:w-[96px] md:h-auto md:w-[86px] sm:h-[auto] w-32 h-32' /></Link>

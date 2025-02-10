@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
@@ -18,7 +17,6 @@ const ImageGallery = () => {
   return (
     <>
     <Updates/>
-    <Header/>
     <Navbar/>
     <Hero image={SchoolImage} title="" subBody="School infrastructure certificate" height={70}/>
     <div className="min-h-screen flex flex-col items-center p-4">
