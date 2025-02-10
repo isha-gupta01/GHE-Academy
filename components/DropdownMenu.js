@@ -29,7 +29,7 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
             <div 
                 onMouseEnter={handleMouseEnter} 
                 onMouseLeave={handleMouseLeave} 
-                className={`lg:text-xl md:text-sm relative ${isActive ? "border bg-white border-white text-black rounded-full py-2 px-4" : ""}`}
+                className={`lg:text-lg md:text-sm relative ${isActive ? " bg-white text-black rounded-full py-3 px-4 shadow-[inset_0px_0px_11px_-4px_rgba(0,_0,_0,_0.7)]" : "hover:bg-white/10 hover:border hover:border-white  hover:text-white px-4 py-3 rounded-full"}`}
             >
                 <button onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
                     {menuTitle.replace(/-/g, " ")}
@@ -39,7 +39,7 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
                         <ul className='absolute top-12 -left-6 min-w-max bg-gray-800 text-white shadow-lg rounded-md'>
                             {menuItems.map((item, index) => (
                                 <li key={index} className='p-2 rounded-md border-b-[1px] border-white/5'>
-                                    <Link href={`/${menuTitle}/${item}`} className={pathname === `/${menuTitle}/${item}` ? "border-white/5" : ""}>
+                                    <Link href={`/${menuTitle}/${item}`} className={pathname === `/${menuTitle}/${item}` ? "border-white/5 border" : ""}>
                                         {item.replace(/-/g, " ")}
                                     </Link>
                                 </li>

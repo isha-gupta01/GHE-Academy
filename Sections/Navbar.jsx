@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className={`sm:w-full  z-10  transition-transform lg:max-w-screen   ease-in-out duration-300 text-white flex items-center justify-between px-2 h-20 font-serif text-lg ${scrolled ? "fixed top-0 z-50 bg-[#5E9538] shadow-lg h-24 transform translate-y-0 " : "absolute top-[12.3rem] bg-transparent h-20 sm:h-[7.5rem] transform translate-y-[-100%]"}`}>
+      <nav className={`sm:w-full  z-10  transition-transform lg:max-w-screen   ease-in-out duration-300 text-white flex items-center justify-between px-2 h-20 font-serif text-sm ${scrolled ? "fixed top-0 z-50 bg-[#5E9538] shadow-lg h-24 transform translate-y-0 " : "absolute top-[12.3rem] bg-transparent h-20 sm:h-[7.5rem] transform translate-y-[-100%]"}`}>
         <div className=" relative flex -px-8 z-10 justify-between gap-12  items-center  ">
           <div className='relative flex -px-8 z-10 justify-between md:gap-5 sm:gap-4  items-center '>
             <Link href="/" className='flex items-center justify-between '><Image src={SchoolLogo} alt="logo of the school" className='sm:w-[96px] md:h-auto md:w-[86px] sm:h-[auto] w-32 h-32' /></Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
             <li className='nav md:hidden lg:block'><DropdownMenu menuTitle={"Certificates"} menuItems={["Affilation-Certificate", "Building-Safety-Certificate", "Fire-Safety-Certificate", "Land-Certificate", "No-Objection-Certificate", "Recognition-Certificate", "School-Infrastructure-Certificate", "Self-Certification", "Society-Trust-Certificate", "Water-Health-&-Sanitation-Certificate"]} /></li>
             <li className='nav'><DropdownMenu menuTitle={"Campus-Facility"} menuItems={["Art-Lab", "Board-Exam-Applicability", "Computer-Lab", "English-Language-Lab", "Extra-Curricular-Activities", "Facility", "Faculty-and-Staff", "Parent-Teacher-Association", "School-Management-Commitee", "Science-Lab", "Transportation"]} /></li>
             <li className='nav'><Link href="/Gallery"><DropdownMenu menuTitle={"Gallery"} menuItems={[]} /></Link></li>
-            <li className='mr-1 px-1 py-1.5 hover:bg-white/10 hover:text-white transition duration-300 border border-white/5 rounded-full  shadow-[inset_0px_0px_15px_3px_rgba(0,_0,_0,_0.1)] '><Link href="/Contact"><DropdownMenu menuTitle={"Contact"} menuItems={[]} /></Link></li>
+            <li className='mr-1 transition duration-300 nav'><Link href="/Contact"><DropdownMenu menuTitle={"Contact"} menuItems={[]} /></Link></li>
           </ul>
         </div>
 
