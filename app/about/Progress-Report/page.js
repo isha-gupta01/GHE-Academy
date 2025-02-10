@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
@@ -11,8 +10,7 @@ const ProgressReport = () => {
   return (
     <>
       <div>
-        <Updates/>
-      <Header/>
+      <Updates/>
       <Navbar/>
       <Hero image={SchoolImage} title="Progress Report" subBody="Excellence in every Student" height={70}/>
       <div className="min-h-screen flex flex-col items-center justify-center p-6">

@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from '@/Sections/Navbar'
-import Header from '@/Sections/Header'
 import Hero from '@/Sections/Hero'
 import Pencil2 from "@/assets/images/library2.jpg"
 import Footer from '@/Sections/Footer'
@@ -11,7 +10,6 @@ export default function ApplicationProcess() {
   return (
     <>
     <Updates/>
-    <Header />
     <Navbar />
     <Hero image={Pencil2} title="Vision & Mission" subBody="Excellence in every Student" height={70} />
     <div className="min-h-screen bg-white  flex flex-col items-center justify-center p-6">

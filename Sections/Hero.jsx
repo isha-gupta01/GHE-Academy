@@ -11,7 +11,7 @@ const playfair = Playfair_Display({
 
 const Hero = ({ image, title, subBody, height,className,className2 }) => {
     return (
-        <div className={`relative w-full z-0 mt-[0.5rem] ${playfair.className}`} style={{ height: `${height}vh` }}>
+        <div className={`relative w-full z-0 ${playfair.className}`} style={{ height: `${height}vh` }}>
             {/* Background Image */}
             <div className="absolute inset-0 "><Image src={image} loading="lazy" alt="School Image" fill className=" object-cover top-16"  /></div>
 

@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from '@/Sections/Navbar'
-import Header from '@/Sections/Header'
 import Hero from '@/Sections/Hero'
 import Pencil2 from "@/assets/images/library2.jpg"
 import Footer from '@/Sections/Footer'
@@ -12,7 +11,6 @@ export default function About() {
   return (
     <>
     <Updates/>
-    <Header />
     <Navbar />
     <Hero image={Pencil2} title="About" subBody="Green Heaven English Adacemy" height={92} />
     <div className="min-h-screen flex flex-col items-center justify-center p-6">

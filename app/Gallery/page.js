@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
@@ -97,7 +96,6 @@ export default function Gallery() {
 
     <>
     <Updates/>
-    <Header/>
     <Navbar/>
     <Hero image={SchoolImage} title="Gallery" subBody="Photo in every Student" height={70}/>
     <div className="min-h-screen bg-gray-100 p-6">

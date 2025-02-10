@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
@@ -42,7 +41,6 @@ const ExtraCurricular = () => {
   return (
     <>
     <Updates/>
-    <Header/>
     <Navbar/>
     <Hero image={SchoolImage} title="" subBody="Extra Curricular Activities" height={70}/>
     <div className="min-h-screen  p-6">
