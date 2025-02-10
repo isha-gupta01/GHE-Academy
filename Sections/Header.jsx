@@ -18,7 +18,7 @@ const Header = () => {
                     <Link href="https://wa.me/91" target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp size={30} />
                     </Link>
-                    <Link href="#" className="hover:text-blue-500"><FaFacebook size={28} /></Link>
+                    <Link href="https://www.facebook.com/Education.temple.G.H.E.Academy/" target='_blank' className="hover:text-blue-500"><FaFacebook size={28} /></Link>
 
                 </div>
                 <div className='flex gap-3 mb-[2px]'>

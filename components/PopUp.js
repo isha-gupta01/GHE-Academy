@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Cross from "@/assets/icons/icons8-cross-48.png";
 import Alert from "@/assets/icons/alert1.jpg";
 import SignUp from "@/assets/icons/signup.png"
+import Link from "next/link";
 
 const PopUp = () => {
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
@@ -40,7 +41,7 @@ const PopUp = () => {
               <div className="text-white w-full gap-8 bg-yellow-500 h-[13rem] sm:h-[15rem] rounded-b-2xl flex flex-col items-center justify-center">
                 <span className="text-3xl font-bold text-gray-800 ">Updates</span>
                 <span className="text-2xl  ">Admissions Open 2025-26</span>
-                <button className="border border-black rounded-full shadow-[0px_0px_14px_2px_rgba(0,_0,_0,_0.1)] flex items-center bg-emerald-500 px-4 py-2 gap-4 text-xl"><span>Register Now! </span><span><Image src={SignUp} alt="register" width={30} height={30}/></span></button>
+                <button className="border border-black rounded-full shadow-[0px_0px_14px_2px_rgba(0,_0,_0,_0.1)] flex items-center bg-emerald-500 px-4 py-2 gap-4 text-xl"><Link href="/Contact">Register Now! </Link><span><Image src={SignUp} alt="register" width={30} height={30}/></span></button>
               </div>
 
             </div>
