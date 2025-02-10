@@ -38,7 +38,7 @@ const Navbar = () => {
             <Link href="/" className='flex items-center justify-between '><Image src={SchoolLogo} alt="logo of the school" className='sm:w-[96px] md:h-auto md:w-[86px] sm:h-[auto] w-32 h-32' /></Link>
             <div className='flex flex-col justify-center items-center'>
               <span className=' lg:flex lg:text-xl '><Link href="/"><Image src={Green} alt="Green Heaven English Academy" width={200} height={50} /></Link></span>
-              <span className='text-[0.6rem] leading-tight sm:hidden lg:flex z-10 flex flex-col justify-center items-center '>
+              <span className='text-[0.6rem] leading-tight sm:hidden lg:flex z-10 flex flex-col justify-center items-center font-ubuntu '>
                 <p>Affiliated To The Council For The</p>
                 <p>Central Board of Secondary Education (CBSE)</p>
               </span>

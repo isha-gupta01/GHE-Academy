@@ -33,8 +33,11 @@ const Updates = () => {
                     </motion.div>
                 </div>
 
-                <div className='self-center lg:text-[16px]  mr-5'>
+                <div className='self-center w-[10vw] lg:text-[16px] flex justify-between  mr-5'>
 
+                    <Link href="/" className='border hover:bg-[#5E9538]  py-1 bg-gray-800 rounded-3xl  '>
+                        <span className='px-4 sm:px-2 text-center text-white   '>Home</span>
+                    </Link>
                     <Link href="/LoginPage" className='border hover:bg-[#5E9538]  py-1 bg-gray-800 rounded-3xl  '>
                         <span className='px-4 sm:px-2 text-center text-white   '>Login</span>
                     </Link>
