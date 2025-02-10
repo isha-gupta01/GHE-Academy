@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className={`z-10 ${scrolled ? "bg-[#76B947]" : ""} rounded-full shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)]   backdrop-blur`}>
+        <div className={`z-10 font-ubuntu ${scrolled ? "bg-[#76B947]" : ""} rounded-full shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)]   backdrop-blur`}>
           <ul className='ml-1 flex h-16 sm:hidden md:flex  lg:flex items-center'>
             <Search show="flex" className="hidden "/>
             <li className='nav'><DropdownMenu menuTitle={"About"} menuItems={["About-Us", "Principal-Message", "Manager-Message", "Vision-&-Mission", "Progress-Report", "Academic-Year", "Institutional-Rules"]} /></li>

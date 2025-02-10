@@ -39,7 +39,7 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
                         <ul className='absolute top-16 -left-6 min-w-max bg-gray-800 text-white shadow-lg rounded-md'>
                             {menuItems.map((item, index) => (
                                 <li key={index} className='p-2 rounded-md border-b-[1px] border-white/5'>
-                                    <Link href={`/${menuTitle}/${item}`} className={pathname === `/${menuTitle}/${item}` ? "underline" : ""}>
+                                    <Link href={`/${menuTitle}/${item}`} className={pathname === `/${menuTitle}/${item}` ? "text-green-500" : ""}>
                                         {item.replace(/-/g, " ")}
                                     </Link>
                                 </li>

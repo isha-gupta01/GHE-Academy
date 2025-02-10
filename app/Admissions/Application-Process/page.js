@@ -11,12 +11,12 @@ export default function ApplicationProcess() {
     <>
     <Updates/>
     <Navbar />
-    <Hero image={Pencil2} title="Vision & Mission" subBody="Excellence in every Student" height={70} />
+    <Hero image={Pencil2} title="Application Process" subBody="Excellence in every Student" height={70} />
     <div className="min-h-screen bg-white  flex flex-col items-center justify-center p-6">
       {/* Header Section */}
       <div className="text-center mb-6">
-        <h1 className="text-3xl font-bold text-green-700">Application Process</h1>
-        <p className="text-gray-700 mt-2 max-w-2xl">
+        <h1 className="text-3xl font-bold text-green-700 ">Application Process</h1>
+        <p className="text-gray-700 mt-2 max-w-2xl ">
           Our school staff and admissions team will ensure that your child’s enrollment process is as smooth as possible. 
           Our admission procedure is broken down into easy steps to ensure a hassle-free experience.
         </p>
@@ -47,7 +47,7 @@ export default function ApplicationProcess() {
             This helps in placing the child in the most suitable class for their age.
           </p>
           <p className="text-gray-700 mt-2">
-            Starting at a new school is both <span className="font-bold">exciting and challenging</span>. Our mentors and student community ensure a **smooth transition** 
+            Starting at a new school is both <span className="font-bold">exciting and challenging</span>. Our mentors and student community ensure a smooth transition
             and make your child feel welcomed and comfortable in the new environment.
           </p>
         </div>

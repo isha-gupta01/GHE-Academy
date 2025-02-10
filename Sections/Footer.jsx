@@ -1,9 +1,13 @@
+"use client"
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
+import { Karla } from "next/font/google";
+
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 mt-[5rem] sm:rounded-t-[2rem] lg:rounded-t-[4rem] text-gray-300 py-10">
+    <footer className="bg-gray-900 mt-[5rem] text-gray-300 py-10">
       <div className="max-w-7xl mx-auto px-5 grid md:grid-cols-4 gap-8 text-center md:text-left">
         {/* Logo & Intro */}
         <div>
@@ -17,10 +21,10 @@ const Footer = () => {
         <div className="">
           <h3 className="text-lg font-semibold text-white">Quick Links</h3>
           <ul className="mt-2 space-y-2">
-            <li><a href="/About/About-Us" className="hover:text-green-400">About Us</a></li>
-            <li><a href="/Admissions/Application-Process" className="hover:text-green-400">Admissions</a></li>
-            <li><a href="/Admissions/Fee-Structure" className="hover:text-green-400">Fee Structure</a></li>
-            <li><a href="/Contact" className="hover:text-green-400">Contact</a></li>
+            <li><Link href="/About/About-Us" className="hover:text-green-400">About Us</Link></li>
+            <li><Link href="/Admissions/Application-Process" className="hover:text-green-400">Admissions</Link></li>
+            <li><Link href="/Admissions/Fee-Structure" className="hover:text-green-400">Fee Structure</Link></li>
+            <li><Link href="/Contact" className="hover:text-green-400">Contact</Link></li>
           </ul>
         </div>
 

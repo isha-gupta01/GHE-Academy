@@ -8,18 +8,23 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        karla: ["var(--font-karla)", "sans-serif"], // Class: font-karla
+        ubuntu: ["var(--font-ubuntu)", "sans-serif"], // Class: font-ubuntu
+        league: ["var(--font-league-script)", "cursive"], // Class: font-league
+      },
       animation: {
-        slideInFromLeft: "slideInFromLeft 1s ease-in-out forwards", // Custom slide-in animation
+        slideInFromLeft: "slideInFromLeft 1s ease-in-out forwards",
       },
       keyframes: {
         slideInFromLeft: {
           "0%": {
-            transform: "translateX(-100%)", // Start off-screen to the left
-            opacity: 0, // Fully transparent initially
+            transform: "translateX(-100%)",
+            opacity: 0,
           },
           "100%": {
-            transform: "translateX(0)", // Move to original position
-            opacity: 1, // Fully opaque at the end
+            transform: "translateX(0)",
+            opacity: 1,
           },
         },
       },
@@ -27,13 +32,13 @@ export default {
     screens: {
       sm: "375px",
       md: "768px",
-      lg: "1200px"
+      lg: "1200px",
     },
     container: {
       center: true,
       padding: {
         DEFAULT: "1rem",
-        md: "2rem"
+        md: "2rem",
       },
     },
   },
