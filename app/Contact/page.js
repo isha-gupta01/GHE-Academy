@@ -25,16 +25,16 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newErrors = {};
-
-    if (!formData.firstName) newErrors.firstName = "First Name is required";
-    if (!formData.lastName) newErrors.lastName = "Last Name is required";
-    if (!formData.email) newErrors.email = "Email is required";
-    if (!formData.phone) newErrors.phone = "Phone number is required";
-    if (!formData.message) newErrors.message = "Message is required";
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
+    
+    const response = await fetch("http://localhost:5001/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+  
+    if (response.ok) {
+      alert("Email sent successfully!");
+      setFormData({ firstName: "", lastName: "", email: "", phone: "", subject: "", message: "" });
     } else {
       alert("Form submitted successfully!");
       setFormData({

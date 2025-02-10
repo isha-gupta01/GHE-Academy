@@ -4,6 +4,7 @@ import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
+import Updates from '@/components/Updates'
 import SchoolImage from "@/assets/images/certification1.png"
 
 const ImageGallery = () => {
@@ -13,6 +14,8 @@ const ImageGallery = () => {
 
   return (
     <>
+    <Updates/>
+
     <Header/>
     <Navbar/>
     <Hero image={SchoolImage} title="" subBody="Fire safety certificate" height={70}/>

@@ -4,7 +4,8 @@ import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
-import SchoolImage from "@/assets/images/certification1.png"
+import Updates from '@/components/Updates'
+import SchoolImage from "@/assets/images/books2.jpg"
 
 const ImageGallery = () => {
   const images = [
@@ -13,6 +14,7 @@ const ImageGallery = () => {
 
   return (
     <>
+    <Updates/>
     <Header/>
     <Navbar/>
     <Hero image={SchoolImage} title="" subBody="Board Examination Applicability" height={70}/>
