@@ -169,7 +169,7 @@ const ContactPage = () => {
         </div>
 
         {/* Right Section - Contact Info */}
-        <div className="w-full md:w-1/3 mt-8 md:mt-0 md:ml-8 text-gray-300">
+        <div className="w-full md:w-1/3 mt-8 md:mt-[4.6rem] md:ml-8 text-gray-300">
           <h2 className="text-lg font-bold text-[#5E9538]">Contact Information</h2>
           <p className="mt-2">Vill: Post Madanpura, Talhapur at Jasmour-Biharigarh Road, UP-247129</p>
           <p className="mt-2">Call Us: Phone: +91 97196 71243</p>
