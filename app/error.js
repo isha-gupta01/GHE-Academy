@@ -25,12 +25,11 @@ const Error=({ error, reset })=> {
         </div>
 
         {/* Title */}
-        <h1 className="text-3xl font-bold text-gray-800 mt-4">Oops! Page Not Found</h1>
+        <h1 className="text-3xl font-bold text-red-800 mt-4">Oops! An error occurred.</h1>
 
         {/* Message */}
         <p className="text-gray-600 mt-2">
-          Sorry, the page you are looking for might have been removed or doesn't exist.  
-          Please check the URL or return to the homepage.
+          Sorry, Some Error Occurred.
         </p>
 
         {/* Back Button */}

@@ -13,9 +13,8 @@ export default function Home() {
   return (
     <>
       <Updates/>
-      <div className="h-[2.4rem]"> <Header /></div>
       <Navbar />
-      <Hero image={SchoolImage} title="Welcome to" subBody="Green Heaven English Academy" height={90} className="opacity-0 animate-slideInFromLeft delay-75" className2="opacity-0 animate-slideInFromLeft delay-75"/>
+      <Hero image={SchoolImage} title="Welcome to" subBody="Green Heaven English Academy" height={100} className="opacity-0 animate-slideInFromLeft delay-75" className2="opacity-0 animate-slideInFromLeft delay-75"/>
       <Message/>
       <FacilitiesSection/>
       <PopUp/>
