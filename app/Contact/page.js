@@ -159,7 +159,7 @@ const ContactPage = () => {
               {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
             </div>
             <button
-            onClick={handleSubmit}
+            
               type="submit"
               className="w-full p-2 bg-[#76B947] hover:bg-[#5E9538] rounded text-white font-bold"
             >
