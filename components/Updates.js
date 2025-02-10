@@ -12,17 +12,17 @@ const Updates = () => {
     return (
         <>
             
-            <div className="relative w-full flex justify-between   overflow-hidden bg-gray-900  py-[0.4rem]">
-                <div className='uppercase sm:text-xs gap-4 flex ml-5'>
-                        <Link href="mailto:greenheavenacademy2011@gmail.com"><Image src={Email} alt='email'  width={30} height={30} /></Link>
+            <div className="relative w-full flex justify-between sm:h-10  overflow-hidden bg-gray-900  py-[0.4rem]">
+                <div className='uppercase self-center  sm:text-xs gap-4 sm:gap-3 sm:ml-3 flex ml-5'>
+                        <Link href="mailto:greenheavenacademy2011@gmail.com"><Image src={Email} alt='email'  width={30} height={30} className='sm:w-10 md:w-[30px]'  /></Link>
                         <Link href="https://wa.me/91" target="_blank" rel="noopener noreferrer">
-                        <Image src={Whatsapp} alt='email'  width={30} height={30} />
+                        <Image src={Whatsapp} alt='email'  width={30} height={30} className='sm:w-10 md:w-[30px]'/>
                         </Link>
-                        <Link href="https://www.facebook.com/Education.temple.G.H.E.Academy/" target='_blank' className="hover:text-blue-500"><Image src={Facebook} alt='email'  width={30} height={30} /></Link>
+                        <Link href="https://www.facebook.com/Education.temple.G.H.E.Academy/" target='_blank' className="hover:text-blue-500"><Image src={Facebook} alt='email'  width={30} height={30} className='sm:w-10 md:w-[30px]' /></Link>
 
                 </div>
 
-                <div className="self-center    overflow-hidden">
+                <div className="self-center   overflow-hidden">
                     <motion.div
                         initial={{ x: "100%" }}
                         animate={{ x: "-100%" }}
@@ -33,10 +33,10 @@ const Updates = () => {
                     </motion.div>
                 </div>
 
-                <div className='self-center mr-5'>
+                <div className='self-center sm:text-xs mr-5'>
 
                     <Link href="/LoginPage" className='border hover:bg-[#5E9538]  py-1 bg-gray-800 rounded-3xl  '>
-                        <span className='px-4  text-center text-white   '>Login</span>
+                        <span className='px-4 sm:px-2 text-center text-white   '>Login</span>
                     </Link>
                 </div>
             </div>
