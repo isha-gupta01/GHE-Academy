@@ -4,7 +4,7 @@ import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/ghe1.png"
-
+import Image from 'next/image'
 
 const BoardExam = () => {
   return (
@@ -14,7 +14,7 @@ const BoardExam = () => {
             <Navbar/>
             <Hero image={SchoolImage} title="Board Exam Applicability" subBody="Excellence in every Student" height={70}/>
             <div className='flex-col flex md:h-[80vh] sm:h-[100vh]'>
-                      <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-14 sm:mx-4'>Art Lab</h1></div>
+                      <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-14 sm:mx-4'>List 3 Years Result of the Board Examination as per Applicability</h1></div>
                       <div className='sm:flex-col mx-5 lg:flex-row md:flex-row flex' >
                         <Image className='lg:rounded-lg sm:h-auto  sm:w-auto  lg:ml-8 lg:mr-8 lg:h-[400px] lg:w-[400px] md:h-auto md:w-[400px]' src={Art} alt='art' />
                         <div className='mx-1 md:ml-[2rem] text-justify sm:mt-8 '>
