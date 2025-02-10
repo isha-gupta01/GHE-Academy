@@ -2,8 +2,8 @@
 import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
-import Hero from '@/Sections/Hero'
-import SchoolImage from "@/assets/images/contact.jpg"
+// import Hero from '@/Sections/Hero'
+// import SchoolImage from "@/assets/images/contact.jpg"
 import { useState } from "react";
 
 const ContactPage = () => {
@@ -23,30 +23,23 @@ const ContactPage = () => {
     setErrors({ ...errors, [e.target.name]: "" });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const newErrors = {};
-
-    if (!formData.firstName) newErrors.firstName = "First Name is required";
-    if (!formData.lastName) newErrors.lastName = "Last Name is required";
-    if (!formData.email) newErrors.email = "Email is required";
-    if (!formData.phone) newErrors.phone = "Phone number is required";
-    if (!formData.message) newErrors.message = "Message is required";
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
+    
+    const response = await fetch("http://localhost:5000/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+  
+    if (response.ok) {
+      alert("Email sent successfully!");
+      setFormData({ firstName: "", lastName: "", email: "", phone: "", subject: "", message: "" });
     } else {
-      alert("Form submitted successfully!");
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
+      alert("Failed to send email. Please try again.");
     }
   };
+  
 
   return (
     <>
@@ -132,6 +125,7 @@ const ContactPage = () => {
               {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
             </div>
             <button
+            onClick={handleSubmit}
               type="submit"
               className="w-full p-2 bg-[#76B947] hover:bg-[#5E9538] rounded text-white font-bold"
             >
