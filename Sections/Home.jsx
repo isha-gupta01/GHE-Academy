@@ -10,6 +10,7 @@ import FacilitiesSection from "@/Sections/Facilities";
 
 
 export default function Home() {
+  higf
   return (
     <>
       <Updates/>
