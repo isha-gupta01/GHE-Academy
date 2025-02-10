@@ -20,7 +20,7 @@ const LoginPage = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-white rounded-2xl shadow-2xl p-8 w-[24rem] flex flex-col items-center"
+        className="bg-white rounded-2xl lg:m-0 sm:m-4 shadow-2xl p-8 w-[24rem] flex flex-col items-center"
       >
         <Image src={SchoolLogo} alt="School Logo" width={80} height={80} className="mb-4" />
         <h2 className="text-2xl font-bold text-[#2F5233]">Login to Your Account</h2>

@@ -9,7 +9,7 @@ import SchoolImage from "@/assets/images/books2.jpg"
 const ImageGallery = () => {
   const images = [
     "/certificates/3yrresult.jpg",
-  ]; // Replace with your actual image paths
+  ]; 
 
   return (
     <>
@@ -17,7 +17,7 @@ const ImageGallery = () => {
     <Navbar/>
     <Hero image={SchoolImage} title="" subBody="Board Examination Applicability" height={70}/>
     <div className="min-h-screen flex flex-col items-center p-4">
-        <h1 className="text-3xl mt-8 font-bold text-green-700">Board Examination Applicability</h1>
+        <h1 className="text-3xl mt-8 font-bold text-green-700">List of 3 years Board Examination Applicability</h1>
       <div className="w-full mt-12 shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)] p-3 rounded-lg max-w-3xl flex flex-col items-center gap-4">
         {images.map((src, index) => (
           <img key={index} src={src} alt={`Image ${index + 1}`} className="w-full rounded-lg shadow-md" />
