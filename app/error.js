@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
+import ErrorImage from "@/assets/images/error.png"
+import Link from "next/link";
 
 const Error=({ error, reset })=> {
   useEffect(() => {
@@ -9,34 +11,34 @@ const Error=({ error, reset })=> {
   }, [error]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#5E9547] p-4">
-      {/* Centered Container with rounded edges */}
-      <div className="bg-white shadow-lg rounded-2xl overflow-hidden w-full max-w-3xl flex flex-col md:flex-row">
-        
-        {/* Left Section - Error Image */}
-        <div className="w-full md:w-1/2 relative">
-          <Image 
-            src="/error-image.png" 
-            alt="Error Illustration" 
-            width={400} 
-            height={300} 
-            className="w-full h-full object-cover"
+    <div className="flex flex-col items-center justify-center min-h-screen bg-blue-50 px-6">
+      {/* Container */}
+      <div className="bg-white shadow-lg rounded-2xl p-8 max-w-lg text-center border border-gray-200">
+        {/* Image */}
+        <div className="flex justify-center">
+          <Image
+            src={ErrorImage} 
+            alt="Page Not Found"
+            width={250}
+            height={250}
           />
         </div>
 
-        {/* Right Section - Error Message */}
-        <div className="w-full md:w-1/2 p-6 flex flex-col justify-center items-center">
-          <h1 className="text-3xl font-bold text-red-600">Oops! Something went wrong</h1>
-          <p className="text-gray-600 mt-2 text-center">An unexpected error occurred. Please try again later.</p>
-          
-          <button 
-            onClick={() => reset()} 
-            className="mt-4 px-6 py-2 bg-[#5E9547] text-white font-semibold rounded-lg hover:bg-green-700 transition"
-          >
+        {/* Title */}
+        <h1 className="text-3xl font-bold text-gray-800 mt-4">Oops! Page Not Found</h1>
+
+        {/* Message */}
+        <p className="text-gray-600 mt-2">
+          Sorry, the page you are looking for might have been removed or doesn't exist.  
+          Please check the URL or return to the homepage.
+        </p>
+
+        {/* Back Button */}
+        <Link href="/">
+          <button onClick={()=>reset()} className="mt-6 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition">
             Try Again
           </button>
-        </div>
-
+        </Link>
       </div>
     </div>
   );

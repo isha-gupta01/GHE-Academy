@@ -36,10 +36,10 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
                 </button>
                 {isDropdownOpen && (
                     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                        <ul className='absolute top-12 -left-6 min-w-max bg-gray-800 text-white shadow-lg rounded-md'>
+                        <ul className='absolute top-16 -left-6 min-w-max bg-gray-800 text-white shadow-lg rounded-md'>
                             {menuItems.map((item, index) => (
                                 <li key={index} className='p-2 rounded-md border-b-[1px] border-white/5'>
-                                    <Link href={`/${menuTitle}/${item}`} className={pathname === `/${menuTitle}/${item}` ? "border-white/5 border" : ""}>
+                                    <Link href={`/${menuTitle}/${item}`} className={pathname === `/${menuTitle}/${item}` ? "underline" : ""}>
                                         {item.replace(/-/g, " ")}
                                     </Link>
                                 </li>
