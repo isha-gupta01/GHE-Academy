@@ -5,6 +5,7 @@ import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/certification1.png"
+import Updates from '@/components/Updates'
 
 const ImageGallery = () => {
   const images = [
@@ -14,6 +15,7 @@ const ImageGallery = () => {
 
   return (
     <>
+    <Updates/>
     <Header/>
     <Navbar/>
     <Hero image={SchoolImage} title="" subBody="Affilation Certicifate" height={70}/>

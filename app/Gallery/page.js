@@ -5,6 +5,7 @@ import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/gallery.jpg"
+import Updates from '@/components/Updates'
 
 import Image from "next/image";
 
@@ -95,6 +96,7 @@ export default function Gallery() {
   return (
 
     <>
+    <Updates/>
     <Header/>
     <Navbar/>
     <Hero image={SchoolImage} title="Gallery" subBody="Photo in every Student" height={70}/>

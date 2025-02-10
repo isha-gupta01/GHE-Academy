@@ -85,7 +85,7 @@ const Search = ({show}) => {
 
       {/* Search Box */}
       <div
-        className={`absolute top-full right-0 mt-2 w-72  bg-white/50 shadow-lg rounded-2xl p-3 transition-all duration-300 ${
+        className={`absolute top-full right-0 mt-2 w-72   bg-gray-800 shadow-lg rounded-2xl p-3 transition-all duration-300 ${
           showSearch ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
         }`}
       >
@@ -99,7 +99,7 @@ const Search = ({show}) => {
             setSelectedIndex(0); // Reset selection when typing
           }}
           onKeyDown={handleKeyDown}
-          className="w-full p-2 border border-gray-300 rounded-md text-black"
+          className="w-full p-2 border border-gray-300 bg-gray-900 rounded-md text-white"
         />
 
         {/* Search Suggestions (Internal Scroll) */}
@@ -109,10 +109,10 @@ const Search = ({show}) => {
               <li
                 key={item}
                 className={`border-b last:border-none cursor-pointer px-3 py-2 ${
-                  index === selectedIndex ? "bg-gray-200" : ""
+                  index === selectedIndex ? "bg-gray-500" : ""
                 }`}
               >
-                <Link href={`/${menuTitle}/${item}`} className="block text-black">
+                <Link href={`/${menuTitle}/${item}`} className="block text-white">
                   {item.replace(/-/g, " ")}
                 </Link>
               </li>
