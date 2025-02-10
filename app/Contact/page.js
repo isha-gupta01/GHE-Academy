@@ -2,6 +2,7 @@
 import Header from '@/Sections/Header'
 import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
+import Updates from '@/components/Updates';
 // import Hero from '@/Sections/Hero'
 // import SchoolImage from "@/assets/images/contact.jpg"
 import { useState } from "react";
@@ -43,6 +44,7 @@ const ContactPage = () => {
 
   return (
     <>
+    <Updates/>
     <Header/>
     <Navbar />
     {/* <Hero image={SchoolImage} title="" subBody="" height={70}/> */}

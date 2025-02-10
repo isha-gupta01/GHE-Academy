@@ -4,6 +4,7 @@ import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/ghe1.png"
+import Updates from '@/components/Updates'
 import Staff from "@/assets/images/staff1.jpg"
 import Image from 'next/image'
 
@@ -11,6 +12,7 @@ const FacultyStaff = () => {
   return (
     <>
       <div>
+        <Updates/>
         <Header />
         <Navbar />
         <Hero image={SchoolImage} title="Faculty and Staff" subBody="" height={70} />

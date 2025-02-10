@@ -11,8 +11,8 @@ const Header = () => {
     return (
         <>
         
-            <div className='sm:block py-1  sm:justify-between sm:px-7 lg:block md:block pt-[0.5rem]'>
-            <div className=' flex md:h-[2rem] bg-white justify-between gap-8  items-center'>
+        <div className='sm:block py-1  sm:justify-between sm:px-7 lg:block md:block'>
+            <div className=' flex md:h-[1.3rem] bg-white justify-between gap-8  items-center'>
                 <div className='uppercase sm:text-xs gap-4 flex items-center'>
                     <Link href="mailto:greenheavenacademy2011@gmail.com"><Image src={Email} alt='email' width={30} height={30} /></Link>
                     <Link href="https://wa.me/91" target="_blank" rel="noopener noreferrer">
