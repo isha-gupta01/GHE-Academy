@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,10 +17,10 @@ const Footer = () => {
         <div className="">
           <h3 className="text-lg font-semibold text-white">Quick Links</h3>
           <ul className="mt-2 space-y-2">
-            <li><a href="/about" className="hover:text-green-400">About Us</a></li>
-            <li><a href="/admissions" className="hover:text-green-400">Admissions</a></li>
-            <li><a href="/academics" className="hover:text-green-400">Academics</a></li>
-            <li><a href="/contact" className="hover:text-green-400">Contact</a></li>
+            <li><a href="/About/About-Us" className="hover:text-green-400">About Us</a></li>
+            <li><a href="/Admissions/Application-Process" className="hover:text-green-400">Admissions</a></li>
+            <li><a href="/Admissions/Fee-Structure" className="hover:text-green-400">Fee Structure</a></li>
+            <li><a href="/Contact" className="hover:text-green-400">Contact</a></li>
           </ul>
         </div>
 
@@ -38,9 +38,9 @@ const Footer = () => {
         <div className="lg:ml-[4rem]">
           <h3 className="text-lg font-semibold text-white">Follow Us</h3>
           <div className="flex justify-center md:justify-start space-x-4 mt-2">
-            <a href="#" className="hover:text-blue-500"><FaFacebook size={24} /></a>
-            <a href="#" className="hover:text-pink-500"><FaInstagram size={24} /></a>
-            <a href="#" className="hover:text-blue-400"><FaTwitter size={24} /></a>
+            <a href="https://www.facebook.com/Education.temple.G.H.E.Academy/" className="hover:text-blue-500"><FaFacebook size={24} /></a>
+            <a href="https://wa.me/91" className="hover:text-green-500"><FaWhatsapp size={24} /></a>
+            {/* <a href="#" className="hover:text-blue-400"><FaTwitter size={24} /></a> */}
             <a href="#" className="hover:text-blue-700"><FaLinkedin size={24} /></a>
           </div>
         </div>
