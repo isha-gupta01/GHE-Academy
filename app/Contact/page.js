@@ -51,9 +51,9 @@ const ContactPage = () => {
       });
 
       if (response.ok) {
-        toast.success('Send Successfully!', {
+        toast.success('Email Sent Successfully!', {
           position: "top-right",
-          autoClose: 10000,
+          autoClose: 2000,
           hideProgressBar: true,
           closeOnClick: false,
           pauseOnHover: true,
