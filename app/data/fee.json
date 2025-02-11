@@ -1,0 +1,10 @@
+[
+    { "Grade": 1, "RegFees": 500, "AdmissionFees": 1000, "TuitionFees": 650 },
+    { "Grade": 2, "RegFees": 500, "AdmissionFees": 1000, "TuitionFees": 800 },
+    { "Grade": 3, "RegFees": 500, "AdmissionFees": 1000, "TuitionFees": 1000 },
+    { "Grade": 4, "RegFees": 500, "AdmissionFees": 1000, "TuitionFees": 1200 },
+    { "Grade": 5, "RegFees": 500, "AdmissionFees": 1000, "TuitionFees": 1500 },
+    { "Grade": 6, "RegFees": 500, "AdmissionFees": 1000, "TuitionFees": 1700 },
+    { "Grade": 7, "RegFees": 500, "AdmissionFees": 1000, "TuitionFees": 1900 },
+    { "Grade": 8, "RegFees": 500, "AdmissionFees": 1000, "TuitionFees": 2100 }
+  ]
