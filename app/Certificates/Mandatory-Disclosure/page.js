@@ -3,7 +3,7 @@ import Footer from "@/Sections/Footer";
 import Navbar from "@/Sections/Navbar";
 import React from "react";
 import Hero from "@/Sections/Hero";
-import SchoolImage from "@/assets/images/pencils3.jpg"
+import SchoolImage from "@/assets/images/docs.png"
 
 const SchoolInfo = () => {
   const generalInfo = [
