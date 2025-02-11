@@ -77,7 +77,7 @@ const Search = ({show}) => {
   };
 
   return (
-    <nav className="p-4 flex justify-between items-center text-white relative">
+    <nav className="lg:ml-4 flex justify-between items-center text-white relative">
       {/* Search Icon */}
       <button onClick={toggleSearch} className="relative ">
         <FaSearch className={`text-xl  cursor-pointer sm:size-6 md:size-5 ${show}`} />

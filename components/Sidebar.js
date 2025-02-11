@@ -92,10 +92,10 @@ const Sidebar = () => {
     <>
       {/* Hamburger Menu Button (Visible only on small screens) */}
       <button
-        className="md:hidden  text-white z-50 pr-3 "
+        className="md:hidden  text-white z-50  "
         onClick={toggleSidebar}
       >
-        <Image src={Hamburger} alt="menu" width={40} height={40} className="invert sm:w-[50px] sm:h-auto "/>
+        <Image src={Hamburger} alt="menu" width={40} height={40} className="invert sm:w-[30px] sm:h-auto "/>
       </button>
       {/* <a href="https://www.freepik.com/search">Icon by pocike</a> */}
 
