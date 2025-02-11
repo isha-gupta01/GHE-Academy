@@ -40,7 +40,7 @@ const Navbar = () => {
               <span className=' lg:flex lg:text-xl '><Link href="/"><Image src={Green} alt="Green Heaven English Academy" width={200} height={50} /></Link></span>
               <span className='text-[0.6rem] leading-tight  z-10 flex flex-col justify-center items-center font-ubuntu '>
                 <p>Affiliated To The Council For The</p>
-                <p ><span className='sm:hidden md:flex'>Central Board of Secondary Education </span><span className='hidden sm:flex'>(CBSE)</span></p>
+                <p ><span className='sm:hidden md:flex'>Central Board of Secondary Education </span><span className='hidden justify-center sm:flex'>(CBSE)</span></p>
               </span>
             </div>
           </div>
