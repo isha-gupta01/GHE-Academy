@@ -120,7 +120,7 @@ export default function Gallery() {
                     height={300}
                     className="rounded-lg w-auto h-auto shadow-md transform group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-lg font-bold transition-opacity duration-300">
+                  <div className="absolute inset-0   opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-lg font-bold transition-opacity duration-300">
                     View in Fullscreen
                   </div>
                 </div>
