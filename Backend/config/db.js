@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import FeesModel from "../models/Fees.js"; // Ensure correct import path
+import mongoose from "mongoose"; 
+
 
 const connectDB = async () => {
   try {

@@ -19,7 +19,7 @@ export default async function handler(req, res) {
         const { Grade, RegFees, AdmissionFees,TuitionFees} = req.body;
         const newFee = new FeesModel({Grade, RegFees, AdmissionFees,TuitionFees});
         await newFee.save();
-        res.status(201).json(newFee);
+        res.status(200).json(newFee);
       } catch (error) {
         res.status(500).json({ error: "Failed to add fee structure" });
       }
@@ -27,9 +27,9 @@ export default async function handler(req, res) {
 
     case "PUT":
       try {
-        const { id,Grade, RegFees, AdmissionFees,TuitionFees} = req.body;
+        const { _id,Grade, RegFees, AdmissionFees,TuitionFees} = req.body;
         const updatedFee = await FeesModel.findByIdAndUpdate(
-          id,
+          _id,
           {Grade, RegFees, AdmissionFees,TuitionFees },
           { new: true }
         );
@@ -41,8 +41,8 @@ export default async function handler(req, res) {
 
     case "DELETE":
       try {
-        const { id } = req.body;
-        await FeesModel.findByIdAndDelete(id);
+        const { _id } = req.body;
+        await FeesModel.findByIdAndDelete(_id);
         res.status(200).json({ message: "Fee entry deleted successfully" });
       } catch (error) {
         res.status(500).json({ error: "Failed to delete fee entry" });

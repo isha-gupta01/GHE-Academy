@@ -1,24 +1,25 @@
 import { NextResponse } from "next/server";
 import connectDB from "/Backend/config/db";
-import FeesModel from "/Backend/models/Fees";
+import Gallery from "/Backend/models/Gallery";
+
 
 connectDB(); // Connect to MongoDB
 
 // Get all fee structures (GET request)
 export async function GET() {
   try {
-    const fees = await FeesModel.find({}); // Fetch all fee entries from MongoDB
-    return NextResponse.json(fees, { status: 200 });
+    const gallery = await Gallery.find({}); // Fetch all fee entries from MongoDB
+    return NextResponse.json(gallery, { status: 200 });
   } catch (error) {
-    return NextResponse.json({ error: "Failed to fetch fees" }, { status: 500 });
+    return NextResponse.json({ error: "Failed to fetch Gallery" }, { status: 500 });
   }
 }
 export async function POST(request) {
   try {
     const body = await request.json(); // Correct way to parse request body in Next.js
-    const { Grade, RegFees, AdmissionFees, TuitionFees } = body;
+    const {title,images } = body;
 
-    const newFee = new FeesModel({ Grade, RegFees, AdmissionFees, TuitionFees });
+    const newgallery = new Gallery({ title,images });
     await newFee.save();
 
     return NextResponse.json(newFee, { status: 201 }); // Return newly created entry
@@ -31,7 +32,7 @@ export async function PUT(request) {
     const body = await request.json();
     const { _id, Grade, RegFees, AdmissionFees, TuitionFees } = body;
 
-    const updatedFee = await FeesModel.findByIdAndUpdate(
+    const updatedFee = await Gallery.findByIdAndUpdate(
       _id,
       { Grade, RegFees, AdmissionFees, TuitionFees },
       { new: true, runValidators: true }
@@ -53,7 +54,7 @@ export async function DELETE(request) {
     const body = await request.json();
     const { _id } = body;
 
-    const deletedFee = await FeesModel.findByIdAndDelete(_id);
+    const deletedFee = await Gallery.findByIdAndDelete(_id);
 
     if (!deletedFee) {
       return NextResponse.json({ error: "Fee entry not found" }, { status: 404 });
