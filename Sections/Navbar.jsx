@@ -36,8 +36,8 @@ const Navbar = () => {
         <div className=" relative flex -px-8 z-10 justify-between gap-8  items-center  ">
           <div className='relative flex -px-8 z-10 justify-between md:gap-5 sm:gap-4  items-center '>
             <Link href="/" className='flex items-center justify-between '><Image src={SchoolLogo} alt="logo of the school" className='sm:w-[85px] md:h-auto md:w-[86px] sm:h-[auto] w-32 h-32' /></Link>
-            <div className='flex flex-col justify-center items-center'>
-              <span className=' lg:flex lg:text-xl '><Link href="/"><Image src={Green} alt="Green Heaven English Academy" width={200} height={50} /></Link></span>
+            <div className='flex  flex-col justify-center items-center'>
+              <span className=' lg:flex lg:text-xl '><Link href="/"><Image src={Green} alt="Green Heaven English Academy" width={200} height={50} className='lg:w-[165px]' /></Link></span>
               <span className='text-[0.6rem] leading-tight  z-10 flex flex-col justify-center items-center font-ubuntu '>
                 <p>Affiliated To The Council For The</p>
                 <p ><span className='sm:hidden md:flex'>Central Board of Secondary Education </span><span className='hidden justify-center sm:flex'>(CBSE)</span></p>
