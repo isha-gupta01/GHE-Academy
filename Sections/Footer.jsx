@@ -45,14 +45,14 @@ const Footer = () => {
             <a href="https://www.facebook.com/Education.temple.G.H.E.Academy/" className="hover:text-blue-500"><FaFacebook size={24} /></a>
             <a href="https://wa.me/91" className="hover:text-green-500"><FaWhatsapp size={24} /></a>
             {/* <a href="#" className="hover:text-blue-400"><FaTwitter size={24} /></a> */}
-            <a href="#" className="hover:text-blue-700"><FaLinkedin size={24} /></a>
+            {/* <a href="#" className="hover:text-blue-700"><FaLinkedin size={24} /></a> */}
           </div>
         </div>
       </div>
 
       {/* Copyright */}
       <div className="mt-10 h-[1rem] text-center border-t border-gray-700 pt-4 sm:text-xs md:text-sm lg:text-sm">
-        © {new Date().getFullYear()} Green Heaven English Academy. All rights reserved.
+        © {new Date().getFullYear()} Green Heaven English Academy. All rights reserved. <span>| Powered by Night Owls</span>
       </div>
     </footer>
   );
