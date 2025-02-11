@@ -51,10 +51,10 @@ const Message = () => {
                                         <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                                             <p className="text-sm md:text-base text-white/50 mt-4">{project.results}</p>
                                         </ul>
-                                            <button className="bg-white cursor-pointer relative z-100 pointer-events-auto text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex gap-2 items-center justify-center mt-8 md:w-auto md:px-6">
-                                            <Link href={project.link}><span>Read More</span></Link>
+                                        <Link href={project.link}><button className="bg-white cursor-pointer relative z-100 pointer-events-auto text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex gap-2 items-center justify-center mt-8 md:w-auto md:px-6">
+                                            <span>Read More</span>
                                                 <Image src={ArrowUpRightIcon} alt='arrow' width={24} height={24}/>
-                                            </button>
+                                            </button></Link>
                                         
                                     </div>
                                     <div className="relative">

@@ -54,9 +54,9 @@ export default function FeeStructure() {
                 {data.map((item, index) => (
                   <tr key={index} className="odd:bg-white even:bg-gray-100">
                     <td className="border p-2">{item.Grade}</td>
-                    <td className="border p-2">{item.RegFees}</td>
-                    <td className="border p-2">{item.AdmissionFees}</td>
-                    <td className="border p-2">{item.TuitionFees}</td>
+                    <td className="border p-2">₹{item.RegFees}</td>
+                    <td className="border p-2">₹{item.AdmissionFees}</td>
+                    <td className="border p-2">₹{item.TuitionFees}</td>
                   </tr>
                 ))}
               </tbody>

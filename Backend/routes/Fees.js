@@ -1,3 +1,4 @@
+import "dotenv/config";
 import connectDB from "./config/db";
 import FeesModel from "./models/Fees";
 
