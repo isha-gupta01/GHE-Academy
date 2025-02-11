@@ -14,7 +14,7 @@ const Facility = () => {
         <Updates />
         <Navbar />
         <Hero image={SchoolImage} title="Facility" subBody="Excellence in every Student" height={70} />
-        <div className='flex-col flex md:h-[80vh] sm:h-[100vh]'>
+        <div className='flex-col mb-10 flex md:h-[80vh] sm:h-[100vh]'>
           <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-14 sm:mx-4'>Facility</h1></div>
           <div className='sm:flex-col mx-5 lg:flex-row md:flex-row flex' >
             <Image className='lg:rounded-lg sm:h-auto  sm:w-auto  lg:ml-8 lg:mr-8 lg:h-[400px] lg:w-[400px] md:h-auto md:w-[400px]' src={SchoolImage} alt='English' />

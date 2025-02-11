@@ -19,7 +19,7 @@ export default function AcademicCalendar() {
     <Navbar />
     <Hero image={Maths} title="Academic Year and Vacations" subBody="Excellence in every Student" height={70} />
     
-      <div className="p-6 lg:mx-20">
+      <div className="p-6  lg:mx-20">
         <h2 className="text-xl font-bold mb-4">Academic Year and Vacations</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full border border-gray-300">
@@ -50,7 +50,7 @@ export default function AcademicCalendar() {
       </p>
 
       {/* Calendar Table */}
-      <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-5xl overflow-x-auto">
+      <div className="bg-white p-6 mb-6 rounded-lg shadow-md w-full max-w-5xl overflow-x-auto">
         <table className="w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-[#5E9538] text-white">

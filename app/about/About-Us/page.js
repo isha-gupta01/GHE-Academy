@@ -13,7 +13,7 @@ export default function About() {
     <Updates/>
     <Navbar />
     <Hero image={Pencil2} title="About" subBody="Green Heaven English Adacemy" height={92} />
-    <div className="min-h-screen flex flex-col items-center justify-center p-6">
+    <div className="min-h-screen flex mb-6 flex-col items-center justify-center p-6">
       
 
       {/* Text Section */}
