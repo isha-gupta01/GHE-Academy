@@ -18,23 +18,23 @@ const SchoolInfo = () => {
   ];
 
   const documentsInfo = [
-    { srNo: 1, title: "Copies of Affiliation", download: "#" },
-    { srNo: 2, title: "Copies of Society", download: "#" },
-    { srNo: 3, title: "Coppies of No Objection Certificate (NOC)", download: "#" },
-    { srNo: 4, title: "Copies of Recognition Certificate (RC)", download: "#" },
-    { srNo: 5, title: "Copies of Land Certificate", download: "#" },
-    { srNo: 6, title: "Copies of Building Safety Certificate", download: "#" },
-    { srNo: 7, title: "Copies of Fire Safety", download: "#" },
-    { srNo: 8, title: "Copies of Self Certificate", download: "#" },
-    { srNo: 9, title: "Copies of Water, Health & Sanitation Certificate", download: "#" },
-    { srNo: 10, title: "Copies of School Infrastructure", download: "#" },
-    { srNo: 11, title: "Fee structure of the School", download: "#" },
-    { srNo: 12, title: "Annual Academic Calender", download: "#" },
-    { srNo: 13, title: "List of School Management Committee", download: "#" },
-    { srNo: 14, title: "List of Parent Teacher Association (PTA) Members", download: "#" },
-    { srNo: 15, title: "Last 3 Year Result of the Borad Examination as per Applicability", download: "#" },
-    { srNo: 16, title: "Mandatory Public Disclosure Details", download: "#" },
-    { srNo: 17, title: "Certificate of Salary Disbursement", download: "#" },
+    { srNo: 1, title: "Copies of Affiliation", download: "/certificates/AFFILATION1.pdf" },
+    { srNo: 2, title: "Copies of Society", download: "/certificates/SOCIETY1.pdf" },
+    { srNo: 3, title: "Coppies of No Objection Certificate (NOC)", download: "/certificates/NOC1.pdf" },
+    { srNo: 4, title: "Copies of Recognition Certificate (RC)", download: "/certificates/RC1.pdf" },
+    { srNo: 5, title: "Copies of Land Certificate", download: "/certificates/LC.pdf" },
+    { srNo: 6, title: "Copies of Building Safety Certificate", download: "/certificates/BUILDING SAFETY1.pdf" },
+    { srNo: 7, title: "Copies of Fire Safety", download: "/certificates/FIRE SAFETY.pdf" },
+    { srNo: 8, title: "Copies of Self Certificate", download: "/certificates/certification.pdf" },
+    { srNo: 9, title: "Copies of Water, Health & Sanitation Certificate", download: "/certificates/HEALTHWATER.pdf" },
+    { srNo: 10, title: "Copies of School Infrastructure", download: "/certificates/SI1.pdf" },
+    { srNo: 11, title: "Fee structure of the School", download: "/certificates/FEE STRUCTURE.pdf" },
+    { srNo: 12, title: "Annual Academic Calender", download: "/certificates/calender.pdf" },
+    { srNo: 13, title: "List of School Management Committee", download: "/certificates/SMC.pdf" },
+    { srNo: 14, title: "List of Parent Teacher Association (PTA) Members", download: "/certificates/PTA.pdf" },
+    { srNo: 15, title: "Last 3 Year Result of the Borad Examination as per Applicability", download: "/certificates/3yrresult.pdf" },
+    { srNo: 16, title: "Mandatory Public Disclosure Details", download: "/certificates/mpd.pdf" },
+    { srNo: 17, title: "Certificate of Salary Disbursement", download: "" },
 
     
   ];
@@ -60,7 +60,7 @@ const SchoolInfo = () => {
     { srNo: 7, info: "CWSN Girls Toilet", details: "02" },
     { srNo: 8, info: "CWSN Boys Toilet", details: "02" },
     { srNo: 9, info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL", details: <a className="hover:text-blue-500 text-green-600" href="https://drive.google.com/file/d/1fKKgW3UuMhkRvjR5bm8FNCRiHWVe8-rY/view?usp=drivesdk">OPEN</a> },
-    { srNo: 10, info: "Download SCHOOL INFRASTRUCTURE Details", details: <a className="hover:text-blue-500 text-green-600" href="#">Download</a> },
+    { srNo: 10, info: "Download SCHOOL INFRASTRUCTURE Details", details: <a className="hover:text-blue-500 text-green-600" href="/certificates/SI1.pdf">Download</a> },
 
   ];
 
@@ -100,7 +100,7 @@ const SchoolInfo = () => {
                     {Object.values(row).map((value, colIndex) => (
                       <td key={colIndex} className="border border-gray-300 px-4 py-2">
                         {colIndex === table.headers.length - 1 && table.title.includes("DOCUMENTS") ? (
-                          <a href={value} className="hover:text-blue-600 text-green-600">Download</a>
+                          <a href={value} download className="hover:text-blue-600 text-green-600">Download</a>
                         ) : (
                           value
                         )}
