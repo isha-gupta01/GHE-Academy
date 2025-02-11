@@ -16,8 +16,8 @@ export default async function handler(req, res) {
 
     case "POST":
       try {
-        const { grade, amount, description } = req.body;
-        const newFee = new FeesModel({ grade, amount, description });
+        const { Grade, RegFees, AdmissionFees,TuitionFees} = req.body;
+        const newFee = new FeesModel({Grade, RegFees, AdmissionFees,TuitionFees});
         await newFee.save();
         res.status(201).json(newFee);
       } catch (error) {
@@ -27,10 +27,10 @@ export default async function handler(req, res) {
 
     case "PUT":
       try {
-        const { id, grade, amount, description } = req.body;
+        const { id,Grade, RegFees, AdmissionFees,TuitionFees} = req.body;
         const updatedFee = await FeesModel.findByIdAndUpdate(
           id,
-          { grade, amount, description },
+          {Grade, RegFees, AdmissionFees,TuitionFees },
           { new: true }
         );
         res.status(200).json(updatedFee);
