@@ -21,8 +21,8 @@ const Navbar = () => {
       } else {
         setScrolled(false);
       }
-    }; 
- 
+    };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -52,10 +52,22 @@ const Navbar = () => {
 
         <div className={`z-10 font-ubuntu ${scrolled ? "bg-[#76B947]" : ""} rounded-full shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)]   backdrop-blur`}>
           <ul className='ml-1 flex h-16 sm:hidden md:flex  lg:flex items-center'>
-            <Search show="flex" className="hidden "/>
+            <Search show="flex" className="hidden " />
             <li className='nav'><DropdownMenu menuTitle={"About"} menuItems={["About-Us", "Principal-Message", "Manager-Message", "Vision-&-Mission", "Progress-Report", "Academic-Year", "Institutional-Rules"]} /></li>
             <li className='nav'><DropdownMenu menuTitle={"Admissions"} menuItems={["Application-Process", "Fee-Structure"]} /></li>
-            <li className='nav md:hidden lg:block'><DropdownMenu menuTitle={"Certificates"} menuItems={["Affilation-Certificate", "Building-Safety-Certificate", "Fire-Safety-Certificate", "Land-Certificate", "No-Objection-Certificate", "Recognition-Certificate", "School-Infrastructure-Certificate", "Self-Certification", "Society-Trust-Certificate", "Water-Health-&-Sanitation-Certificate", "Mandatory-Disclosure"]} /></li>
+            <li className='nav md:hidden lg:block'><DropdownMenu menuTitle={"Certificates"} menuItems={[
+              "Affilation-Certificate",
+              "Building-Safety-Certificate",
+              "Fire-Safety-Certificate",
+              "Land-Certificate",
+              "Mandatory-Disclosure",
+              "No-Objection-Certificate",
+              "Recognition-Certificate",
+              "School-Infrastructure-Certificate",
+              "Self-Certification",
+              "Society-Trust-Certificate",
+              "Water-Health-&-Sanitation-Certificate"
+            ]} /></li>
             <li className='nav'><DropdownMenu menuTitle={"Campus-Facility"} menuItems={["Art-Lab", "Board-Exam-Applicability", "Computer-Lab", "English-Language-Lab", "Extra-Curricular-Activities", "Facility", "Faculty-and-Staff", "Parent-Teacher-Association", "School-Management-Committee", "Science-Lab", "Transportation"]} /></li>
             <li className='nav'><Link href="/Gallery"><DropdownMenu menuTitle={"Gallery"} menuItems={[]} /></Link></li>
             <li className=' transition duration-300 nav'><Link href="/Contact"><DropdownMenu menuTitle={"Contact"} menuItems={[]} /></Link></li>
