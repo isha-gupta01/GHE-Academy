@@ -16,7 +16,7 @@ const ImageGallery = () => {
     <>
     <Updates/>
     <Navbar/>
-    <Hero image={SchoolImage} title="" subBody="Recognition certificate" height={70}/>
+    <Hero image={SchoolImage}  title="Recognition certificate" subBody="" height={70}/>
     <div className="flex md:flex-row lg:m-20 md:gap-32 sm:flex-col">
       <div className="min-h-screen flex flex-col items-center p-4">
           <h1 className="text-3xl mt-8 font-bold text-green-700">Recognition Certicifate</h1>

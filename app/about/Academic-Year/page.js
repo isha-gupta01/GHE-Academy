@@ -36,7 +36,7 @@ export default function AcademicCalendar() {
     <>
     <Updates/>
     <Navbar />
-    <Hero image={Maths} title="Academic Year and Vacations" subBody="Excellence in every Student" height={70} />
+    <Hero image={Maths} title="Academic Year and Vacations" subBody='"This year, aim higher, work harder, and shine brighter!"' height={70} />
     
       <div className="p-6  lg:mx-20">
         <h2 className="text-xl font-bold mb-4">Academic Year and Vacations</h2>

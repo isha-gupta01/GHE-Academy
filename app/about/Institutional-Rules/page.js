@@ -13,7 +13,7 @@ const InstitutionalRules = () => {
     <div>
       <Updates/>
       <Navbar/>
-      <Hero image={SchoolImage} title="Institutional Rules" subBody="Excellence in every Student" height={70}/>
+      <Hero image={SchoolImage} title="Institutional Rules" subBody="" height={70}/>
       <div className="min-h-[70vh]  flex flex-col items-center justify-center p-6">
       {/* Header Section */}
       <div className="text-center mb-6">

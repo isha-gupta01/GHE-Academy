@@ -13,7 +13,7 @@ const FacultyStaff = () => {
       <div>
         <Updates/>
         <Navbar />
-        <Hero image={SchoolImage} title="Faculty and Staff" subBody="" height={70} />
+        <Hero image={SchoolImage}  title="Faculty and Staff" subBody="" height={70} />
         <div className='min-h-screen mb-10 flex flex-col items-center p-4'>
           <div><h1 className='text-3xl mt-8 font-bold text-green-700'>Faculty and Staff</h1></div>
           <div className='w-full mt-12 shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)] p-3 pb-8 rounded-lg max-w-3xl flex flex-col items-center gap-4"' >

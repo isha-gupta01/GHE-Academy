@@ -15,7 +15,7 @@ const ManagerMessage = () => {
     <>
     <Updates/>
     <Navbar/>
-    <Hero image={SchoolImage} title="Manager's Message" subBody="Excellence in every Student" height={70}/>
+    <Hero image={SchoolImage} title="Manager's Message" subBody='"Great things never come from comfort zones."' height={70}/>
     <div className='flex-col mb-10 flex h-auto]'>
       <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-10 sm:mx-4'>Manager's Message</h1></div>
       <div className='flex sm:flex-col mx-5 lg:flex-row md:flex-row' >

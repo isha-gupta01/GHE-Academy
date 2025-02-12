@@ -11,7 +11,7 @@ export default function ApplicationProcess() {
     <>
     <Updates/>
     <Navbar />
-    <Hero image={Pencil2} title="Application Process" subBody="Excellence in every Student" height={70} />
+    <Hero image={Pencil2} title="Application Process" subBody="" height={70} />
     <div className="min-h-screen bg-white  flex flex-col items-center justify-center p-6">
       {/* Header Section */}
       <div className="text-center mb-6">

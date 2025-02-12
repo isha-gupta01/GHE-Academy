@@ -12,7 +12,7 @@ const ProgressReport = () => {
       <div>
       <Updates/>
       <Navbar/>
-      <Hero image={SchoolImage} title="Progress Report" subBody="Excellence in every Student" height={70}/>
+      <Hero image={SchoolImage} title="Progress Report" subBody='"Learning never stops, growth happens in every effort you make."' height={70}/>
       <div className="min-h-screen flex flex-col items-center justify-center p-6">
       {/* Header Section */}
       <div className="text-center mb-6">

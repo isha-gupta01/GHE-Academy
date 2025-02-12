@@ -15,7 +15,7 @@ const ImageGallery = () => {
     <>
     <Updates/>
     <Navbar/>
-    <Hero image={SchoolImage} title="" subBody="Board Examination Applicability" height={70}/>
+    <Hero image={SchoolImage}  title="Board Examination Applicability" subBody="" height={70}/>
     <div className="min-h-screen mb-10 flex flex-col items-center p-4">
         <h1 className="text-3xl mt-8 font-bold text-green-700">List of 3 years Board Examination Applicability</h1>
       <div className="w-full mt-12 shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)] p-3 rounded-lg max-w-3xl flex flex-col items-center gap-4">

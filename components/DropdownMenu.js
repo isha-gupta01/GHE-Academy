@@ -17,7 +17,7 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
 
     const handleMouseLeave = () => {
         timeoutId = setTimeout(() => {
-            setIsDropdownOpen(false); 
+            setIsDropdownOpen(false);
         }, 100);
     };
 
@@ -26,9 +26,9 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
 
     return (
         <div className='lg:px-2 py-2 md:px-2'>
-            <div 
-                onMouseEnter={handleMouseEnter} 
-                onMouseLeave={handleMouseLeave} 
+            <div
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
                 className={`lg:text-lg md:text-sm relative ${isActive ? " bg-white text-black rounded-full py-3 px-4 shadow-[inset_0px_0px_11px_-4px_rgba(0,_0,_0,_0.7)]" : "hover:bg-white/10 hover:border hover:border-white  hover:text-white px-4 py-3 rounded-full"}`}
             >
                 <button onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
@@ -38,11 +38,11 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
                     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                         <ul className='absolute top-16 -left-6 min-w-max bg-gray-800 text-white shadow-lg rounded-md'>
                             {menuItems.map((item, index) => (
-                                <li key={index} className='p-2 rounded-md border-b-[1px] hover:text-green-500 border-white/5'>
-                                    <Link href={`/${menuTitle}/${item}`} className={pathname === `/${menuTitle}/${item}` ? "text-green-500" : ""}>
+                                <Link key={index} href={`/${menuTitle}/${item}`} className={pathname === `/${menuTitle}/${item}` ? "text-green-500" : ""}>
+                                    <li  className='p-2 rounded-md border-b-[1px] hover:text-green-500 border-white/5'>
                                         {item.replace(/-/g, " ")}
-                                    </Link>
-                                </li>
+                                    </li>
+                                </Link>
                             ))}
                         </ul>
                     </div>

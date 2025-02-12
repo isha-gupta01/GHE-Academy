@@ -14,7 +14,7 @@ const ArtLab = () => {
       <div>
         <Updates/>
         <Navbar />
-        <Hero image={SchoolImage} title="Art Lab" subBody="Excellence in every Student" height={70} />
+        <Hero image={SchoolImage} title="Art Lab" subBody="" height={70} />
         <div className='flex-col flex md:h-[80vh] sm:h-[100vh]'>
           <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-14 sm:mx-4'>Art Lab</h1></div>
           <div className='sm:flex-col mx-5 lg:flex-row md:flex-row flex' >

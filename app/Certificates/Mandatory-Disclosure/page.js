@@ -72,7 +72,7 @@ const SchoolInfo = () => {
     <>
     <Updates/>
     <Navbar/>
-    <Hero image={SchoolImage} title="" subBody="Mandatory Public Disclosure" height={70}/>
+    <Hero image={SchoolImage}  title="Mandatory Public Disclosure" subBody="" height={70}/>
     <div className="p-6">
       <h1 className="text-2xl font-bold text-green-600 text-center mb-6">Mandatory Public Disclosure</h1>
       

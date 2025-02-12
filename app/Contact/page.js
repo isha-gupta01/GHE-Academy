@@ -21,6 +21,7 @@ const ContactPage = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false); // Prevent multiple submissions
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,18 +30,22 @@ const ContactPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // If already submitting, prevent another request
+    if (isSubmitting) return;
+
+    setIsSubmitting(true); // Disable submit button
 
     const newErrors = {};
-
     if (!formData.firstName) newErrors.firstName = "First Name is required";
     if (!formData.lastName) newErrors.lastName = "Last Name is required";
-    if (!formData.email) newErrors.email = "Email is required";
     if (!formData.phone) newErrors.phone = "Phone number is required";
     if (!formData.message) newErrors.message = "Message is required";
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-      return; // Stop submission if there are errors
+      setIsSubmitting(false); // Re-enable button if validation fails
+      return;
     }
 
     try {
@@ -54,64 +59,42 @@ const ContactPage = () => {
         toast.success('Email Sent Successfully!', {
           position: "top-right",
           autoClose: 2000,
-          hideProgressBar: true,
-          closeOnClick: false,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
           theme: "dark"
         });
+
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+
+        setErrors({});
       } else {
         toast.error('Failed to Send Email!', {
           position: "top-right",
           autoClose: 1000,
-          hideProgressBar: true,
-          closeOnClick: false,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
           theme: "dark"
         });
       }
-
-      // Reset form data after successful submission attempt
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
-
-      setErrors({}); // Clear errors after successful submission
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("An error occurred while submitting the form.");
+      toast.error("An error occurred while submitting the form.");
+    } finally {
+      setIsSubmitting(false); // Re-enable button after request is complete
     }
   };
 
-
   return (
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick={false}
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+      <ToastContainer />
       <Updates />
       <Navbar />
-      {/* <Hero image={SchoolImage} title="" subBody="" height={70}/> */}
-      <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-slate-500 to-stone-500   p-4">
+
+      <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-slate-500 to-stone-500 p-4">
         <div className="w-full sm:mt-[10rem] lg:mt-[8rem] max-w-4xl bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg shadow-xl p-6 md:p-10 flex flex-col md:flex-row">
-          {/* Left Section - Form */}
           <div className="w-full md:w-2/3">
             <h2 className="text-2xl font-bold text-[#5E9538]">Contact Us</h2>
             <p className="text-gray-300 mb-6">How can we help?</p>
@@ -164,7 +147,6 @@ const ContactPage = () => {
                   {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
                 </div>
               </div>
-              {/* Subject Field (Optional) */}
               <div>
                 <input
                   type="text"
@@ -175,7 +157,6 @@ const ContactPage = () => {
                   className="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:border-[#5E9538] focus:outline-none"
                 />
               </div>
-              {/* Message Field */}
               <div>
                 <textarea
                   name="message"
@@ -188,28 +169,27 @@ const ContactPage = () => {
                 {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
               </div>
               <button
-
                 type="submit"
-                className="w-full p-2 bg-[#76B947] hover:bg-[#5E9538] rounded text-white font-bold"
+                className={`w-full p-2 rounded text-white font-bold ${
+                  isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-[#76B947] hover:bg-[#5E9538]"
+                }`}
+                disabled={isSubmitting} // Prevent multiple clicks
               >
-                SUBMIT
+                {isSubmitting ? "Submitting..." : "SUBMIT"}
               </button>
             </form>
           </div>
 
-          {/* Right Section - Contact Info */}
           <div className="w-full md:w-1/3 mt-8 md:mt-[4.6rem] md:ml-8 text-gray-300">
             <h2 className="text-lg font-bold text-[#5E9538]">Contact Information</h2>
             <p className="mt-2">Vill: Post Madanpura, Talhapur at Jasmour-Biharigarh Road, UP-247129</p>
-            <p className="mt-2">Call Us: Phone: +91 97196 71243</p>
-            <p className="mt-2">Call Us: Phone: +91 97198 00456</p>
-            <p className="mt-2">We are open from Monday - Saturday, 08:00 AM - 05:00 PM</p>
-
+            <p className="mt-2">Call Us: +91 97196 71243 | +91 97198 00456</p>
+            <p className="mt-2">Monday - Saturday, 08:00 AM - 05:00 PM</p>
             <h2 className="text-lg font-bold text-[#5E9538] mt-6">Follow Us</h2>
             <div className="flex gap-4 mt-2">
               <div className='uppercase sm:text-xs gap-4 flex'>
                 <Link href="mailto:greenheavenacademy2011@gmail.com"><Image src={Email} alt='email' width={30} height={30} /></Link>
-                <Link href="https://wa.me/91" target="_blank" rel="noopener noreferrer">
+                <Link href="https://wa.me/919058695869" target="_blank" rel="noopener noreferrer">
                   <Image src={Whatsapp} alt='email' width={30} height={30} />
                 </Link>
                 <Link href="https://www.facebook.com/Education.temple.G.H.E.Academy/" target='_blank' className="hover:text-blue-500"><Image src={Facebook} alt='email' width={30} height={30} /></Link>
@@ -217,8 +197,10 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
+
       <Footer />
     </>
   );

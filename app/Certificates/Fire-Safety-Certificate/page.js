@@ -16,7 +16,7 @@ const ImageGallery = () => {
     <>
     <Updates/>
     <Navbar/>
-    <Hero image={SchoolImage} title="" subBody="Fire safety certificate" height={70}/>
+    <Hero image={SchoolImage}  title="Fire safety certificate" subBody="" height={70}/>
     <div className="flex md:flex-row lg:m-20 md:gap-32 sm:flex-col">
 
       <div className="min-h-screen flex flex-col items-center p-4">

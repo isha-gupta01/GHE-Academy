@@ -42,7 +42,7 @@ const ExtraCurricular = () => {
     <>
     <Updates/>
     <Navbar/>
-    <Hero image={SchoolImage} title="" subBody="Extra Curricular Activities" height={70}/>
+    <Hero image={SchoolImage}  title="Extra Curricular Activities" subBody="" height={70}/>
     <div className="min-h-screen  p-6">
       <h1 className="text-3xl font-bold text-center text-green-700 mb-6">Extra Curricular Activities</h1>
       <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)]">

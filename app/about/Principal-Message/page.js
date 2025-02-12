@@ -13,7 +13,7 @@ const PrincipalMessage = () => {
     <>
     <Updates/>
     <Navbar/>
-    <Hero image={SchoolImage} title="Principal's Message" subBody="Excellence in every Student" height={70}/>
+    <Hero image={SchoolImage} title="Principal's Message" subBody='"Be a learner today, a leader tomorrow."' height={70}/>
     <div className='flex-col mb-10 flex h-auto'>
       <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-10 sm:mx-4'>Principal's Message</h1></div>
       <div className='sm:flex-col mx-5 lg:flex-row md:flex-row flex' >

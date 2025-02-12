@@ -53,7 +53,7 @@ const GalleryPage = () => {
     <>
     <Updates/>
     <Navbar/>
-    <Hero image={SchoolImage} title="" subBody="Gallery" height={70}/>
+    <Hero image={SchoolImage} title="Gallery" subBody="" height={70}/>
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold text-center my-4">Event Gallery</h1>
       {events.map((event, index) => (

@@ -32,7 +32,7 @@ export default function FeeStructure() {
     <>
       <Updates />
       <Navbar />
-      <Hero image={Pencil} title="Fee Structure" subBody="Excellence in every Student" height={70} />
+      <Hero image={Pencil} title="Fee Structure" subBody="" height={70} />
 
       <div className="p-6 lg:mx-20">
         <h2 className="text-3xl mx-auto text-center font-bold mb-4">Green Heaven English Academy Fee Structure 2025-26</h2>
