@@ -7,7 +7,7 @@ const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"], variable: "-
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${karla.className} ${ubuntu.className} ${leagueScript.className}`}>
+    <html lang="en" className={`${karla.className} ${ubuntu.variable} ${leagueScript.variable}`}>
       <head>
         <title>GHE Academy</title>
         <meta name="description" content="School" />
