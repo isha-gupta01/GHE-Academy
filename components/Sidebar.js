@@ -39,7 +39,7 @@ const menuData = [
       "Facility",
       "Faculty-and-Staff",
       "Parent-Teacher-Association",
-      "School-Management-Committe",
+      "School-Management-Committee",
       "Science-Lab",
       "Transportation",
     ],
