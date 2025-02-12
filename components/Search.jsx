@@ -85,7 +85,7 @@ const Search = ({show}) => {
 
       {/* Search Box */}
       <div
-        className={`absolute top-full right-0 mt-2 w-72   bg-gray-800 shadow-lg rounded-2xl p-3 transition-all duration-300 ${
+        className={`absolute top-full right-0 mt-2 w-72 z-50   bg-gray-800 shadow-lg rounded-2xl p-3 transition-all duration-300 ${
           showSearch ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
         }`}
       >
