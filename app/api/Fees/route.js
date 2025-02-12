@@ -1,66 +1,79 @@
+import { connectDB } from "@/lib/db";
+import FeesModel from "@/models/Fees";
 import { NextResponse } from "next/server";
-import connectDB from "/Backend/config/db";
-import FeesModel from "/Backend/models/Fees";
 
-connectDB(); // Connect to MongoDB
-
-// Get all fee structures (GET request)
+// ✅ GET all fees data
 export async function GET() {
   try {
-    const fees = await FeesModel.find({}); // Fetch all fee entries from MongoDB
-    return NextResponse.json(fees, { status: 200 });
+    await connectDB();
+    const feesData = await FeesModel.find({});
+    return NextResponse.json(feesData);
   } catch (error) {
-    return NextResponse.json({ error: "Failed to fetch fees" }, { status: 500 });
+    return NextResponse.json({ error: "Error fetching fees data" }, { status: 500 });
   }
 }
-export async function POST(request) {
+
+// ✅ POST - Add a new fees entry
+export async function POST(req) {
   try {
-    const body = await request.json(); // Correct way to parse request body in Next.js
-    const { Grade, RegFees, AdmissionFees, TuitionFees } = body;
+    await connectDB();
+    const { grade, regFees, admissionFees, tuitionFees } = await req.json();
 
-    const newFee = new FeesModel({ Grade, RegFees, AdmissionFees, TuitionFees });
-    await newFee.save();
+    if (!grade || regFees == null || admissionFees == null || tuitionFees == null) {
+      return NextResponse.json({ error: "All fields are required" }, { status: 400 });
+    }
 
-    return NextResponse.json(newFee, { status: 201 }); // Return newly created entry
+    const newFee = await FeesModel.create({ grade, regFees, admissionFees, tuitionFees });
+    return NextResponse.json(newFee, { status: 201 });
   } catch (error) {
-    return NextResponse.json({ error: "Failed to add fees", details: error.message }, { status: 500 });
+    return NextResponse.json({ error: "Error adding fees" }, { status: 500 });
   }
 }
-export async function PUT(request) {
+
+// ✅ PUT - Update an existing fee entry
+export async function PUT(req) {
   try {
-    const body = await request.json();
-    const { _id, Grade, RegFees, AdmissionFees, TuitionFees } = body;
+    await connectDB();
+    const { id, grade, regFees, admissionFees, tuitionFees } = await req.json();
+
+    if (!id || !grade || regFees == null || admissionFees == null || tuitionFees == null) {
+      return NextResponse.json({ error: "ID and all fields are required" }, { status: 400 });
+    }
 
     const updatedFee = await FeesModel.findByIdAndUpdate(
-      _id,
-      { Grade, RegFees, AdmissionFees, TuitionFees },
-      { new: true, runValidators: true }
+      id,
+      { grade, regFees, admissionFees, tuitionFees },
+      { new: true }
     );
 
     if (!updatedFee) {
       return NextResponse.json({ error: "Fee entry not found" }, { status: 404 });
     }
 
-    return NextResponse.json(updatedFee, { status: 200 });
+    return NextResponse.json(updatedFee);
   } catch (error) {
-    return NextResponse.json({ error: "Failed to update fee entry", details: error.message }, { status: 500 });
+    return NextResponse.json({ error: "Error updating fees" }, { status: 500 });
   }
 }
 
-// Delete a fee entry (DELETE request)
-export async function DELETE(request) {
+// ✅ DELETE - Remove a fee entry
+export async function DELETE(req) {
   try {
-    const body = await request.json();
-    const { _id } = body;
+    await connectDB();
+    const { id } = await req.json();
 
-    const deletedFee = await FeesModel.findByIdAndDelete(_id);
+    if (!id) {
+      return NextResponse.json({ error: "ID is required" }, { status: 400 });
+    }
+
+    const deletedFee = await FeesModel.findByIdAndDelete(id);
 
     if (!deletedFee) {
       return NextResponse.json({ error: "Fee entry not found" }, { status: 404 });
     }
 
-    return NextResponse.json({ message: "Fee entry deleted successfully" }, { status: 200 });
+    return NextResponse.json({ message: "Fee entry deleted successfully" });
   } catch (error) {
-    return NextResponse.json({ error: "Failed to delete fee entry", details: error.message }, { status: 500 });
+    return NextResponse.json({ error: "Error deleting fees" }, { status: 500 });
   }
 }
