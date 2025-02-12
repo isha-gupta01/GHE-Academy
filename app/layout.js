@@ -1,4 +1,3 @@
-import "./globals.css";
 import { Karla } from "next/font/google";
 import "@/app/globals.css"; 
 import { Ubuntu } from "next/font/google";
