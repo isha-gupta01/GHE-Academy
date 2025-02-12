@@ -79,34 +79,6 @@ const GalleryPage = () => {
 
   return (
     <>
-<<<<<<< HEAD
-    <Updates/>
-    <Navbar/>
-    <Hero image={SchoolImage} title="Gallery" subBody="" height={70}/>
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold text-center my-4">Event Gallery</h1>
-      {events.map((event, index) => (
-        <div key={index} className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4">{event.title}</h2>
-          {event.images.length > 0 ? (
-            <Masonry
-              breakpointCols={{ default: 4, 1024: 3, 768: 2, 500: 1 }}
-              className="flex gap-2"
-              columnClassName="masonry-column space-y-2"
-            >
-              {event.images.map((image, imgIndex) => (
-                <img
-                  key={imgIndex}
-                  src={image}
-                  alt={`Event ${index + 1} - Image ${imgIndex + 1}`}
-                  className=" shadow-md hover:shadow-lg transition-all duration-300 w-full mb-2"
-                />
-              ))}
-            </Masonry>
-          ) : (
-            <p className="text-gray-500">No images available for this event.</p>
-          )}
-=======
       <Updates />
       <Navbar />
       <Hero image={SchoolImage} title="" subBody="Gallery" height={70} />
@@ -173,7 +145,6 @@ const GalleryPage = () => {
           >
             &#8250;
           </button>
->>>>>>> ca019e1fee792f5d2e74629524d282cb967159c9
         </div>
       )}
     </>
