@@ -1,5 +1,6 @@
+import "@/globals.css";
 import { Karla } from "next/font/google";
-import "@/app/globals.css"; 
+// import "@/app/globals.css"; 
 import { Ubuntu } from "next/font/google";
 import { League_Script } from "next/font/google";
 
