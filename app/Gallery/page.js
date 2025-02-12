@@ -121,13 +121,13 @@ const GalleryPage = () => {
       {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
           <button
-            className="absolute top-5 right-5 text-white text-2xl"
+            className="absolute top-5 p-[1rem] right-5 text-white text-2xl"
             onClick={closeFullscreen}
           >
             &times;
           </button>
           <button
-            className="absolute left-5 text-white text-2xl"
+            className="absolute left-5 p-[1rem] text-white text-2xl"
             onClick={showPrevImage}
             disabled={currentIndex === 0}
           >
@@ -139,7 +139,7 @@ const GalleryPage = () => {
             className="max-w-full max-h-[90vh] rounded-lg shadow-lg"
           />
           <button
-            className="absolute right-5 text-white text-2xl"
+            className="absolute right-5 p-[1rem] text-white text-2xl"
             onClick={showNextImage}
             disabled={currentIndex === currentEventImages.length - 1}
           >
