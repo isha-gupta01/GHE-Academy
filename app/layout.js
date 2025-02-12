@@ -1,4 +1,4 @@
-import "@/globals.css";  // ✅ Only one CSS import
+import "@/app/globals.css";  // ✅ Only one CSS import
 import { Karla, Ubuntu, League_Script } from "next/font/google";
 
 const karla = Karla({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-karla" });
