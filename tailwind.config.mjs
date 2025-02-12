@@ -9,9 +9,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        karla: ["var(--font-karla)", "sans-serif"], // Class: font-karla
-        ubuntu: ["var(--font-ubuntu)", "sans-serif"], // Class: font-ubuntu
-        league: ["var(--font-league-script)", "cursive"], // Class: font-league
+        karla: ["var(--font-karla)", "sans-serif"],
+        ubuntu: ["var(--font-ubuntu)", "sans-serif"],
+        league: ["var(--font-league-script)", "cursive"],
       },
       animation: {
         slideInFromLeft: "slideInFromLeft 1s ease-in-out forwards",

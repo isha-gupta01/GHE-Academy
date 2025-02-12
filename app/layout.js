@@ -1,43 +1,20 @@
-import "@/globals.css";
-import { Karla } from "next/font/google";
-// import "@/app/globals.css"; 
-import { Ubuntu } from "next/font/google";
-import { League_Script } from "next/font/google";
+import "@/globals.css";  // ✅ Only one CSS import
+import { Karla, Ubuntu, League_Script } from "next/font/google";
 
-const karla = Karla({
-  subsets: ["latin"],
-  weight: ["400", "700"], // Choose the required font weights
-  variable: "--font-karla", // Define a CSS variable for Tailwind usage
-});
-const leagueScript = League_Script({
-  subsets: ["latin"],
-  weight: ["400"], // Choose the required font weights
-  variable: "--font-league-script", // Define a CSS variable for Tailwind usage
-});
-const ubuntu = Ubuntu({
-  subsets: ["latin"],
-  weight: ["400", "700"], // Choose the required font weights
-  variable: "--font-ubuntu", // Define a CSS variable for Tailwind usage
-});
-
-export const metadata = {
-  title: "GHE Academy",
-  description: "School",
-  
-};
+const karla = Karla({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-karla" });
+const leagueScript = League_Script({ subsets: ["latin"], weight: ["400"], variable: "--font-league-script" });
+const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-ubuntu" });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${karla.className} ${ubuntu.variable} ${leagueScript.variable}`}>
+    <html lang="en" className={`${karla.className} ${ubuntu.className} ${leagueScript.className}`}>
       <head>
-        <link rel="icon" href="/favicon.ico"/>
-        </head>
-      <body
-        className={` antialiased`}
-      >
-        <div>
-          {children}
-        </div>
+        <title>GHE Academy</title>
+        <meta name="description" content="School" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+      <body className="antialiased">
+        {children}
       </body>
     </html>
   );
