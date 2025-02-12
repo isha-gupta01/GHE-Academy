@@ -80,6 +80,7 @@ const GalleryPage = () => {
         </div>
       ))}
     </div>
+    <Footer/>
     </>
   );
 };
