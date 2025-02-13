@@ -18,7 +18,7 @@ const ScienceLab = () => {
         <div className='flex-col mb-10 flex h-auto'>
                   <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-10 sm:mx-4 xs:mx-4'>Science Lab</h1></div>
                   <div className='sm:flex-col xs:flex-col mx-5 lg:flex-row md:flex-row flex' >
-                    <Image className='lg:rounded-lg sm:h-auto  sm:w-auto  lg:ml-8 lg:mr-8 lg:h-auto lg:w-[500px] md:h-[400px] md:w-auto' src={Science} alt='Science' />
+                    <Image className='lg:rounded-lg sm:h-auto  sm:w-auto  lg:ml-8 lg:mr-8 lg:h-[300px] lg:w-[400px] md:h-auto md:w-[400px]' src={Science} alt='Science' />
                     <div className='mx-1 md:ml-[2rem] text-justify sm:mt-8 xs:mt-8'>
                       <p className='sm:text-[1rem] lg:text-xl'>The laboratories for physics, chemistry and biology are equipped in accordance with the specification of examination boards. The science lab aids the study of science and robotics. All lab are provided with lecture seminar areas too.</p>
                       <p className='mt-4 sm:text-[1rem] lg:text-xl'>A highly sophisticated a fully equipped science lab that provides an open environment for students to experiment and do research work. The three divisions of the science department ensure the students do real experiments and the latest gadgets on display. All these labs are provided with lecture seminar areas too.</p>
