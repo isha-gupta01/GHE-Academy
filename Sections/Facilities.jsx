@@ -42,7 +42,7 @@ const FacilitiesSection = () => {
   };
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-auto">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -50,7 +50,7 @@ const FacilitiesSection = () => {
           alt="Background"
           fill
           quality={100}
-          className="z-0 object-cover"
+          className="z-0 object-cover h-auto"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50 z-10"></div>
@@ -67,7 +67,7 @@ const FacilitiesSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-20 h-[80vh] overflow-y-auto">
+      <div className="relative z-20 h-auto overflow-y-auto">
         <div className="container mx-auto px-4 text-center py-12">
           {/* Section Title */}
           <h1 className="text-3xl font-bold text-white uppercase mb-8">Facilities</h1>
@@ -93,7 +93,7 @@ const FacilitiesSection = () => {
           <div className="md:hidden">
             <div className="relative">
               {/* Slide */}
-              <div className="bg-white text-gray-800 shadow-lg rounded-2xl overflow-hidden w-[90%] mx-auto">
+              <div className="bg-white text-gray-800 shadow-lg rounded-2xl overflow-hidden w-[90%]  xx:w-[70vw] mx-auto">
                 <Image
                   src={slides[currentIndex].image}
                   alt={slides[currentIndex].title}

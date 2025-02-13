@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import Navbar from '@/Sections/Navbar'
+import Nav from '@/Sections/Nav'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import Updates from '@/components/Updates'
@@ -14,7 +14,7 @@ const ImageGallery = () => {
   return (
     <>
     <Updates/>
-    <Navbar/>
+    <Nav/>
     <Hero image={SchoolImage}  title="Board Examination Applicability" subBody="" height={70}/>
     <div className="min-h-screen mb-10 flex flex-col items-center p-4">
         <h1 className="text-3xl mt-8 font-bold text-green-700">List of 3 years Board Examination Applicability</h1>

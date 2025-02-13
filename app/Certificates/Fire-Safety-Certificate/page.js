@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import Navbar from '@/Sections/Navbar'
+import Nav from '@/Sections/Nav'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import Updates from '@/components/Updates'
@@ -15,9 +15,9 @@ const ImageGallery = () => {
   return (
     <>
     <Updates/>
-    <Navbar/>
+    <Nav/>
     <Hero image={SchoolImage}  title="Fire safety certificate" subBody="" height={70}/>
-    <div className="flex md:flex-row lg:m-20 md:gap-32 sm:flex-col">
+    <div className="flex md:flex-row lg:m-20 md:gap-32 sm:flex-col xs:flex-col">
 
       <div className="min-h-screen flex flex-col items-center p-4">
           <h1 className="text-3xl mt-8 font-bold text-green-700">Fire safety Certicifate</h1>

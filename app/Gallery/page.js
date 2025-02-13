@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
-import Navbar from '@/Sections/Navbar';
+import Nav from '@/Sections/Nav';
 import Footer from '@/Sections/Footer';
 import Hero from '@/Sections/Hero';
 import SchoolImage from "@/assets/images/gallery.jpg";
@@ -80,13 +80,13 @@ const GalleryPage = () => {
   return (
     <>
       <Updates />
-      <Navbar />
-      <Hero image={SchoolImage} title="" subBody="Gallery" height={70} />
+      <Nav />
+      <Hero image={SchoolImage} title="Gallery" subBody="" height={70} />
       <div className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold text-center my-4">Event Gallery</h1>
+        <h1 className="text-4xl font-bold text-center  my-4">Event Gallery</h1>
         {events.map((event, index) => (
           <div key={index} className="mb-10">
-            <h2 className="text-2xl font-semibold mb-4">{event.title}</h2>
+            <h2 className="text-2xl font-semibold xs:whitespace-nowrap underline mb-4">{event.title}</h2>
             {event.images.length > 0 ? (
               <Masonry
                 breakpointCols={{ default: 4, 1024: 3, 768: 2, 500: 1 }}

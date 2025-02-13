@@ -57,6 +57,7 @@ const menuData = [
       "Self-Certification",
       "Society-Trust-Certificate",
       "Water-Health-&-Sanitation-Certificate",
+      "Mandatory-Disclosure"
     ],
   },
   {
@@ -95,14 +96,14 @@ const Sidebar = () => {
         className="md:hidden  text-white z-50  "
         onClick={toggleSidebar}
       >
-        <Image src={Hamburger} alt="menu" width={40} height={40} className="invert xs:w-[27px] xs:h-auto  sm:w-[30px] sm:h-auto "/>
+        <Image src={Hamburger} alt="menu" width={40} height={40} className="invert sm:w-[30px] sm:h-auto xs:w-[25px] xs:h-auto "/>
       </button>
       {/* <a href="https://www.freepik.com/search">Icon by pocike</a> */}
 
       {/* Sidebar (Appears when isSidebarOpen is true) */}
       <aside
-        className={`fixed z-50 top-[16px]  right-0 w-72 h-[100vh] backdrop-blur-3xl text-white p-2 transform ${isSidebarOpen ? "translate-x-0 " : "translate-x-full hidden"
-          } transition-transform duration-300 xl:hidden`}
+        className={`fixed z-50 sm:top-[16px] xs:-top-[0.75rem]  right-0 w-72 h-[100vh] backdrop-blur-3xl text-white p-2 transform ${isSidebarOpen ? "translate-x-0 " : "translate-x-full hidden"
+          } transition-transform duration-300 md:hidden`}
       >
         <button className="relative top-0 pt-7 left-56 mb-4 invert" onClick={toggleSidebar}>
           <Image src={Cross} alt="Cross" width={20} height={20} />
@@ -167,7 +168,7 @@ const Sidebar = () => {
       {/* Overlay (Closes sidebar when clicked outside) */}
       {isSidebarOpen && (
         <div
-          className="fixed inset-0 top-[16px] h-[100vh] bg-black opacity-50 z-40 ip:hidden"
+          className="fixed inset-0 sm:top-[16px] xs:-top-[0.75rem] h-[100vh] bg-black opacity-50 z-40 md:hidden"
           onClick={toggleSidebar}
         ></div>
       )}

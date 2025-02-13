@@ -10,7 +10,7 @@ import Green from "@/assets/images/Wgreen.png"
 import Search from '@/components/Search'
 
 
-const Navbar = () => {
+const Nav = () => {
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -31,7 +31,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`z-10 flex justify-between w-[100vw] transition-transform lg:h-[8vw] items-center lg:max-w-screen  ease-in-out duration-300 px-2 h-20 ${scrolled ? "fixed top-0 z-50 bg-[#5E9538] shadow-lg h-20 transform translate-y-0 " : "absolute xs:top-[17.2rem] md:top-[10rem] sm:top-[8rem]  bg-transparent h-96 sm:h-[4rem] transform translate-y-[-100%]"}`}>
+    <nav className={`z-10 flex justify-between  w-[100vw] transition-transform lg:h-[8vw] items-center lg:max-w-screen  ease-in-out duration-300 px-2 h-20 ${scrolled ? "fixed top-0 z-50 bg-[#5E9538] shadow-lg h-20 transform translate-y-0 " : "absolute xs:top-[17.2rem] md:top-[10rem] sm:top-[8rem]  bg-transparent h-96 sm:h-[4rem] transform translate-y-[-100%]"}`}>
         <div className="relative flex flex-row  xs:w-[100vw] md:w-[18vw] lg:w-[30vw]  justify-between items-center  ">
           <div className='relative flex xs:w-[75vw] lg:gap-2  sm:w-[60vw] lg:w-[100vw] items-center'>
             <Link href="/" className=''><Image src={SchoolLogo} alt="logo of the school" className='xs:w-[80px]  xs:h-auto md:w-[100px]   md:h-auto lg:w-[90px]  lg:h-auto' /></Link>
@@ -68,4 +68,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Nav

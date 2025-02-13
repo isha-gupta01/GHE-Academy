@@ -32,7 +32,7 @@ const Message = () => {
     return (
         <>
             <section className="pb-16 pt-24 lg:py-24">
-                <div className="container">
+                <div className="sm:container sm:mx-auto xs:mx-3">
                     <div className="flex justify-center">
                         <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">Message from our Authorities</p>
                     </div>
@@ -49,16 +49,16 @@ const Message = () => {
                                         <h3 className="font-serif md:text-4xl md:mt-5  text-2xl mt-2 bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2  uppercase tracking-widest  text-transparent bg-clip-text ">{project.title}</h3>
                                         <hr className="border-t-2 border-white/5 md:mt-5 mt-4" />
                                         <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                                            <p className="text-sm md:text-base text-white/50 mt-4">{project.results}</p>
+                                            <p className="text-sm md:text-base text-white/50 mt-4 text-justify">{project.results}</p>
                                         </ul>
-                                        <Link href={project.link}><button className="bg-white cursor-pointer relative z-100 pointer-events-auto text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex gap-2 items-center justify-center mt-8 md:w-auto md:px-6">
+                                        <Link href={project.link}><button className="bg-white cursor-pointer relative z-100 pointer-events-auto text-gray-950 h-12 xs:w-full xx:w-[10rem] rounded-xl font-semibold inline-flex gap-2 items-center justify-center mt-8 md:w-auto md:px-6">
                                             <span>Read More</span>
                                                 <Image src={ArrowUpRightIcon} alt='arrow' width={24} height={24}/>
                                             </button></Link>
                                         
                                     </div>
                                     <div className="relative">
-                                        <Image src={project.image} alt={project.title} width={500} height={500} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
+                                        <Image src={project.image} alt={project.title} width={500} height={500} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-lg" />
                                     </div>
                                 </div>
                             </div>

@@ -31,7 +31,9 @@ export default {
       screens: { // Moved inside extend
         xs: "300px",
         sm: "375px",
-        md: "800px",
+        xx:"490px",
+        md: "768px",
+        xl:"1000px",
         lg: "1200px",
       },
     },

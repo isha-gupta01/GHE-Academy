@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '@/Sections/Navbar'
+import Nav from '@/Sections/Nav'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/ghe1.png"
@@ -12,7 +12,7 @@ const InstitutionalRules = () => {
     <>
     <div>
       <Updates/>
-      <Navbar/>
+      <Nav/>
       <Hero image={SchoolImage} title="Institutional Rules" subBody="" height={70}/>
       <div className="min-h-[70vh]  flex flex-col items-center justify-center p-6">
       {/* Header Section */}
