@@ -61,7 +61,6 @@ export async function DELETE(req) {
     if (!id) {
       return NextResponse.json({ error: "ID is required" }, { status: 400 });
     }
-
     const deletedEvent = await CalendarModel.findByIdAndDelete(id);
 
     if (!deletedEvent) {
