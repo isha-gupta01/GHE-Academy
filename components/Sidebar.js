@@ -95,7 +95,7 @@ const Sidebar = () => {
         className="md:hidden  text-white z-50  "
         onClick={toggleSidebar}
       >
-        <Image src={Hamburger} alt="menu" width={40} height={40} className="invert sm:w-[30px] sm:h-auto "/>
+        <Image src={Hamburger} alt="menu" width={40} height={40} className="invert xs:w-[27px] xs:h-auto  sm:w-[30px] sm:h-auto "/>
       </button>
       {/* <a href="https://www.freepik.com/search">Icon by pocike</a> */}
 

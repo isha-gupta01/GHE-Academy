@@ -32,30 +32,30 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className={`sm:w-full  z-10  transition-transform lg:max-w-screen   ease-in-out duration-300 text-white flex items-center justify-between px-2 h-20 font-serif text-sm ${scrolled ? "fixed top-0 z-50 bg-[#5E9538] shadow-lg h-24 transform translate-y-0 " : "absolute md:top-[10rem] sm:top-[9rem] bg-transparent h-20 sm:h-[7.5rem] transform translate-y-[-100%]"}`}>
-        <div className=" relative flex -px-8 z-10 justify-between gap-8  items-center  ">
+      <nav className={`sm:w-full   z-10  transition-transform lg:max-w-screen   ease-in-out duration-300 text-white flex items-center justify-between px-2 h-20 font-serif text-sm ${scrolled ? "fixed top-0 z-50 bg-[#5E9538] shadow-lg h-24 transform translate-y-0 " : "absolute xs:top-[7.7rem] md:top-[10rem] sm:top-[9rem] bg-transparent h-20 sm:h-[7.5rem] transform translate-y-[-100%]"}`}>
+        <div className=" relative flex -px-8 z-10 justify-around gap-[12rem] items-center  ">
           <div className='relative flex -px-8 z-10 justify-between md:gap-5 sm:gap-4  items-center '>
-            <Link href="/" className='flex items-center justify-between '><Image src={SchoolLogo} alt="logo of the school" className='sm:w-[85px] md:h-auto md:w-[86px] sm:h-[auto] w-32 h-32' /></Link>
+            <Link href="/" className='flex items-center justify-between '><Image src={SchoolLogo} alt="logo of the school" className='sm:w-[85px] xs:w-[85px] xs:h-auto md:h-auto md:w-[86px] sm:h-[auto] w-32 h-32' /></Link>
             <div className='flex  flex-col justify-center items-center'>
               <span className=' lg:flex lg:text-xl '><Link href="/"><Image src={Green} alt="Green Heaven English Academy" width={200} height={50} className='lg:w-[165px]' /></Link></span>
               <span className='text-[0.6rem] leading-tight  z-10 flex flex-col justify-center items-center font-ubuntu '>
-                <p>Affiliated To The Council For The</p>
-                <p ><span className='sm:hidden md:flex'>Central Board of Secondary Education </span><span className='hidden justify-center sm:flex'>(CBSE)</span></p>
+                <p className='xs:hidden md:flex '>Affiliated To The Council For The</p>
+                <p ><span className='sm:hidden xs:hidden md:flex'>Central Board of Secondary Education </span><span className='hidden justify-center sm:flex'>(CBSE)</span></p>
               </span>
             </div>
           </div>
-          <div className='flex sm:gap-4 items-center'>
+          <div className='flex  xs:gap-3 items-center'>
             <Search show="md:hidden" />
             <Sidebar className="hidden " />
           </div>
         </div>
 
         <div className={`z-10 font-ubuntu ${scrolled ? "bg-[#76B947]" : ""} rounded-full shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)]   backdrop-blur`}>
-          <ul className='ml-1 flex h-16 sm:hidden md:flex  lg:flex items-center'>
+          <ul className='ml-1 flex h-16 sm:hidden xs:hidden md:flex  lg:flex items-center'>
             <Search show="flex" className="hidden " />
             <li className='nav'><DropdownMenu menuTitle={"About"} menuItems={["About-Us", "Principal-Message", "Manager-Message", "Vision-&-Mission", "Progress-Report", "Academic-Year", "Institutional-Rules"]} /></li>
             <li className='nav'><DropdownMenu menuTitle={"Admissions"} menuItems={["Application-Process", "Fee-Structure"]} /></li>
-            <li className='nav md:hidden lg:block'><DropdownMenu menuTitle={"Certificates"} menuItems={[
+            <li className='nav lg:block'><DropdownMenu menuTitle={"Certificates"} menuItems={[
               "Affilation-Certificate",
               "Building-Safety-Certificate",
               "Fire-Safety-Certificate",
