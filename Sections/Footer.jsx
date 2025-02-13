@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="mt-10 h-[1rem] text-center border-t border-gray-700 pt-4 sm:text-xs md:text-sm lg:text-sm">
+      <div className="mt-10 h-[1rem] text-center border-t border-gray-700 xs:pt-2 pt-4 xs:text-xs sm:text-xs md:text-sm lg:text-sm">
         © {new Date().getFullYear()} Green Heaven English Academy. All rights reserved. <span>| Powered by Night Owls</span>
       </div>
     </footer>

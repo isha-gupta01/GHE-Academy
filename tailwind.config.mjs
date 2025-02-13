@@ -30,9 +30,10 @@ export default {
       },
     },
     screens: {
-      xs: "340px",
+      xs: "300px",
       sm: "375px",
-      md: "768px",
+      md: "769px",
+      ip: "800px",
       lg: "1200px",
     },
     container: {
