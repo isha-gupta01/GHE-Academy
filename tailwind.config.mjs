@@ -28,13 +28,12 @@ export default {
           },
         },
       },
-    },
-    screens: {
-      xs: "300px",
-      sm: "375px",
-      md: "769px",
-      ip: "800px",
-      lg: "1200px",
+      screens: { // Moved inside extend
+        xs: "300px",
+        sm: "375px",
+        md: "800px",
+        lg: "1200px",
+      },
     },
     container: {
       center: true,

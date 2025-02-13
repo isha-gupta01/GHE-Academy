@@ -1,4 +1,4 @@
-import Navbar from "@/Sections/Navbar";
+import Nav from "@/Sections/Nav";
 // import Hero from "@/Sections/Hero";
 import SchoolImage from "@/assets/images/ghe1.png"
 import Footer from '@/Sections/Footer'
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Updates/>
-      <Navbar />
+      <Nav />
       <HeroSection 
     image={SchoolImage} 
     video="/videos/vid.mp4" // Use relative path
@@ -26,7 +26,7 @@ export default function Home() {
 />
       <Message/>
       <FacilitiesSection/>
-      <PopUp/>
+      {/* <PopUp/> */}
       <Footer/>
     </>
   )
