@@ -6,6 +6,8 @@ import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/certification1.png"
 import Updates from '@/components/Updates';
 import QuickLinks from '@/components/QuickLinks';
+import DownloadIcon from "@/assets/icons/download.png";
+import Image from "next/image";
 
 const ImageGallery = () => {
   const images = [
