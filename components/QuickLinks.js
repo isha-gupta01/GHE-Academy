@@ -32,7 +32,7 @@ const QuickLinks = () => {
   const currentItem = pathname.split("/").pop();
 
   return (
-    <div className="mt-20 px-5 mx-auto  rounded-2xl  max-w-[20rem] ">
+    <div className="mt-20 mb-6 px-5 mx-auto  rounded-2xl  max-w-[20rem] ">
       <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Quick Links</h2>
       <div className="flex flex-col gap-4">
         {activeMenu.items

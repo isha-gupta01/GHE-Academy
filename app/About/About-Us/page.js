@@ -11,7 +11,7 @@ export default function About() {
   return (
     <>
     <Updates/>
-    <Navbar />
+    <Navbar/>
     <Hero image={Pencil2} title="About Our School" subBody="Green Heaven English Adacemy" height={70} />
     <div className="min-h-screen flex mb-6 flex-col items-center justify-center p-6">
       

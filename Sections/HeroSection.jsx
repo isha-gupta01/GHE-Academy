@@ -2,14 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({
-    subsets: ["latin"],
-    weight: ["400", "500", "600", "700", "800", "900"],
-    style: ["normal", "italic"],
-    display: "swap",
-});
 
 const HeroSection = ({ image, video, title, subBody, height, className, className2 }) => {
     const [showMedia, setShowMedia] = useState(true);
@@ -23,7 +15,7 @@ const HeroSection = ({ image, video, title, subBody, height, className, classNam
     }, []);
 
     return (
-        <div className={`relative w-full z-0 ${playfair.className}`} style={{ height: `${height}vh` }}>
+        <div className={`relative w-full z-0 font-ubuntu`} style={{ height: `${height}vh` }}>
             {/* Background */}
             {showMedia ? (
                 <div className="absolute inset-0">
@@ -41,11 +33,11 @@ const HeroSection = ({ image, video, title, subBody, height, className, classNam
             <div className="absolute inset-0 bg-gray-900/50"></div>
 
             {/* Text Content */}
-            <div className={`absolute inset-0 flex flex-col justify-center text-white px-4 ${playfair.className}`}>
-                <h1 className={`md:text-4xl text-white inline-flex gap-2 tracking-wide text-transparent bg-clip-text sm:text-5xl lg:text-5xl font-ubuntu ${className}`}>
+            <div className={`absolute inset-0 flex flex-col justify-center text-white px-4 font-ubuntu`}>
+                <h1 className={`md:text-4xl xs:text-5xl text-white inline-flex gap-2 tracking-wide text-transparent bg-clip-text sm:text-5xl lg:text-5xl font-ubuntu ${className}`}>
                     {title}
                 </h1>
-                <p className={`md:text-6xl lg:text-6xl text-white inline-flex gap-2 tracking-wide text-transparent bg-clip-text sm:text-[1.7rem] font-bold font-ubuntu mt-2 ${className2}`}>
+                <p className={`md:text-6xl xs:text-[1.7rem] lg:text-6xl text-white inline-flex gap-2 tracking-wide text-transparent bg-clip-text sm:text-[1.7rem] font-bold font-ubuntu mt-2 ${className2}`}>
                     {subBody}
                 </p>
             </div>

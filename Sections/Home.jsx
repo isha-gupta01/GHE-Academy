@@ -1,5 +1,4 @@
 import Navbar from "@/Sections/Navbar";
-// import Hero from "@/Sections/Hero";
 import SchoolImage from "@/assets/images/ghe1.png"
 import Footer from '@/Sections/Footer'
 import Message from "@/Sections/Message";

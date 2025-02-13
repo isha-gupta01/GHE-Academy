@@ -94,7 +94,7 @@ const ContactPage = () => {
       <Navbar />
 
       <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-slate-500 to-stone-500 p-4">
-        <div className="w-full sm:mt-[10rem] lg:mt-[8rem] max-w-4xl bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg shadow-xl p-6 md:p-10 flex flex-col md:flex-row">
+        <div className="w-full sm:mt-[10rem] xs:mt-[10rem] lg:mt-[8rem] max-w-4xl bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg shadow-xl p-6 md:p-10 flex flex-col md:flex-row">
           <div className="w-full md:w-2/3">
             <h2 className="text-2xl font-bold text-[#5E9538]">Contact Us</h2>
             <p className="text-gray-300 mb-6">How can we help?</p>

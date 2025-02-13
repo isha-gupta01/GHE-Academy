@@ -1,6 +1,6 @@
 import Updates from "@/components/Updates";
 import Footer from "@/Sections/Footer";
-import Navbar from "@/Sections/Navbar";
+import Navbar from '@/Sections/Navbar'
 import React from "react";
 import Hero from "@/Sections/Hero";
 import SchoolImage from "@/assets/images/docs.png"

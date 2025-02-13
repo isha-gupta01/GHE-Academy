@@ -80,12 +80,12 @@ const Search = ({show}) => {
     <nav className="lg:ml-4 flex justify-between items-center text-white relative">
       {/* Search Icon */}
       <button onClick={toggleSearch} className="relative ">
-        <FaSearch className={`text-xl  cursor-pointer sm:size-6 md:size-5 ${show}`} />
+        <FaSearch className={`text-xl md:ml-4 cursor-pointer sm:size-6 md:size-5 px-[0.5px] ${show} `} />
       </button>
 
       {/* Search Box */}
       <div
-        className={`absolute top-full right-0 mt-2 w-72 z-50   bg-gray-800 shadow-lg rounded-2xl p-3 transition-all duration-300 ${
+        className={`absolute top-full right-0 md:left-2 mt-2 w-72 z-50   bg-gray-800 shadow-lg rounded-2xl p-3 transition-all duration-300 ${
           showSearch ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
         }`}
       >

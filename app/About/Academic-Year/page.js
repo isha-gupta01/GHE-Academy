@@ -61,7 +61,7 @@ export default function AcademicCalendar() {
       </div>
       <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
       {/* Header */}
-      <h1 className="text-3xl font-bold text-[#5E9538] mb-4">
+      <h1 className="text-3xl text-center font-bold text-[#5E9538] mb-4">
         Annual School Calendar (2024-25)
       </h1>
       <p className="text-gray-600 text-center mb-6 max-w-3xl">
