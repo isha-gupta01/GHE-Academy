@@ -33,13 +33,13 @@ const Updates = () => {
                     </motion.div>
                 </div>
 
-                <div className='self-center md:w-[10vw] xs:gap-2 sm:gap-2  lg:text-[16px] flex items-center sm:mr-3 xs:mr-2 md:mr-1'>
+                <div className='md:w-[10vw] xs:gap-2 sm:gap-2  lg:text-[16px] flex items-center sm:mr-3 xs:mr-2 md:mr-1'>
 
                     <Link href="/" className=' invert  '>
                         <Image src={Home} alt='home' width={100} height={30} className='xs:w-[150px] sm:w-[90px] xx:w-[32px] md:w-[48px] xl:w-[32px] lg:w-[28px] '/>
                     </Link>
                     <Link href="/LoginPage" className='border hover:bg-[#5E9538]   bg-gray-800 rounded-3xl  '>
-                        <span className='px-4 sm:px-2 text-center text-white   '>Login</span>
+                        <span className='px-4 sm:px-2 text-center text-white py-1   '>Login</span>
                     </Link>
                 </div>
             </div>

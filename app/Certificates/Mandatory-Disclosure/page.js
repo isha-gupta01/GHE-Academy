@@ -1,6 +1,6 @@
 import Updates from "@/components/Updates";
 import Footer from "@/Sections/Footer";
-import Nav from "@/Sections/Nav";
+import Navbar from '@/Sections/Navbar'
 import React from "react";
 import Hero from "@/Sections/Hero";
 import SchoolImage from "@/assets/images/docs.png"
@@ -71,7 +71,7 @@ const SchoolInfo = () => {
   return (
     <>
     <Updates/>
-    <Nav/>
+    <Navbar/>
     <Hero image={SchoolImage}  title="Mandatory Public Disclosure" subBody="" height={70}/>
     <div className="p-6">
       <h1 className="text-2xl font-bold text-green-600 text-center mb-6">Mandatory Public Disclosure</h1>

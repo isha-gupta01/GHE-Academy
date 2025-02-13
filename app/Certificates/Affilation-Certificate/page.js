@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import Nav from '@/Sections/Nav'
+import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/certification1.png"
@@ -11,12 +11,12 @@ const ImageGallery = () => {
   const images = [
     "/certificates/AFFILATION1.jpg",
     "/certificates/AFFILATION2.jpg",
-  ]; // Replace with your actual image paths
+  ]; 
 
   return (
     <>
       <Updates />
-      <Nav />
+      <Navbar />
       <Hero image={SchoolImage}  title="Affilation Certicifate" subBody="" height={70} />
       <div className='flex md:flex-row lg:m-20 md:gap-32 sm:flex-col xs:flex-col'>
         

@@ -1,7 +1,7 @@
 "use client"
 import { useState,useEffect } from 'react'
 import React from 'react'
-import Nav from '@/Sections/Nav'
+import Navbar from '@/Sections/Navbar'
 import Hero from '@/Sections/Hero'
 import Maths from "@/assets/images/maths.jpg"
 import Footer from '@/Sections/Footer'
@@ -35,7 +35,7 @@ export default function AcademicCalendar() {
     return (
     <>
     <Updates/>
-    <Nav />
+    <Navbar />
     <Hero image={Maths} title="Academic Year and Vacations" subBody='"This year, aim higher, work harder, and shine brighter!"' height={70} />
     
       <div className="p-6  lg:mx-20">

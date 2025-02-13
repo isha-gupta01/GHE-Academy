@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '@/Sections/Nav'
+import Navbar from '@/Sections/Navbar'
 import Hero from '@/Sections/Hero'
 import Image from 'next/image'
 import Principle from "@/assets/images/principle.png"
@@ -12,7 +12,7 @@ const PrincipalMessage = () => {
   return (
     <>
     <Updates/>
-    <Nav/>
+    <Navbar/>
     <Hero image={SchoolImage} title="Principal's Message" subBody='"Be a learner today, a leader tomorrow."' height={70}/>
     <div className='flex-col mb-10 flex h-auto'>
       <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-10 xs:mx-4 sm:mx-4'>Principal's Message</h1></div>

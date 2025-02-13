@@ -31,10 +31,10 @@ const PopUp = () => {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
-            className="fixed inset-0 flex justify-center items-center z-50"
+            className="fixed inset-0  flex justify-center items-center z-50"
           >
             <div className="bg-white pt-4 md:h-[32rem] md:w-[25rem] sm:h-[35rem] sm:w-[22rem] xs:h-[32rem] xs:w-[20rem] rounded-2xl flex justify-center flex-col gap-4 items-center">
-              <button onClick={closePopup} className=" z-10 md:pl-[22rem] sm:pl-[18rem] xs:pl-[16rem]"><Image src={Cross} alt="cross" width={30} height={30}/></button>
+              <button onClick={closePopup} className=" z-10 md:pl-[20rem] md:pt-[0.7rem] sm:pl-[18rem] xs:pl-[16rem] "><Image src={Cross} alt="cross" width={30} height={30}/></button>
               <div className="flex flex-col justify-center">
                 <Image src={Alert} alt="icon" width={250} height={300} />
               </div>

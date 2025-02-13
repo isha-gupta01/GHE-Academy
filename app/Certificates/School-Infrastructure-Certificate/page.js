@@ -1,11 +1,10 @@
 "use client";
 import React from 'react';
-import Nav from '@/Sections/Nav'
+import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/certification1.png"
 import Updates from '@/components/Updates'
-import { Quando } from 'next/font/google';
 import QuickLinks from '@/components/QuickLinks';
 
 const ImageGallery = () => {
@@ -19,7 +18,7 @@ const ImageGallery = () => {
   return (
     <>
     <Updates/>
-    <Nav/>
+    <Navbar/>
     <Hero image={SchoolImage}  title="School infrastructure certificate" subBody="" height={70}/>
     <div className="flex md:flex-row lg:m-20 md:gap-32 sm:flex-col xs:flex-col">
       <div className="min-h-screen flex flex-col items-center p-4">

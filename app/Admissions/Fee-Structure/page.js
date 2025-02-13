@@ -1,7 +1,7 @@
 "use client"; // Required since we are using `useEffect` (fetching data on client side)
 
 import React, { useEffect, useState } from "react";
-import Nav from "@/Sections/Nav";
+import Navbar from '@/Sections/Navbar'
 import Hero from "@/Sections/Hero";
 import Pencil from "@/assets/images/pencils.jpg";
 import Footer from "@/Sections/Footer";
@@ -31,7 +31,7 @@ export default function FeeStructure() {
   return (
     <>
       <Updates />
-      <Nav />
+      <Navbar />
       <Hero image={Pencil} title="Fee Structure" subBody="" height={70} />
 
       <div className="p-6 lg:mx-20">

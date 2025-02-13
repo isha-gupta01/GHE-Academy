@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from '@/Sections/Nav'
+import Navbar from '@/Sections/Navbar'
 import Hero from '@/Sections/Hero'
 import Pencil2 from "@/assets/images/library2.jpg"
 import Footer from '@/Sections/Footer'
@@ -11,7 +11,7 @@ export default function About() {
   return (
     <>
     <Updates/>
-    <Nav/>
+    <Navbar/>
     <Hero image={Pencil2} title="About Our School" subBody="Green Heaven English Adacemy" height={70} />
     <div className="min-h-screen flex mb-6 flex-col items-center justify-center p-6">
       

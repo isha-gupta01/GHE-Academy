@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '@/Sections/Nav'
+import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/ghe1.png"
@@ -14,7 +14,7 @@ const SchoolManagementCommitte = () => {
     <>
       <div>
         <Updates />
-        <Nav />
+        <Navbar />
         <Hero image={SchoolImage}  title="School Management Committee" subBody="" height={70} />
         <div className="h-auto mb-10 flex flex-col items-center p-4">
           <h1 className="text-3xl mt-8 font-bold text-green-700">List of School Management Committee</h1>

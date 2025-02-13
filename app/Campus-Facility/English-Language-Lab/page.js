@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '@/Sections/Nav'
+import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/ghe1.png"
@@ -13,7 +13,7 @@ const EnglishLab = () => {
     <>
       <div>
         <Updates />
-        <Nav />
+        <Navbar />
         <Hero image={SchoolImage} title="English Language Lab" subBody="" height={70} />
         <div className='flex-col mb-10 flex h-auto'>
           <div><h1 className='font-extralight text-[3rem] mt-4 mb-6 lg:ml-10 sm:mx-4 xs:mx-4'>English Language Lab</h1></div>

@@ -1,5 +1,5 @@
 "use client";
-import Nav from '@/Sections/Nav'
+import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Updates from '@/components/Updates';
 import { ToastContainer, toast } from 'react-toastify';
@@ -91,7 +91,7 @@ const ContactPage = () => {
     <>
       <ToastContainer />
       <Updates />
-      <Nav />
+      <Navbar />
 
       <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-slate-500 to-stone-500 p-4">
         <div className="w-full sm:mt-[10rem] xs:mt-[10rem] lg:mt-[8rem] max-w-4xl bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg shadow-xl p-6 md:p-10 flex flex-col md:flex-row">

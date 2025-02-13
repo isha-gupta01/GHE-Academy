@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '@/Sections/Nav'
+import Navbar from '@/Sections/Navbar'
 import Hero from '@/Sections/Hero'
 import Pencil2 from "@/assets/images/library2.jpg"
 import Footer from '@/Sections/Footer'
@@ -12,7 +12,7 @@ const VisionMission = () => {
     <>
       <div className=''>
         <Updates/>
-        <Nav />
+        <Navbar />
         <Hero image={Pencil2} title="Vision & Mission" subBody="Excellence in every Student" height={70} />
         <div className='w-[80%] mb-10 mr-auto ml-auto'>
           <h1 className='text-center mt-10 font-extralight md:text-[3rem] text-[#76B947] xs:text-[2.2rem]'>Vision & Mission</h1>

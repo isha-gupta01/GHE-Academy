@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '@/Sections/Nav'
+import Navbar from '@/Sections/Navbar'
 import Footer from '@/Sections/Footer'
 import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/pencils3.jpg"
@@ -11,7 +11,7 @@ const ProgressReport = () => {
     <>
       <div>
       <Updates/>
-      <Nav/>
+      <Navbar/>
       <Hero image={SchoolImage} title="Progress Report" subBody='"Learning never stops, growth happens in every effort you make."' height={70}/>
       <div className="min-h-screen flex flex-col items-center justify-center p-6">
       {/* Header Section */}
