@@ -6,6 +6,8 @@ import Hero from '@/Sections/Hero'
 import SchoolImage from "@/assets/images/certification1.png"
 import Updates from '@/components/Updates'
 import QuickLinks from '@/components/QuickLinks';
+import DownloadIcon from "@/assets/icons/download.png";
+import Image from 'next/image';
 
 const ImageGallery = () => {
   const images = [
@@ -23,10 +25,10 @@ const ImageGallery = () => {
       <div className="flex md:flex-row lg:m-20 md:gap-32 sm:flex-col xs:flex-col">
         <div className="min-h-screen flex flex-col items-center p-4">
           <div className='flex'>
-            <h1 className="text-3xl mt-8 font-bold text-green-700">School infrastructure Certicifate</h1>
+            <h1 className="text-3xl mt-8 font-bold text-green-700">School Infrastructure Certicifate</h1>
 
-            <button className="mt-8 flex items-center gap-2 px-4  text-white rounded-lg hover:bg-blue-600 transition">
-              <a href="/path-to-your-file.pdf" download className="flex items-center gap-2"><Image src={DownloadIcon} alt="Download" width={20} height={20} /></a>
+            <button className="mt-8 flex items-center gap-2 px-4  text-white rounded-lg hover:scale-150 transition">
+              <a href="/certificates/SI1.pdf" download className="flex items-center gap-2"><Image src={DownloadIcon} alt="Download" width={20} height={20} /></a>
             </button>
 
           </div>

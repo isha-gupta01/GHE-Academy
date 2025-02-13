@@ -24,8 +24,8 @@ const ImageGallery = () => {
           <div className='flex'>
             <h1 className="text-3xl mt-8 font-bold text-green-700">Recognition Certificate</h1>
 
-            <button className="mt-8 flex items-center gap-2 px-4  text-white rounded-lg hover:bg-blue-400 transition">
-              <a href="/path-to-your-file.pdf" download className="flex items-center gap-2"><Image src={DownloadIcon} alt="Download" width={20} height={20} /></a>
+            <button className="mt-8 flex items-center gap-2 px-4  text-white rounded-lg hover:scale-150 transition">
+              <a href="/certificates/RC1.pdf" download className="flex items-center gap-2"><Image src={DownloadIcon} alt="Download" width={20} height={20} /></a>
             </button>
           </div>
           <div className="w-full mt-12 shadow-[0px_0px_5px_2px_rgba(0,_0,_0,_0.1)] p-3 rounded-lg max-w-3xl flex flex-col items-center gap-4">
