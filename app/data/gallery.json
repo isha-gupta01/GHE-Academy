@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Annual Day Celebration",
+        "images": [
+          "/gallery/event1-1.jpeg",
+          "/gallery/event1-2.jpeg",
+          "/gallery/event1-3.jpeg",
+          "/gallery/event1-4.jpeg",
+          "/gallery/event1-5.jpeg",
+          "/gallery/event1-6.jpeg",
+          "/gallery/event1-7.jpeg",
+          "/gallery/event1-8.jpeg",
+          "/gallery/event1-9.jpeg"
+        ]
+      },
+      {
+        "title": "Independence Day",
+        "images": [
+          "/gallery/event3-1.jpg",
+          "/gallery/event3-2.jpg",
+          "/gallery/event3-3.jpg",
+          "/gallery/event3-4.jpg",
+          "/gallery/event3-5.jpg",
+          "/gallery/event3-6.jpg",
+          "/gallery/event3-7.jpg",
+          "/gallery/event3-8.jpg",
+          "/gallery/event3-9.jpg",
+          "/gallery/event3-10.jpg",
+          "/gallery/event3-11.jpg",
+          "/gallery/event3-12.jpg",
+          "/gallery/event3-13.jpg",
+          "/gallery/event3-14.jpg",
+          "/gallery/event3-15.jpg"
+        ]
+      }
+]

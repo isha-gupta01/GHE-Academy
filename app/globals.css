@@ -3,9 +3,35 @@
 @tailwind utilities;
 
 
-@layer components{
-  .nav
-  {
-    @apply flex bg-blue-900 text-white items-center justify-between px-8 h-16 font-serif text-lg;
-  }
+
+
+
+@layer base{
+    .nav{
+        @apply   transition duration-300 py-1.5  rounded-full text-white/70 text-sm
+    }
 }
+
+.active{
+  background-color: yellow;
+}
+
+
+@layer utilities {
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .animate-fade-in {
+      @apply opacity-0;
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+  }
+  
