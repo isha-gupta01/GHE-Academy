@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 const menuData = [
   { menuTitle: "About", items: ["About-Us", "Principal-Message", "Manager-Message", "Vision-&-Mission", "Progress-Report", "Academic-Year", "Institutional-Rules"] },
   { menuTitle: "Admissions", items: ["Application-Process", "Fee-Structure"] },
-  { menuTitle: "Certificates", items: ["Affilation-Certificate", "Building-Safety-Certificate", "Fire-Safety-Certificate", "Land-Certificate", "No-Objection-Certificate", "Recognition-Certificate", "School-Infrastructure-Certificate", "Self-Certification", "Society-Trust-Certificate", "Water-Health-&-Sanitation-Certificate", "Mandatory-Disclosure"] },
+  { menuTitle: "Certificates", items: ["Affilation-Certificate", "Building-Safety-Certificate","Class-Room-Size-Certificate", "Fire-Safety-Certificate","HT-Line-Certificate", "Land-Certificate", "No-Objection-Certificate", "Recognition-Certificate", "School-Infrastructure-Certificate", "Self-Certification", "Society-Trust-Certificate", "Water-Health-&-Sanitation-Certificate", "Mandatory-Disclosure"] },
   { menuTitle: "Campus-Facility", items: ["Art-Lab", "Board-Exam-Applicability", "Computer-Lab", "English-Language-Lab", "Extra-Curricular-Activities", "Facility", "Faculty-and-Staff", "Parent-Teacher-Association", "School-Management-Committee", "Science-Lab", "Transportation"] },
   { menuTitle: "Gallery", items: [] },
   { menuTitle: "Contact", items: [] },

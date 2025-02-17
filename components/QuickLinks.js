@@ -9,7 +9,9 @@ const menuData = [
         items: [
             "Affilation-Certificate",
             "Building-Safety-Certificate",
+            "Class-Room-Size-Certificate",
             "Fire-Safety-Certificate",
+            "HT-Line-Certificate",
             "Land-Certificate",
             "No-Objection-Certificate",
             "Recognition-Certificate",

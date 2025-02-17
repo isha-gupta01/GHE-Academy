@@ -58,7 +58,9 @@ const Navbar = () => {
             <li className='nav'><DropdownMenu menuTitle={"Certificates"} menuItems={[
               "Affilation-Certificate",
               "Building-Safety-Certificate",
+              "Class-Room-Size-Certificate",
               "Fire-Safety-Certificate",
+              "HT-Line-Certificate",
               "Land-Certificate",
               "Mandatory-Disclosure",
               "No-Objection-Certificate",

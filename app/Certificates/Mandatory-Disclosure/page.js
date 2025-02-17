@@ -34,7 +34,9 @@ const SchoolInfo = () => {
     { srNo: 14, title: "List of Parent Teacher Association (PTA) Members", download: "/certificates/PTA.pdf" },
     { srNo: 15, title: "Last 3 Year Result of the Borad Examination as per Applicability", download: "/certificates/3yrresult.pdf" },
     { srNo: 16, title: "Mandatory Public Disclosure Details", download: "/certificates/mpd.pdf" },
-    { srNo: 17, title: "Certificate of Salary Disbursement", download: "" },
+    { srNo: 17, title: "Certificate of Salary Disbursement", download: "#" },
+    { srNo: 18, title: "Class Room Size Certificate", download: "/certificates/class room size certificate.pdf" },
+    { srNo: 19, title: "HT Line Certificate", download: "/certificates/HT LINE CERTIFICATE.pdf" }
 
     
   ];
