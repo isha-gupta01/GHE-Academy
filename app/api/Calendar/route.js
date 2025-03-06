@@ -7,42 +7,49 @@ export async function GET() {
   try {
     await connectDB();
 
-    // Define custom month order (April to March)
-    const customMonthOrder = {
-      "April": 1, "May": 2, "June": 3, "July": 4, "August": 5, "September": 6,
-      "October": 7, "November": 8, "December": 9, "January": 10, "February": 11, "March": 12
+    // Fetch events from MongoDB
+    let events = await CalendarModel.find({}).lean();
+
+    // Mapping month numbers to names (Indian Academic Calendar Order)
+    const monthNames = {
+      4: "April", 5: "May", 6: "June", 7: "July", 8: "August", 
+      9: "September", 10: "October", 11: "November", 12: "December",
+      1: "January", 2: "February", 3: "March"
     };
 
-    let events = await CalendarModel.find({});
-
-    // Sorting logic
-    events.sort((a, b) => {
-      // Compare months first using custom order
-      const monthComparison = customMonthOrder[a.month] - customMonthOrder[b.month];
-      if (monthComparison !== 0) return monthComparison;
-
-      // Extract numerical part of date
-      const extractNumber = (dateStr) => {
-        const match = dateStr.match(/\d+/); // Find the first number in the date string
-        return match ? parseInt(match[0]) : 0;
+    // Convert month numbers to names and sort
+    events = events.map(event => ({
+      ...event,
+      month: monthNames[event.month] || event.month // Convert month number to name
+    })).sort((a, b) => {
+      // Custom sorting logic for academic year (April - March)
+      const academicMonthOrder = {
+        "April": 1, "May": 2, "June": 3, "July": 4, "August": 5, 
+        "September": 6, "October": 7, "November": 8, "December": 9,
+        "January": 10, "February": 11, "March": 12
       };
 
-      // Compare dates within the same month
-      return extractNumber(a.date) - extractNumber(b.date);
+      const monthOrderA = academicMonthOrder[a.month] || 99;
+      const monthOrderB = academicMonthOrder[b.month] || 99;
+
+      if (monthOrderA !== monthOrderB) {
+        return monthOrderA - monthOrderB; // Sort by month
+      }
+
+      // Sort by date within each month
+      const dateA = parseInt(a.date.match(/\d+/) ? a.date.match(/\d+/)[0] : "0", 10);
+      const dateB = parseInt(b.date.match(/\d+/) ? b.date.match(/\d+/)[0] : "0", 10);
+
+      return dateA - dateB;
     });
 
-    // Ensure API response includes proper month names
-    const formattedEvents = events.map(event => ({
-      month: event.month, // Keeps the month name
-      date: event.date,
-      event: event.event
-    }));
-
-    return NextResponse.json(formattedEvents);
+    return NextResponse.json(events);
   } catch (error) {
-    return NextResponse.json({ error: "Error fetching events" }, { status: 500 });
+    console.error("Error fetching academic calendar:", error);
+    return NextResponse.json({ error: "Error fetching academic calendar" }, { status: 500 });
   }
 }
+
 
 
 

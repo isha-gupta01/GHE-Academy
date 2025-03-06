@@ -6,12 +6,21 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     await connectDB();
-    const feesData = await FeesModel.find({});
+
+    // Fetch fees data
+    const feesData = await FeesModel.find({}).sort({Grade:1}).lean();
+
+    // Sorting function with error handling
+    
+
     return NextResponse.json(feesData);
   } catch (error) {
+    console.error("Error fetching fees data:", error);
     return NextResponse.json({ error: "Error fetching fees data" }, { status: 500 });
   }
 }
+
+
 
 // ✅ POST - Add a new fees entry
 export async function POST(req) {
