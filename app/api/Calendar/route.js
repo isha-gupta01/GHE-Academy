@@ -6,12 +6,21 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     await connectDB();
+
     const monthNames = [
       "", "January", "February", "March", "April", "May", "June",
       "July", "August", "September", "October", "November", "December"
     ];
 
-    let events = await CalendarModel.find({}).sort({ month: 1 });
+    let events = await CalendarModel.find({});
+
+    // Custom sorting: April (4) to March (3)
+    events = events.sort((a, b) => {
+      const customOrder = [
+        4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3
+      ];
+      return customOrder.indexOf(a.month) - customOrder.indexOf(b.month);
+    });
 
     // Convert month numbers to month names
     events = events.map(event => ({
@@ -24,6 +33,7 @@ export async function GET() {
     return NextResponse.json({ error: "Error fetching events" }, { status: 500 });
   }
 }
+
 
 // ✅ POST - Add a new calendar event
 export async function POST(req) {
