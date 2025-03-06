@@ -7,32 +7,30 @@ export async function GET() {
   try {
     await connectDB();
 
-    const monthNames = [
-      "", "January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
-    ];
+    const customMonthOrder = {
+      "April": 1, "May": 2, "June": 3, "July": 4, "August": 5, "September": 6,
+      "October": 7, "November": 8, "December": 9, "January": 10, "February": 11, "March": 12
+    };
 
     let events = await CalendarModel.find({});
 
-    // Custom sorting: April (4) to March (3)
-    events = events.sort((a, b) => {
-      const customOrder = [
-        4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3
-      ];
-      return customOrder.indexOf(a.month) - customOrder.indexOf(b.month);
-    });
+    // Sort months in custom order (April → March) and sort dates within each month
+    events.sort((a, b) => {
+      const monthComparison = customMonthOrder[a.month] - customMonthOrder[b.month];
+      if (monthComparison !== 0) return monthComparison;
 
-    // Convert month numbers to month names
-    events = events.map(event => ({
-      ...event._doc, 
-      month: monthNames[event.month] 
-    }));
+      // Extract numerical part of the date for sorting
+      const dateA = parseInt(a.date);
+      const dateB = parseInt(b.date);
+      return dateA - dateB;
+    });
 
     return NextResponse.json(events);
   } catch (error) {
     return NextResponse.json({ error: "Error fetching events" }, { status: 500 });
   }
 }
+
 
 
 // ✅ POST - Add a new calendar event
