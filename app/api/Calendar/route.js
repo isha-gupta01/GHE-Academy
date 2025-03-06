@@ -6,7 +6,19 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     await connectDB();
-    const events = await CalendarModel.find();
+    const monthNames = [
+      "", "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+
+    let events = await CalendarModel.find({}).sort({ month: 1 });
+
+    // Convert month numbers to month names
+    events = events.map(event => ({
+      ...event._doc, 
+      month: monthNames[event.month] 
+    }));
+
     return NextResponse.json(events);
   } catch (error) {
     return NextResponse.json({ error: "Error fetching events" }, { status: 500 });

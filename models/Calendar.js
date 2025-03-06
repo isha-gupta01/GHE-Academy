@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const CalendarSchema = new mongoose.Schema({
-  month: { type: String, required: true },
+  month: { type: Number, required: true },
   date: { type: String, required: true },
   event: { type: String, required: true },
 });
