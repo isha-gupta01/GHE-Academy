@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '@/Sections/Navbar'
 import Hero from '@/Sections/Hero'
 import Image from 'next/image'
-import Principle from "@/assets/images/principle.png"
+import Principle from "@/assets/images/principle.jpg"
 import SchoolImage from "@/assets/images/ghe1.png"
 import Footer from '@/Sections/Footer'
 import Updates from "@/components/Updates";

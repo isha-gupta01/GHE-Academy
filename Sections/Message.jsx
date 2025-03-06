@@ -1,5 +1,5 @@
 import React from 'react'
-import PrincipleImage from "@/assets/images/principle.png"
+import PrincipleImage from "@/assets/images/principle.jpg"
 import ManagerImage from "@/assets/images/manager.png"
 import VisionImage from "@/assets/images/sqLIbrary.jpg"
 import grainImage from "@/assets/images/grain.jpg"

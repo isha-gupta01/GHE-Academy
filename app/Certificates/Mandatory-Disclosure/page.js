@@ -34,7 +34,9 @@ const SchoolInfo = () => {
     { srNo: 14, title: "List of Parent Teacher Association (PTA) Members", download: "/certificates/PTA.pdf" },
     { srNo: 15, title: "Last 3 Year Result of the Borad Examination as per Applicability", download: "/certificates/3yrresult.pdf" },
     { srNo: 16, title: "Mandatory Public Disclosure Details", download: "/certificates/mpd.pdf" },
-    { srNo: 17, title: "Certificate of Salary Disbursement", download: "" },
+    { srNo: 17, title: "Certificate of Salary Disbursement", download: "#" },
+    { srNo: 18, title: "Class Room Size Certificate", download: "/certificates/class room size certificate.pdf" },
+    { srNo: 19, title: "HT Line Certificate", download: "/certificates/HT LINE CERTIFICATE.pdf" }
 
     
   ];
@@ -59,8 +61,8 @@ const SchoolInfo = () => {
     { srNo: 6, info: "NO. OF BOYS TOILETS", details: "12" },
     { srNo: 7, info: "CWSN Girls Toilet", details: "02" },
     { srNo: 8, info: "CWSN Boys Toilet", details: "02" },
-    { srNo: 9, info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL", details: <a className="hover:text-blue-500 text-green-600" href="https://drive.google.com/file/d/1fKKgW3UuMhkRvjR5bm8FNCRiHWVe8-rY/view?usp=drivesdk">OPEN</a> },
-    { srNo: 10, info: "Download SCHOOL INFRASTRUCTURE Details", details: <a className="hover:text-blue-500 text-green-600" href="/certificates/SI1.pdf">Download</a> },
+    { srNo: 9, info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL", details: <a className="hover:text-blue-500 text-green-600" href="https://drive.google.com/file/d/1fKKgW3UuMhkRvjR5bm8FNCRiHWVe8-rY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">OPEN</a> },
+    { srNo: 10, info: "Download SCHOOL INFRASTRUCTURE Details", details: <a className="hover:text-blue-500 text-green-600" href="/certificates/SI1.pdf" download target="_blank" rel="noopener noreferrer">Download</a> },
 
   ];
 
