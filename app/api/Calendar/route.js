@@ -7,6 +7,7 @@ export async function GET() {
   try {
     await connectDB();
 
+    // Define custom month order (April to March)
     const customMonthOrder = {
       "April": 1, "May": 2, "June": 3, "July": 4, "August": 5, "September": 6,
       "October": 7, "November": 8, "December": 9, "January": 10, "February": 11, "March": 12
@@ -14,22 +15,35 @@ export async function GET() {
 
     let events = await CalendarModel.find({});
 
-    // Sort months in custom order (April → March) and sort dates within each month
+    // Sorting logic
     events.sort((a, b) => {
+      // Compare months first using custom order
       const monthComparison = customMonthOrder[a.month] - customMonthOrder[b.month];
       if (monthComparison !== 0) return monthComparison;
 
-      // Extract numerical part of the date for sorting
-      const dateA = parseInt(a.date);
-      const dateB = parseInt(b.date);
-      return dateA - dateB;
+      // Extract numerical part of date
+      const extractNumber = (dateStr) => {
+        const match = dateStr.match(/\d+/); // Find the first number in the date string
+        return match ? parseInt(match[0]) : 0;
+      };
+
+      // Compare dates within the same month
+      return extractNumber(a.date) - extractNumber(b.date);
     });
 
-    return NextResponse.json(events);
+    // Ensure API response includes proper month names
+    const formattedEvents = events.map(event => ({
+      month: event.month, // Keeps the month name
+      date: event.date,
+      event: event.event
+    }));
+
+    return NextResponse.json(formattedEvents);
   } catch (error) {
     return NextResponse.json({ error: "Error fetching events" }, { status: 500 });
   }
 }
+
 
 
 
