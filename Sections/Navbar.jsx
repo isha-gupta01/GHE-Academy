@@ -39,7 +39,7 @@ const Navbar = () => {
             <div className='flex  flex-col justify-center items-center'>
               <span className=' lg:flex lg:text-xl '><Link href="/"><Image src={Green} alt="Green Heaven English Academy" width={200} height={50} className='lg:w-[165px] md:hidden lg:flex xl:flex' /></Link></span>
               <span className='text-[0.6rem] leading-tight  z-10 flex flex-col justify-center items-center font-ubuntu '>
-                <p className='md:hidden flex lg:flex xl:flex '>Affiliated To The Council For The</p>
+                <p className='md:hidden flex lg:flex xl:flex '>A/F The Council For The</p>
                 <p ><span className='sm:hidden md:hidden xl:flex xs:hidden'>Central Board of Secondary Education </span><span className='md:hidden justify-center xl:flex sm:flex xs:flex'>(CBSE)</span></p>
               </span>
             </div>
