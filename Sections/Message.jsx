@@ -31,7 +31,7 @@ const Message = () => {
     ];
     return (
         <>
-            <section className="pb-16 pt-24 lg:py-24">
+            <section className="pb-10 pt-24 lg:py-12">
                 <div className="sm:container sm:mx-auto xs:mx-3">
                     <div className="flex justify-center">
                         <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">Message from our Authorities</p>
@@ -66,6 +66,11 @@ const Message = () => {
                     </div>
                 </div>
             </section>
+            <div className='flex items-center justify-center gap-2 mb-12'>
+                <Link href="/Certificates/Mandatory-Disclosure" className='bg-orange-500 hover:bg-orange-600 text-white rounded-md px-3 py-1 text-center text-lg'>
+                    Mandatory Disclosure
+                </Link>
+            </div>
         </>
     )
 }
