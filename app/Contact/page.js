@@ -9,6 +9,7 @@ import Whatsapp from "@/assets/icons/white_WA.png"
 import Facebook from "@/assets/icons/image.png"
 import Link from 'next/link'
 import Image from 'next/image'
+import { SyncLoader } from 'react-spinners';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -175,7 +176,7 @@ const ContactPage = () => {
                 }`}
                 disabled={isSubmitting} // Prevent multiple clicks
               >
-                {isSubmitting ? "Submitting..." : "SUBMIT"}
+                {isSubmitting ? <SyncLoader color="#28ae35" margin={7} size={9} /> : "SUBMIT"}
               </button>
             </form>
           </div>

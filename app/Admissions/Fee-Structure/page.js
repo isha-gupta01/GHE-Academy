@@ -6,6 +6,7 @@ import Hero from "@/Sections/Hero";
 import Pencil from "@/assets/images/pencils.jpg";
 import Footer from "@/Sections/Footer";
 import Updates from "@/components/Updates";
+import { SyncLoader } from "react-spinners";
 
 export default function FeeStructure() {
   const [data, setData] = useState([]); // Store fetched data
@@ -38,7 +39,14 @@ export default function FeeStructure() {
         <h2 className="text-3xl mx-auto text-center font-bold mb-4">Green Heaven English Academy Fee Structure 2025-26</h2>
 
         {loading ? (
-          <p className="text-lg">Loading fee structure...</p>
+          <div className=" flex items-center justify-center">
+            <SyncLoader
+          color="#28ae35"
+          margin={7}
+          size={9}
+        />
+          </div>
+          
         ) : (
           <div className="overflow-x-auto">
             <table className="min-w-full border text-center border-gray-300">
