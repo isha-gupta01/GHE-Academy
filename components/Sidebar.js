@@ -38,7 +38,6 @@ const menuData = [
       "Extra-Curricular-Activities",
       "Facility",
       "Faculty-and-Staff",
-      "Parent-Teacher-Association",
       "School-Management-Committee",
       "Science-Lab",
       "Transportation",
