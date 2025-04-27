@@ -269,11 +269,11 @@ const Sidebar = () => {
               
               {/* Footer section */}
               <motion.div 
-                className="absolute bottom-6 left-0 right-0 text-center text-xs text-gray-400 px-4"
+                className="absolute bottom-14 left-0 right-0 text-center text-xs text-gray-400 px-4"
                 variants={menuItemVariants}
               >
-                <div className="h-px w-3/4 mx-auto mb-4 bg-green-700/30"></div>
-                <p>© 2024 School Name</p>
+                <div className="h-px w-3/4 mx-auto mb-4  bg-green-700/30"></div>
+                <p className="font-ubuntu font-thin">© {new Date().getFullYear()} Green Heaven English Academy.</p>
               </motion.div>
             </motion.aside>
           </>
