@@ -64,13 +64,14 @@ const Navbar = () => {
               "Land-Certificate",
               "Mandatory-Disclosure",
               "No-Objection-Certificate",
+              "Parents-Teachers-Association",
               "Recognition-Certificate",
               "School-Infrastructure-Certificate",
               "Self-Certification",
               "Society-Trust-Certificate",
               "Water-Health-&-Sanitation-Certificate"
             ]} /></li>
-            <li className='nav whitespace-nowrap'><DropdownMenu menuTitle={"Campus-Facility"} menuItems={["Art-Lab", "Board-Exam-Applicability", "Computer-Lab", "English-Language-Lab", "Extra-Curricular-Activities", "Facility", "Faculty-and-Staff", "Parent-Teacher-Association", "School-Management-Committee", "Science-Lab", "Transportation"]} /></li>
+            <li className='nav whitespace-nowrap'><DropdownMenu menuTitle={"Campus-Facility"} menuItems={["Art-Lab", "Board-Exam-Applicability", "Computer-Lab", "English-Language-Lab", "Extra-Curricular-Activities", "Facility", "Faculty-and-Staff", "School-Management-Committee", "Science-Lab", "Transportation"]} /></li>
             <li className='nav'><Link href="/Gallery"><DropdownMenu menuTitle={"Gallery"} menuItems={[]} /></Link></li>
             <li className=' transition duration-300 nav'><Link href="/Contact"><DropdownMenu menuTitle={"Contact"} menuItems={[]} /></Link></li>
           </ul>

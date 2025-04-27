@@ -14,6 +14,7 @@ const menuData = [
             "HT-Line-Certificate",
             "Land-Certificate",
             "No-Objection-Certificate",
+            "Parents-Teachers-Association",
             "Recognition-Certificate",
             "School-Infrastructure-Certificate",
             "Self-Certification",

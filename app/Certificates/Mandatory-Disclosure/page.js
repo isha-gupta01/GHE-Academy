@@ -31,7 +31,7 @@ const SchoolInfo = () => {
     { srNo: 11, title: "Fee structure of the School", download: "/certificates/FEE STRUCTURE.pdf" },
     { srNo: 12, title: "Annual Academic Calender", download: "/certificates/calender.pdf" },
     { srNo: 13, title: "List of School Management Committee", download: "/certificates/SMC.pdf" },
-    { srNo: 14, title: "List of Parent Teacher Association (PTA) Members", download: "/certificates/PTA.pdf" },
+    { srNo: 14, title: "List of Parent Teacher Association (PTA) Members", download: "/certificates/PTA.jpg" },
     { srNo: 15, title: "Last 3 Year Result of the Borad Examination as per Applicability", download: "/certificates/3yrresult.pdf" },
     { srNo: 16, title: "Mandatory Public Disclosure Details", download: "/certificates/mpd.pdf" },
     { srNo: 17, title: "Certificate of Salary Disbursement", download: "#" },
