@@ -18,16 +18,16 @@ const SchoolInfo = () => {
   ];
 
   const documentsInfo = [
-    { srNo: 1, title: "Affiliation", download: "/certificates/AFFILATION1.pdf" },
-    { srNo: 2, title: "Society", download: "/certificates/SOCIETY1.pdf" },
+    { srNo: 1, title: "Affiliation Certificate", download: "/certificates/AFFILATION1.pdf" },
+    { srNo: 2, title: "Society Certificate", download: "/certificates/SOCIETY1.pdf" },
     { srNo: 3, title: "No Objection Certificate (NOC)", download: "/certificates/NOC1.pdf" },
     { srNo: 4, title: "Recognition Certificate (RC)", download: "/certificates/RC1.pdf" },
     { srNo: 5, title: "Land Certificate", download: "/certificates/LC.pdf" },
     { srNo: 6, title: "Building Safety Certificate", download: "/certificates/BUILDING SAFETY1.pdf" },
-    { srNo: 7, title: "Fire Safety", download: "/certificates/FIRE SAFETY.pdf" },
+    { srNo: 7, title: "Fire Safety Certificate", download: "/certificates/FIRE SAFETY.pdf" },
     { srNo: 8, title: "Self Certificate", download: "/certificates/certification.pdf" },
     { srNo: 9, title: "Water, Health & Sanitation Certificate", download: "/certificates/HEALTHWATER.pdf" },
-    { srNo: 10, title: "School Infrastructure", download: "/certificates/SI1.pdf" },
+    { srNo: 10, title: "School Infrastructure Certificate", download: "/certificates/SI1.pdf" },
     { srNo: 11, title: "Fee structure of the School", download: "/certificates/FEE STRUCTURE.pdf" },
     { srNo: 12, title: "Annual Academic Calender", download: "/certificates/calender.pdf" },
     { srNo: 13, title: "List of School Management Committee", download: "/certificates/SMC.pdf" },
