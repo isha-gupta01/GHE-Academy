@@ -42,7 +42,7 @@ const QuickLinks = () => {
           .filter((item) => item !== currentItem) // Exclude current page
           .map((item, index) => (
             <Link key={index} href={`/${activeMenu.title}/${item}`}>
-              <div className="p-4 bg-white rounded-lg shadow hover:bg-green-500 hover:text-white transition cursor-pointer text-center font-semibold">
+              <div className="p-4 bg-white rounded-lg shadow ring-2 ring-green-600 hover:bg-green-500 hover:text-white transition cursor-pointer text-center font-semibold">
                 {item.replace(/-/g, " ")}
               </div>
             </Link>
