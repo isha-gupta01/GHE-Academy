@@ -22,7 +22,7 @@ const SchoolInfo = () => {
     { srNo: 2, title: "Society Certificate", download: "/certificates/SOCIETY1.pdf" },
     { srNo: 3, title: "No Objection Certificate (NOC)", download: "/certificates/NOC1.pdf" },
     { srNo: 4, title: "Recognition Certificate (RC)", download: "/certificates/RC1.pdf" },
-    { srNo: 5, title: "Land Certificate", download: "/certificates/LC.pdf" },
+    { srNo: 5, title: "Land Certificate", download: "/certificates/LC.jpg" },
     { srNo: 6, title: "Building Safety Certificate", download: "/certificates/BUILDING SAFETY1.pdf" },
     { srNo: 7, title: "Fire Safety Certificate", download: "/certificates/FIRE SAFETY.pdf" },
     { srNo: 8, title: "Self Certificate", download: "/certificates/certification.pdf" },
@@ -36,7 +36,9 @@ const SchoolInfo = () => {
     { srNo: 16, title: "Mandatory Public Disclosure Details", download: "/certificates/mpd.pdf" },
     { srNo: 17, title: "Certificate of Salary Disbursement", download: "#" },
     { srNo: 18, title: "Class Room Size Certificate", download: "/certificates/class room size certificate.pdf" },
-    { srNo: 19, title: "HT Line Certificate", download: "/certificates/HT LINE CERTIFICATE.pdf" }
+    { srNo: 19, title: "HT Line Certificate", download: "/certificates/HT LINE CERTIFICATE.pdf" },
+    { srNo: 20, title: "Society Registartion Certificate", download: "/certificates/Society-Registartion-Certificate.jpg" },
+    { srNo: 21, title: "Teachers Data", download: "/certificates/Teachers Data.png" }
 
     
   ];

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
 
-const DropdownMenu = ({ menuTitle, menuItems }) => {
+const DropdownMen = ({ menuTitle, menuItems }) => {
     const pathname = usePathname();
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -36,7 +36,7 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
                 </button>
                 {isDropdownOpen && (
                     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                        <ul className='absolute top-16 -left-6 min-w-max bg-gray-800 text-white shadow-lg rounded-md'>
+                        <ul className='absolute top-16 -left-6 min-w-max bg-gray-800 text-white shadow-lg rounded-md max-h-[70vh] overflow-y-auto'>
                             {menuItems.map((item, index) => (
                                 <Link key={index} href={`/${menuTitle}/${item}`} className={pathname === `/${menuTitle}/${item}` ? "text-green-500" : ""}>
                                     <li  className='p-2 rounded-md border-b-[1px] hover:text-green-500 border-white/5'>
@@ -52,4 +52,4 @@ const DropdownMenu = ({ menuTitle, menuItems }) => {
     );
 };
 
-export default DropdownMenu;
+export default DropdownMen;

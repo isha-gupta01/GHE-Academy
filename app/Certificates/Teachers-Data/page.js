@@ -11,21 +11,21 @@ import Image from "next/image";
 
 const ImageGallery = () => {
   const images = [
-    "/certificates/LC.jpg",
+    "/certificates/Teachers Data.png",
   ]; 
   return (
     <>
     <Updates/>
     <Navbar/>
-    <Hero image={SchoolImage}  title="Land Certificate" subBody="" height={70}/>
+    <Hero image={SchoolImage}  title="Teachers Data" subBody="" height={70}/>
     <div className="flex md:flex-row lg:m-20 md:gap-32 sm:flex-col xs:flex-col">
       <div className="min-h-screen flex flex-col items-center p-4">
           
           <div className='flex'>
-          <h1 className="text-3xl mt-8 font-bold text-green-700">Land Certicifate</h1>
+          <h1 className="text-3xl mt-8 font-bold text-green-700">Teachers Data</h1>
           
                       <button className="mt-8 flex items-center gap-2 px-4 py-2  text-white rounded-lg  transform hover:scale-150 transition-transform duration-300">
-            <a href="/certificates/LC.pdf" download className="flex items-center gap-2">
+            <a href="/certificates/Teachers Data.png" download className="flex items-center gap-2">
               <Image src={DownloadIcon} alt="Download" width={24} height={24} />
             </a>
           </button>

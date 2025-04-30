@@ -20,6 +20,8 @@ const menuData = [
             "Self-Certification",
             "Society-Trust-Certificate",
             "Water-Health-&-Sanitation-Certificate",
+            "Society-Registartion-Certificate",
+            "Teachers-Data"
         ],
     },
 ];

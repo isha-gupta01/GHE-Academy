@@ -69,7 +69,9 @@ const Navbar = () => {
               "School-Infrastructure-Certificate",
               "Self-Certification",
               "Society-Trust-Certificate",
-              "Water-Health-&-Sanitation-Certificate"
+              "Water-Health-&-Sanitation-Certificate",
+              "Society-Registartion-Certificate",
+              "Teachers-Data"
             ]} /></li>
             <li className='nav whitespace-nowrap'><DropdownMenu menuTitle={"Campus-Facility"} menuItems={["Art-Lab", "Board-Exam-Applicability", "Computer-Lab", "English-Language-Lab", "Extra-Curricular-Activities", "Facility", "Faculty-and-Staff", "School-Management-Committee", "Science-Lab", "Transportation"]} /></li>
             <li className='nav'><Link href="/Gallery"><DropdownMenu menuTitle={"Gallery"} menuItems={[]} /></Link></li>
