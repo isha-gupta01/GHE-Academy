@@ -19,7 +19,7 @@ const SchoolInfo = () => {
 
   const documentsInfo = [
     { srNo: 1, title: "Affiliation Certificate", download: "/certificates/AFFILATION1.pdf" },
-    { srNo: 2, title: "Society Certificate", download: "/certificates/SOCIETY1.pdf" },
+    { srNo: 2, title: "Society Registartion Certificate", download: "/certificates/Society-Registartion-Certificate.jpg" },
     { srNo: 3, title: "No Objection Certificate (NOC)", download: "/certificates/NOC1.pdf" },
     { srNo: 4, title: "Recognition Certificate (RC)", download: "/certificates/RC1.pdf" },
     { srNo: 5, title: "Land Certificate", download: "/certificates/LC.jpg" },
@@ -37,8 +37,8 @@ const SchoolInfo = () => {
     { srNo: 17, title: "Certificate of Salary Disbursement", download: "#" },
     { srNo: 18, title: "Class Room Size Certificate", download: "/certificates/class room size certificate.pdf" },
     { srNo: 19, title: "HT Line Certificate", download: "/certificates/HT LINE CERTIFICATE.pdf" },
-    { srNo: 20, title: "Society Registartion Certificate", download: "/certificates/Society-Registartion-Certificate.jpg" },
-    { srNo: 21, title: "Teachers Data", download: "/certificates/Teachers Data.png" }
+    // { srNo: 20, title: "Society Registartion Certificate", download: "/certificates/Society-Registartion-Certificate.jpg" },
+    // { srNo: 21, title: "Teachers Data", download: "/certificates/Teachers Data.png" }
 
     
   ];
@@ -51,6 +51,7 @@ const SchoolInfo = () => {
     { srNo: 5, info: "TEACHERS SECTION RATIO", details: "30:1" },
     { srNo: 6, info: "DETAILS OF SPECIAL EDUCATOR", details: "1" },
     { srNo: 7, info: "DETAILS OF COUNSELLOR AND WELLNESS TEACHER", details: "1" },
+    { srNo: 8, info: "Teachers Data", details: <a className="hover:text-blue-500 text-green-600" href="/certificates/Teachers Data.png" download target="_blank" rel="noopener noreferrer">Download</a> }
 
   ];
 
