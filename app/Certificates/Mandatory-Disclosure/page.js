@@ -45,17 +45,17 @@ const SchoolInfo = () => {
     { srNo: 6, title: "Building Safety Certificate", download: "/certificates/BUILDING SAFETY1.pdf" },
     { srNo: 7, title: "Fire Safety Certificate", download: "/certificates/FIRE SAFETY.pdf" },
     { srNo: 8, title: "Self Certificate", download: "/certificates/certification.pdf" },
-    { srNo: 9, title: "Water, Health & Sanitation Certificate", download: "/certificates/HEALTHWATER.pdf" },
+    { srNo: 9, title: "Water, Health & Sanitation Certificate", download: "/certificates/Sanitation n water TDS 2025-26.pdf" },
     { srNo: 10, title: "School Infrastructure Certificate", download: "/certificates/SI1.pdf" },
     { srNo: 11, title: "Fee structure of the School", download: "/certificates/FEE STRUCTURE.pdf" },
     { srNo: 12, title: "Annual Academic Calender", download: "/certificates/calender.pdf" },
     { srNo: 13, title: "List of School Management Committee", download: "/certificates/SMC.pdf" },
     { srNo: 14, title: "List of Parent Teacher Association (PTA) Members", download: "/certificates/PTA.jpg" },
-    { srNo: 15, title: "Last 3 Year Result of the Borad Examination as per Applicability", download: "/certificates/3yrresult.pdf" },
-    { srNo: 16, title: "Mandatory Public Disclosure Details", download: "/certificates/mpd.pdf" },
-    { srNo: 17, title: "Certificate of Salary Disbursement", download: "#" },
-    { srNo: 18, title: "Class Room Size Certificate", download: "/certificates/class room size certificate.pdf" },
-    { srNo: 19, title: "HT Line Certificate", download: "/certificates/HT LINE CERTIFICATE.pdf" },
+    // { srNo: 15, title: "Last 3 Year Result of the Borad Examination as per Applicability", download: "/certificates/3yrresult.pdf" },
+    { srNo: 15, title: "Mandatory Public Disclosure Details", download: "/certificates/Mandatory_Disclosure_Details_SARAS_6.0.pdf" },
+    { srNo: 16, title: "Certificate of Salary Disbursement", download: "#" },
+    { srNo: 17, title: "Class Room Size Certificate", download: "/certificates/class room size certificate.pdf" },
+    { srNo: 18, title: "HT Line Certificate", download: "/certificates/HT LINE CERTIFICATE.pdf" },
     // { srNo: 20, title: "Society Registartion Certificate", download: "/certificates/Society-Registartion-Certificate.jpg" },
     // { srNo: 21, title: "Teachers Data", download: "/certificates/Teachers Data.png" }
 
@@ -83,8 +83,8 @@ const SchoolInfo = () => {
     { srNo: 6, info: "NO. OF BOYS TOILETS", details: "10" },
     { srNo: 7, info: "CWSN Girls Toilet", details: "02" },
     { srNo: 8, info: "CWSN Boys Toilet", details: "02" },
-    { srNo: 9, info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL", details: <a className="hover:text-blue-500 text-green-600" href="https://drive.google.com/file/d/1fKKgW3UuMhkRvjR5bm8FNCRiHWVe8-rY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">OPEN</a> },
-    { srNo: 10, info: "Download SCHOOL INFRASTRUCTURE Details", details: <a className="hover:text-blue-500 text-green-600" href="/certificates/SI1.pdf" download target="_blank" rel="noopener noreferrer">Download</a> },
+    // { srNo: 9, info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL", details: <a className="hover:text-blue-500 text-green-600" href="https://drive.google.com/file/d/1fKKgW3UuMhkRvjR5bm8FNCRiHWVe8-rY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">OPEN</a> },
+    { srNo: 9, info: "Download SCHOOL INFRASTRUCTURE Details", details: <a className="hover:text-blue-500 text-green-600" href="/certificates/SI1.pdf" download target="_blank" rel="noopener noreferrer">Download</a> },
 
   ];
 

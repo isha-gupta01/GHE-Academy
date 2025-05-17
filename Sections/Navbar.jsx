@@ -68,7 +68,6 @@ const Navbar = () => {
               "Recognition-Certificate",
               "School-Infrastructure-Certificate",
               "Self-Certification",
-              "Society-Trust-Certificate",
               "Water-Health-&-Sanitation-Certificate",
               "Society-Registartion-Certificate",
               "Teachers-Data"

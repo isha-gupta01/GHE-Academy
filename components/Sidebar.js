@@ -57,7 +57,6 @@ const menuData = [
       "Recognition-Certificate",
       "School-Infrastructure-Certificate",
       "Self-Certification",
-      "Society-Trust-Certificate",
       "Water-Health-&-Sanitation-Certificate",
       "Mandatory-Disclosure",
       "Society-Registartion-Certificate",
