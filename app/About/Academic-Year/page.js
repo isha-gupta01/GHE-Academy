@@ -9,6 +9,10 @@ import Updates from "@/components/Updates";
 import { SyncLoader } from "react-spinners"; // Added missing import
 
 export default function AcademicCalendar() {
+  const today = new Date();
+  const startYear = today.getMonth() > 2 ? today.getFullYear() : today.getFullYear() - 1;
+  const endYear = String(startYear + 1).slice(-2);
+  const academicYear = `${startYear}-${endYear}`;
   const data = [
     { term: "Academic Year", details: "April beginning to March end" },
     { term: "Summer Vacation", details: "Mid-May to June end" },
@@ -16,7 +20,7 @@ export default function AcademicCalendar() {
   ];
   const [dataset, setDataset] = useState([]);
   const [loading, setLoading] = useState(true);
-  
+
   // Fetch fee structure from API
   useEffect(() => {
     const fetchCalender = async () => {
@@ -31,21 +35,21 @@ export default function AcademicCalendar() {
         setLoading(false); // Also set loading to false if there's an error
       }
     };
-    
+
     fetchCalender();
   }, []);
-  
+
   return (
     <>
-      <Updates/>
+      <Updates />
       <Navbar />
-      <Hero 
-        image={Maths} 
-        title="Academic Year and Vacations" 
-        subBody='"This year, aim higher, work harder, and shine brighter!"' 
-        height={70} 
+      <Hero
+        image={Maths}
+        title="Academic Year and Vacations"
+        subBody='"This year, aim higher, work harder, and shine brighter!"'
+        height={70}
       />
-      
+
       <div className="p-6 lg:mx-20">
         <h2 className="text-xl font-bold mb-4">Academic Year and Vacations</h2>
         <div className="overflow-x-auto">
@@ -67,16 +71,16 @@ export default function AcademicCalendar() {
           </table>
         </div>
       </div>
-      
+
       <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
         {/* Header */}
         <h1 className="text-3xl text-center font-bold text-[#5E9538] mb-4">
-          Annual School Calendar (2025-26)
+          Annual School Calendar ({academicYear})
         </h1>
         <p className="text-gray-600 text-center mb-6 max-w-3xl">
           Our school follows the Indian academic year from <strong>April to March</strong>, ensuring a structured learning experience with academic and extracurricular activities.
         </p>
-        
+
         {loading ? (
           <div className="flex items-center justify-center">
             <SyncLoader color="#28ae35" margin={7} size={9} />
@@ -105,8 +109,8 @@ export default function AcademicCalendar() {
           </div>
         )}
       </div>
-      
-      <Footer/>
+
+      <Footer />
     </>
   );
 }
