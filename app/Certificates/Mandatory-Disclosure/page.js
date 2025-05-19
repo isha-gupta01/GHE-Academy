@@ -38,10 +38,10 @@ const SchoolInfo = () => {
 
   const documentsInfo = [
     { srNo: 1, title: "Affiliation Certificate", download: "/certificates/AFFILATION1.pdf" },
-    { srNo: 2, title: "Society Registartion Certificate", download: "/certificates/Society-Registartion-Certificate.jpg" },
+    { srNo: 2, title: "Society Registartion Certificate", download: "/certificates/Society-Registartion-Certificate.pdf" },
     { srNo: 3, title: "No Objection Certificate (NOC)", download: "/certificates/NOC1.pdf" },
     { srNo: 4, title: "Recognition Certificate (RC)", download: "/certificates/RC1.pdf" },
-    { srNo: 5, title: "Land Certificate", download: "/certificates/LC.jpg" },
+    { srNo: 5, title: "Land Certificate", download: "/certificates/LC.pdf" },
     { srNo: 6, title: "Building Safety Certificate", download: "/certificates/BUILDING SAFETY1.pdf" },
     { srNo: 7, title: "Fire Safety Certificate", download: "/certificates/FIRE SAFETY.pdf" },
     { srNo: 8, title: "Self Certificate", download: "/certificates/certification.pdf" },
@@ -50,7 +50,7 @@ const SchoolInfo = () => {
     { srNo: 11, title: "Fee structure of the School", download: "/certificates/FEE STRUCTURE.pdf" },
     { srNo: 12, title: "Annual Academic Calender", download: "/certificates/calender.pdf" },
     { srNo: 13, title: "List of School Management Committee", download: "/certificates/SMC.pdf" },
-    { srNo: 14, title: "List of Parent Teacher Association (PTA) Members", download: "/certificates/PTA.jpg" },
+    { srNo: 14, title: "List of Parent Teacher Association (PTA) Members", download: "/certificates/PTA.pdf" },
     // { srNo: 15, title: "Last 3 Year Result of the Borad Examination as per Applicability", download: "/certificates/3yrresult.pdf" },
     { srNo: 15, title: "Mandatory Public Disclosure Details", download: "/certificates/Mandatory_Disclosure_Details_SARAS_6.0.pdf" },
     { srNo: 16, title: "Certificate of Salary Disbursement", download: "#" },
@@ -84,7 +84,7 @@ const SchoolInfo = () => {
     { srNo: 7, info: "CWSN Girls Toilet", details: "02" },
     { srNo: 8, info: "CWSN Boys Toilet", details: "02" },
     // { srNo: 9, info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL", details: <a className="hover:text-blue-500 text-green-600" href="https://drive.google.com/file/d/1fKKgW3UuMhkRvjR5bm8FNCRiHWVe8-rY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">OPEN</a> },
-    { srNo: 9, info: "Download SCHOOL INFRASTRUCTURE Details", details: <a className="hover:text-blue-500 text-green-600" href="/certificates/SI1.pdf" download target="_blank" rel="noopener noreferrer">Download</a> },
+    { srNo: 9, info: "Download SCHOOL INFRASTRUCTURE Details", details:<> <a className="hover:text-blue-500 text-green-600" href="/certificates/SI1.pdf" download target="_blank" rel="noopener noreferrer">Download</a>  <a className="hover:text-blue-500 text-green-600" href="/certificates/SI1.pdf" target="_blank" rel="noopener noreferrer">/ OPEN</a> </>},
 
   ];
 
@@ -136,7 +136,7 @@ const SchoolInfo = () => {
               {/* Document Grid */}
               <h2 className="text-green-500 font-bold text-xl text-center mb-6">Quick Link</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                
+
                 {availablePdfs.map((pdf, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg p-3 hover:shadow-md transition-shadow duration-200">
                     <div className="flex items-center justify-between">
@@ -218,7 +218,11 @@ const SchoolInfo = () => {
                       {Object.values(row).map((value, colIndex) => (
                         <td key={colIndex} className="border border-gray-300 px-4 py-2">
                           {colIndex === table.headers.length - 1 && table.title.includes("DOCUMENTS") ? (
+                            <>
                             <a href={value} download className="hover:text-blue-600 text-green-600">Download</a>
+                            <a href={value} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 text-green-600"> / Open</a>
+                            </>
+                            
                           ) : (
                             value
                           )}
