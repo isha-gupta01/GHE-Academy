@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 const ImageGallery = () => {
   const images = [
-    "/certificates/certification.jpg",
+    "/certificates/certification.png",
   ]; // Replace with your actual image paths
 
   return (
