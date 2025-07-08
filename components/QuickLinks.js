@@ -17,6 +17,7 @@ const menuData = [
             "Parents-Teachers-Association",
             "Recognition-Certificate",
             "School-Infrastructure-Certificate",
+            "School-Management-Committee",
             "Self-Certification",
             "Water-Health-&-Sanitation-Certificate",
             "Society-Registartion-Certificate",

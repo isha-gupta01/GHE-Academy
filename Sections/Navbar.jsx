@@ -67,12 +67,13 @@ const Navbar = () => {
               "Parents-Teachers-Association",
               "Recognition-Certificate",
               "School-Infrastructure-Certificate",
+              "School-Management-Committee",
               "Self-Certification",
               "Water-Health-&-Sanitation-Certificate",
               "Society-Registartion-Certificate",
               "Teachers-Data"
             ]} /></li>
-            <li className='nav whitespace-nowrap'><DropdownMenu menuTitle={"Campus-Facility"} menuItems={["Art-Lab", "Board-Exam-Applicability", "Computer-Lab", "English-Language-Lab", "Extra-Curricular-Activities", "Facility", "Faculty-and-Staff", "School-Management-Committee", "Science-Lab", "Transportation"]} /></li>
+            <li className='nav whitespace-nowrap'><DropdownMenu menuTitle={"Campus-Facility"} menuItems={["Art-Lab", "Board-Exam-Applicability", "Computer-Lab", "English-Language-Lab", "Extra-Curricular-Activities", "Facility", "Faculty-and-Staff", "Science-Lab", "Transportation"]} /></li>
             <li className='nav'><Link href="/Gallery"><DropdownMenu menuTitle={"Gallery"} menuItems={[]} /></Link></li>
             <li className=' transition duration-300 nav'><Link href="/Contact"><DropdownMenu menuTitle={"Contact"} menuItems={[]} /></Link></li>
           </ul>
