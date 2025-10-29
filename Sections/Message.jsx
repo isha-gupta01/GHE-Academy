@@ -1,6 +1,6 @@
 import React from 'react'
 import PrincipleImage from "@/assets/images/principle.jpg"
-import ManagerImage from "@/assets/images/manager.png"
+import ManagerImage from "@/assets/images/manager.jpg"
 import VisionImage from "@/assets/images/sqLIbrary.jpg"
 import grainImage from "@/assets/images/grain.jpg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.png"
